@@ -78,51 +78,61 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
                
 
       Symbol.bindElementAction(compId, symbolName, "${_article-card}", "click", function(sym, e) {
-         sym.play("CardFlip");
-         // $('#Stage_coverFlow').scrollTop(0);
-         // xLinker = Math.round($('#Stage_article-card').offset().top);
+         sym.play("ArticleFlip");
+         setTimeout(function() {
+         $('#Stage_coverFlow').scrollTop(0);
+         xLinker = Math.round($('#Stage_article-card').offset().top);
+         }, 200);
 
       });
       //Edge binding end
 
       Symbol.bindElementAction(compId, symbolName, "${_article-3-4-card}", "click", function(sym, e) {
          sym.play("34ArticleFlip");
+         setTimeout(function() {
          $('#Stage_coverFlow').scrollTop(0);
-         //window.setTimeOut($('#Stage_coverFlow').scrollTop(0) , 50);
          xLinker = Math.round($('#Stage_article-3-4-card').offset().top);         
+         }, 200);
 
       });
       //Edge binding end
 
       Symbol.bindElementAction(compId, symbolName, "${_article-video-card}", "click", function(sym, e) {
-         sym.play("34ArticleFlip");
+         sym.play("videoArticleFlip");
+         setTimeout(function() {
          $('#Stage_coverFlow').scrollTop(0);
          xLinker = Math.round($('#Stage_article-video-card').offset().top);                  
+         }, 200);
 
       });
       //Edge binding end
 
       Symbol.bindElementAction(compId, symbolName, "${_article-gallery-card}", "click", function(sym, e) {
-         sym.play("FlipBack");        
-         // $('#Stage_coverFlow').scrollTop(0);
-         // xLinker = Math.round($('#Stage_article-gallery-card').offset().top);                  
+         sym.play("34ArticleFlip");
+         setTimeout(function() {
+         $('#Stage_coverFlow').scrollTop(0);
+         xLinker = Math.round($('#Stage_article-gallery-card').offset().top);                  
+         }, 200);
 
       });
       //Edge binding end
 
       Symbol.bindElementAction(compId, symbolName, "${_article-assetless-card}", "click", function(sym, e) {
-         sym.play("FlipBack");
-         // $('#Stage_coverFlow').scrollTop(0);
-         // xLinker = Math.round($('#Stage_article-assetless-card').offset().top);                           
+         sym.play("34ArticleFlip");
+         setTimeout(function() {
+         $('#Stage_coverFlow').scrollTop(0);
+         xLinker = Math.round($('#Stage_article-assetless-card').offset().top);                           
+         }, 200);
 
       });
       //Edge binding end
 
       Symbol.bindElementAction(compId, symbolName, "${_video-card}", "click", function(sym, e) {
          sym.play("videoArticleFlip");
-         // window.setTimeOut(50);
+         setTimeout(function() {
          $('#Stage_coverFlow').scrollTop(0);
          xLinker = Math.round($('#Stage_video-card').offset().top);                                    
+         }, 200);
 
       });
       //Edge binding end
@@ -134,7 +144,7 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
 
       Symbol.bindElementAction(compId, symbolName, "${_article-card-full}", "click", function(sym, e) {
          sym.play("ArticleSlideOut");
-         // $('#Stage_coverFlow').scrollTop(xLinker);
+         $('#Stage_coverFlow').scrollTop(xLinker);
 
       });
       //Edge binding end      
@@ -152,7 +162,7 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       //Edge binding end
 
       Symbol.bindElementAction(compId, symbolName, "${_article-card-fullCopy}", "click", function(sym, e) {
-         sym.play("FlipBack");
+         sym.play("ArticleFlipBack");
          $('#Stage_coverFlow').scrollTop(xLinker);
 
       });
@@ -198,6 +208,31 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       Symbol.bindElementAction(compId, symbolName, "${_videoArticleCardFull}", "click", function(sym, e) {
          sym.play("videoArticleFlipBack");
          // $('#Stage_coverFlow').scrollTop(xLinker);
+
+      });
+      //Edge binding end
+
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 4800, function(sym, e) {
+         sym.stop();// insert code here
+
+      });
+      //Edge binding end
+
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 5900, function(sym, e) {
+         sym.stop();
+
+      });
+      //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${_Rectangle}", "click", function(sym, e) {
+         sym.play("myCardsFlip");
+         // insert code for mouse click here
+
+      });
+      //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${_RectangleCopy}", "click", function(sym, e) {
+         sym.play("myCardsFlipBack");
 
       });
       //Edge binding end
