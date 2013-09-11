@@ -29,6 +29,39 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
           //       sym.play("Coverflow");
           //     });          
           // }        
+          var scrollStore = -1;
+          
+          function scrollDetect(thisObj){
+              var obj = thisObj;              
+              //Keep track of last scroll
+              var lastScroll = -1;
+              var scrollSeq = -1;
+              obj.scroll(function(event){
+                  //Sets the current scroll position
+                  var st = $(this).scrollTop();
+                  //Determines up-or-down scrolling
+                  if (st > lastScroll) {
+                     scrollSeq = -1;                      
+                     if (scrollStore != scrollSeq){
+                        //Replace this with your function call for downward-scrolling
+                        sym.play("botPanelDown");
+                     }                     
+                  }
+                  else {
+                     scrollSeq = 1;
+                     //Replace this with your function call for upward-scrolling
+                     if (scrollStore != scrollSeq) {
+                         sym.play("botPanelUp");
+                     }
+                  }
+                  //Updates scroll position
+                  lastScroll = st;
+                  scrollStore = scrollSeq;
+              });
+            }
+          
+          // scrollDetect($('#Stage_coverFlow'));
+          
          /**
           * Gallery Template
           * To add more items simply duplicate the symbol "large4" in the library and increase the number.
@@ -54,7 +87,7 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
              $button.css({float: "left", margin: "0px 0 0px 0px"});
            }
          }
-
+         
          var xLinker;
          
          // Hover effect for buttons
@@ -233,6 +266,26 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
 
       Symbol.bindElementAction(compId, symbolName, "${_RectangleCopy}", "click", function(sym, e) {
          sym.play("myCardsFlipBack");
+
+      });
+      //Edge binding end
+
+      
+
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 6500, function(sym, e) {
+         sym.stop();
+
+      });
+      //Edge binding end
+
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 7700, function(sym, e) {
+         sym.stop();
+
+      });
+      //Edge binding end
+
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 8300, function(sym, e) {
+         sym.stop();
 
       });
       //Edge binding end
