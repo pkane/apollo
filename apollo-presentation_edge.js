@@ -314,6 +314,7 @@ var symbols = {
             ["style", "display", 'block'],
             ["style", "height", '1105px'],
             ["style", "clip", [0,640,2322.8190917969,0], {valueTemplate:'rect(@@0@@px @@1@@px @@2@@px @@3@@px)'} ],
+            ["style", "z-index", '50'],             
             ["transform", "scaleX", '0.5']
          ],
          "${_Baseball-normal-color}": [
@@ -359,6 +360,7 @@ var symbols = {
             ["style", "display", 'none'],
             ["transform", "scaleX", '0.5'],
             ["style", "height", '1105px'],
+            ["style", "z-index", '50'],             
             ["style", "clip", [0,640,2322.819091796875,0], {valueTemplate:'rect(@@0@@px @@1@@px @@2@@px @@3@@px)'} ]
          ],
          "${_article-gallery-card}": [
@@ -438,6 +440,7 @@ var symbols = {
             ["transform", "scaleY", '0.5'],
             ["style", "display", 'none'],
             ["style", "height", '1105px'],
+            ["style", "z-index", '50'], 
             ["style", "clip", [0,640,2322.819091796875,0], {valueTemplate:'rect(@@0@@px @@1@@px @@2@@px @@3@@px)'} ],
             ["transform", "scaleX", '0.5']
          ],

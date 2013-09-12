@@ -113,8 +113,8 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       Symbol.bindElementAction(compId, symbolName, "${_article-card}", "click", function(sym, e) {
          sym.play("ArticleFlip");
          setTimeout(function() {
-         $('#Stage_coverFlow').scrollTop(0);
-         xLinker = Math.round($('#Stage_article-card').offset().top);
+             $('#Stage_coverFlow').scrollTop(0);
+             xLinker = Math.round($('#Stage_article-card').offset().top);
          }, 200);
 
       });
@@ -123,8 +123,8 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       Symbol.bindElementAction(compId, symbolName, "${_article-3-4-card}", "click", function(sym, e) {
          sym.play("34ArticleFlip");
          setTimeout(function() {
-         $('#Stage_coverFlow').scrollTop(0);
-         xLinker = Math.round($('#Stage_article-3-4-card').offset().top);         
+             $('#Stage_coverFlow').scrollTop(0);
+             xLinker = Math.round($('#Stage_article-3-4-card').offset().top);         
          }, 200);
 
       });
@@ -133,8 +133,8 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       Symbol.bindElementAction(compId, symbolName, "${_article-video-card}", "click", function(sym, e) {
          sym.play("videoArticleFlip");
          setTimeout(function() {
-         $('#Stage_coverFlow').scrollTop(0);
-         xLinker = Math.round($('#Stage_article-video-card').offset().top);                  
+             $('#Stage_coverFlow').scrollTop(0);
+             xLinker = Math.round($('#Stage_article-video-card').offset().top);                  
          }, 200);
 
       });
@@ -143,8 +143,8 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       Symbol.bindElementAction(compId, symbolName, "${_article-gallery-card}", "click", function(sym, e) {
          sym.play("34ArticleFlip");
          setTimeout(function() {
-         $('#Stage_coverFlow').scrollTop(0);
-         xLinker = Math.round($('#Stage_article-gallery-card').offset().top);                  
+             $('#Stage_coverFlow').scrollTop(0);
+             xLinker = Math.round($('#Stage_article-gallery-card').offset().top);                  
          }, 200);
 
       });
@@ -153,8 +153,8 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       Symbol.bindElementAction(compId, symbolName, "${_article-assetless-card}", "click", function(sym, e) {
          sym.play("34ArticleFlip");
          setTimeout(function() {
-         $('#Stage_coverFlow').scrollTop(0);
-         xLinker = Math.round($('#Stage_article-assetless-card').offset().top);                           
+             $('#Stage_coverFlow').scrollTop(0);
+             xLinker = Math.round($('#Stage_article-assetless-card').offset().top);                           
          }, 200);
 
       });
@@ -176,7 +176,7 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       //Edge binding end
 
       Symbol.bindElementAction(compId, symbolName, "${_article-card-full}", "click", function(sym, e) {
-         sym.play("ArticleSlideOut");
+         sym.play("ArticleFlipBack");
          $('#Stage_coverFlow').scrollTop(xLinker);
 
       });
