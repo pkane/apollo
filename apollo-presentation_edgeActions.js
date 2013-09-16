@@ -60,8 +60,31 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
               });
             }
           
+          	window.setTimeout(function() { 
+            	sym.play("breakingAlertIn");
+         	}, 15000);
+         /*
+            window.setTimeout(function() { 
+            	sym.play("breakingAlertOut");
+         	}, 12500);
+         */
+         	// define function and counter
+         	var counter = 1;
+         /*
+         	function update_me() {
+         	setTimeout(function(){
+         		counter++;
+         		update_me();
+         	}, 1000);
+         	}
+         */
+         //	window.onLoad(alert("hey!"));
+         
+         	// run code
+         	update_me();	
+         
           // scrollDetect($('#Stage_coverFlow'));
-          
+         
          /**
           * Gallery Template
           * To add more items simply duplicate the symbol "large4" in the library and increase the number.
@@ -358,6 +381,46 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
 
       Symbol.bindElementAction(compId, symbolName, "${_baseball-full}", "click", function(sym, e) {
          sym.play("natsFullClose");
+
+      });
+      //Edge binding end
+
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 11011, function(sym, e) {
+         sym.stop();
+
+      });
+      //Edge binding end
+
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 11691, function(sym, e) {
+         sym.stop();
+
+      });
+      //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${_liverpool-full}", "click", function(sym, e) {
+         sym.play("livFullClose");
+         sym.stop("myCardsFlipBack");
+
+      });
+      //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${_RectangleFullCardCopy}", "click", function(sym, e) {
+         sym.play("livFullExpand");
+
+      });
+      //Edge binding end
+
+      
+
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 16004, function(sym, e) {
+         sym.stop();
+
+      });
+      //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${_Rectangle2}", "click", function(sym, e) {
+         sym.stop("ArticleFlip");
+         sym.play("ArticleFlip");
 
       });
       //Edge binding end
