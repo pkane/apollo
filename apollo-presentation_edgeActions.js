@@ -62,7 +62,7 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
           
           	window.setTimeout(function() { 
             	sym.play("breakingAlertIn");
-         	}, 15000);
+         	}, 3000);
          /*
             window.setTimeout(function() { 
             	sym.play("breakingAlertOut");
@@ -154,10 +154,10 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       //Edge binding end
 
       Symbol.bindElementAction(compId, symbolName, "${_article-video-card}", "click", function(sym, e) {
-         sym.play("videoArticleFlip");
+         sym.play("ArticleFlip");
          setTimeout(function() {
              $('#Stage_coverFlow').scrollTop(0);
-             xLinker = Math.round($('#Stage_article-video-card').offset().top);                  
+             xLinker = Math.round($('#Stage_article-video-card').offset().top);
          }, 200);
 
       });
@@ -194,7 +194,8 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       //Edge binding end
 
       Symbol.bindElementAction(compId, symbolName, "${_leftSwipeEle}", "swiperight", function(sym, e) {
-         sym.play("ArticleSlideOut");
+         sym.play("navIn");
+
       });
       //Edge binding end
 
@@ -421,6 +422,30 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       Symbol.bindElementAction(compId, symbolName, "${_Rectangle2}", "click", function(sym, e) {
          sym.stop("ArticleFlip");
          sym.play("ArticleFlip");
+
+      });
+      //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${_rightSwipeEle}", "swipeleft", function(sym, e) {
+         // insert code to be run when a swipeleft event occurs on an element
+
+      });
+      //Edge binding end
+
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 16700, function(sym, e) {
+         sym.stop();
+
+      });
+      //Edge binding end
+
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 17600, function(sym, e) {
+         sym.stop();
+
+      });
+      //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${_offEdgeNav}", "swipeleft", function(sym, e) {
+         sym.play("navOut");
 
       });
       //Edge binding end
