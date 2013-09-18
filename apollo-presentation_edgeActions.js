@@ -432,13 +432,13 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       });
       //Edge binding end
 
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 16700, function(sym, e) {
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 16500, function(sym, e) {
          sym.stop();
 
       });
       //Edge binding end
 
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 17600, function(sym, e) {
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 17200, function(sym, e) {
          sym.stop();
 
       });
@@ -446,6 +446,18 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
 
       Symbol.bindElementAction(compId, symbolName, "${_offEdgeNav}", "swipeleft", function(sym, e) {
          sym.play("navOut");
+
+      });
+      //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${_RectangleCopy3}", "click", function(sym, e) {
+         sym.play("myCardsFlipBack");
+
+      });
+      //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${_RectangleFullCardCopy2}", "click", function(sym, e) {
+         sym.play("natsFullExpand");
 
       });
       //Edge binding end
