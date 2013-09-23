@@ -402,11 +402,7 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       });
       //Edge binding end
 
-      Symbol.bindElementAction(compId, symbolName, "${_baseball-full}", "click", function(sym, e) {
-         sym.play("natsFullClose");
-
-      });
-      //Edge binding end
+      
 
       Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 11011, function(sym, e) {
          sym.stop();
@@ -420,12 +416,7 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       });
       //Edge binding end
 
-      Symbol.bindElementAction(compId, symbolName, "${_liverpool-full}", "click", function(sym, e) {
-         sym.play("livFullClose");
-         sym.stop("myCardsFlipBack");
-
-      });
-      //Edge binding end
+      
 
       
 
@@ -467,6 +458,8 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
 
       });
       //Edge binding end
+
+      
 
       
 
@@ -514,38 +507,37 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
    (function(symbolName) {   
    
       Symbol.bindElementAction(compId, symbolName, "${_Rectangle}", "click", function(sym, e) {
-         sym.play("myCardsFlip");
-         // insert code for mouse click here
+         sym.play("myCardsFlip1");
 
       });
          //Edge binding end
 
       Symbol.bindElementAction(compId, symbolName, "${_RectangleFullCardCopy}", "click", function(sym, e) {
-         sym.play("livFullExpand");
+         sym.getComposition().getStage().getSymbol("livFull_symbol").play("livFullExpand");
 
       });
          //Edge binding end
 
       Symbol.bindElementAction(compId, symbolName, "${_RectangleCopy3}", "click", function(sym, e) {
-         sym.play("myCardsFlipBack");
+         sym.play("myCardsFlip2");
 
       });
          //Edge binding end
 
       Symbol.bindElementAction(compId, symbolName, "${_RectangleFullCardCopy2}", "click", function(sym, e) {
-         sym.play("natsFullExpand");
+         sym.getComposition().getStage().getSymbol("natsFull_symbol").play("natsFullExpand");
 
       });
          //Edge binding end
 
       Symbol.bindElementAction(compId, symbolName, "${_RectangleCopy}", "click", function(sym, e) {
-         sym.play("myCardsFlipBack");
+         sym.play("myCardsFlip3");
 
       });
          //Edge binding end
 
       Symbol.bindElementAction(compId, symbolName, "${_RectangleFullCard}", "click", function(sym, e) {
-         sym.play("natsFullExpand");
+         sym.getComposition().getStage().getSymbol("natsFull_symbol").play("natsFullExpand");
 
       });
          //Edge binding end
@@ -562,7 +554,88 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       });
       //Edge binding end
 
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 2600, function(sym, e) {
+         sym.stop();
+
+      });
+      //Edge binding end
+
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 3600, function(sym, e) {
+         sym.stop();
+
+      });
+      //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${_RectangleCopy6}", "click", function(sym, e) {
+         sym.play("myCardsFlip1");
+         // insert code for mouse click here
+
+      });
+      //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${_RectangleCopy7}", "click", function(sym, e) {
+         sym.play("myCardsFlip2");
+
+      });
+      //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${_RectangleCopy8}", "click", function(sym, e) {
+         sym.play("myCardsFlip2");
+
+      });
+      //Edge binding end
+
    })("myCards_symbol");
    //Edge symbol end:'myCards_symbol'
+
+   //=========================================================
+   
+   //Edge symbol: 'livFull_symbol'
+   (function(symbolName) {   
+   
+      Symbol.bindElementAction(compId, symbolName, "${_liverpool-full}", "click", function(sym, e) {
+         sym.getComposition().getStage().getSymbol("livFull_symbol").play("livFullClose");
+         // sym.getComposition().getStage().stop("myCardsFlipBack");
+
+      });
+         //Edge binding end
+
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 430, function(sym, e) {
+         sym.stop();
+
+      });
+      //Edge binding end
+
+   })("livFull_symbol");
+   //Edge symbol end:'livFull_symbol'
+
+   //=========================================================
+   
+   //Edge symbol: 'natsFull_symbol'
+   (function(symbolName) {   
+   
+      Symbol.bindElementAction(compId, symbolName, "${_baseball-full}", "click", function(sym, e) {
+         sym.getComposition().getStage().getSymbol("natsFull_symbol").play("natsFullClose");
+         // sym.getComposition().getStage().stop("myCardsFlipBack");
+
+      });
+         //Edge binding end
+
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 497, function(sym, e) {
+         sym.stop();
+
+      });
+      //Edge binding end
+
+      
+
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 0, function(sym, e) {
+         sym.stop();
+
+      });
+      //Edge binding end
+
+   })("natsFull_symbol");
+   //Edge symbol end:'natsFull_symbol'
 
 })(jQuery, AdobeEdge, "EDGE-260752881");
