@@ -59,6 +59,12 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
                   scrollStore = scrollSeq;
               });
             }
+            
+        var dfd = $.Deferred();
+        dfd.done(function(){
+        xLinker = Math.round($('#Stage_cardFlow_symbol2_article-gallery-card').offset().top);                  
+        $('#Stage_coverFlow').scrollTop(0);
+        });    
           
           	window.setTimeout(function() { 
             	sym.play("breakingAlertIn");
@@ -84,7 +90,7 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
          	update_me();	
          
           // scrollDetect($('#Stage_coverFlow'));
-          
+         
         // When ready...
         window.addEventListener("load",function() {
             // Set a timeout...
@@ -93,19 +99,19 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
                 window.scrollTo(0, 1);
             }, 0);
         });          
-         
+        
          /**
           * Gallery Template
           * To add more items simply duplicate the symbol "large4" in the library and increase the number.
           * Then you can customize the content of the new symbol by double clicking on the symbol in the library.
           * The navigation will be extended automatically.
           **/
-         
-         
+        
+        
          /**
           * Don't modify the code below.
           */
-         
+        
          // Find all large symbols in the library
          var prefix = "panel"; // large1, large2 ... large99
          var index = 1;
@@ -119,9 +125,9 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
              $button.css({float: "left", margin: "0px 0 0px 0px"});
            }
          }
-         
+        
          var xLinker;
-         
+        
          // Hover effect for buttons
          $(".custom-button").mouseleave(function(evt){$(evt.currentTarget).css({"background-color": "rgba(229, 233, 233,0)"});});
          $(".custom-button").mouseenter(function(evt){$(evt.currentTarget).css({"background-color": "rgb(237, 241, 241)"});});
@@ -142,163 +148,68 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
 
                
 
-            Symbol.bindElementAction(compId, symbolName, "${_article-card}", "click", function(sym, e) {
-         sym.play("ArticleFlip");
-         setTimeout(function() {
-             $('#Stage_coverFlow').scrollTop(0);
-             xLinker = Math.round($('#Stage_article-card').offset().top);
-         }, 200);
-
-      });
-         //Edge binding end
+            
 
 
 
-            Symbol.bindElementAction(compId, symbolName, "${_article-3-4-card}", "click", function(sym, e) {
-         sym.play("34ArticleFlip");
-         setTimeout(function() {
-             $('#Stage_coverFlow').scrollTop(0);
-             xLinker = Math.round($('#Stage_article-3-4-card').offset().top);         
-         }, 200);
-
-      });
-         //Edge binding end
+            
 
 
 
-            Symbol.bindElementAction(compId, symbolName, "${_article-video-card}", "click", function(sym, e) {
-         sym.play("ArticleFlip");
-         setTimeout(function() {
-             $('#Stage_coverFlow').scrollTop(0);
-             xLinker = Math.round($('#Stage_article-video-card').offset().top);
-         }, 200);
-
-      });
-         //Edge binding end
+            
 
 
 
-            Symbol.bindElementAction(compId, symbolName, "${_article-gallery-card}", "click", function(sym, e) {
-         sym.play("34ArticleFlip");
-         setTimeout(function() {
-             $('#Stage_coverFlow').scrollTop(0);
-             xLinker = Math.round($('#Stage_article-gallery-card').offset().top);                  
-         }, 200);
-
-      });
-         //Edge binding end
+            
 
 
 
-            Symbol.bindElementAction(compId, symbolName, "${_article-assetless-card}", "click", function(sym, e) {
-         sym.play("34ArticleFlip");
-         setTimeout(function() {
-             $('#Stage_coverFlow').scrollTop(0);
-             xLinker = Math.round($('#Stage_article-assetless-card').offset().top);                           
-         }, 200);
-
-      });
-         //Edge binding end
+            
 
 
 
-            Symbol.bindElementAction(compId, symbolName, "${_video-card}", "click", function(sym, e) {
-         sym.play("videoArticleFlip");
-         setTimeout(function() {
-         $('#Stage_coverFlow').scrollTop(0);
-         xLinker = Math.round($('#Stage_video-card').offset().top);                                    
-         }, 200);
-
-      });
-         //Edge binding end
+            
 
 
 
       Symbol.bindElementAction(compId, symbolName, "${_leftSwipeEle}", "swiperight", function(sym, e) {
-         sym.play("navIn");
+         sym.play("cardFlowSlideRight");
+         sym.getSymbol("mainNav_symbol").play("navIn");
 
       });
       //Edge binding end
 
-      Symbol.bindElementAction(compId, symbolName, "${_article-card-full}", "click", function(sym, e) {
-         sym.play("ArticleFlipBack");
-         $('#Stage_coverFlow').scrollTop(xLinker);
+            
 
-      });
-      //Edge binding end      
+      
 
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 1000, function(sym, e) {
-         sym.stop();
+      
 
-      });
-      //Edge binding end
-
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 1500, function(sym, e) {
-         sym.stop();
-
-      });
-      //Edge binding end
-
-            Symbol.bindElementAction(compId, symbolName, "${_article-card-fullCopy}", "click", function(sym, e) {
-         sym.play("ArticleFlipBack");
-         $('#Stage_coverFlow').scrollTop(xLinker);
-
-      });
-         //Edge binding end
+            
 
 
 
-            Symbol.bindElementAction(compId, symbolName, "${__34ArticleCardFull}", "click", function(sym, e) {
-         sym.play("34ArticleFlipBack");
-         $('#Stage_coverFlow').scrollTop(xLinker);
-
-      });
-         //Edge binding end
-
-
-
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 2100, function(sym, e) {
-         sym.stop();
-
-      });
-      //Edge binding end
-
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 2600, function(sym, e) {
-         sym.stop();
-
-      });
-      //Edge binding end
-
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 400, function(sym, e) {
-         sym.stop();
-
-      });
-      //Edge binding end
-
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 3700, function(sym, e) {
-         sym.stop();
-
-      });
-      //Edge binding end
-
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 3200, function(sym, e) {
-         sym.stop();
-
-      });
-      //Edge binding end
-
-            Symbol.bindElementAction(compId, symbolName, "${_videoArticleCardFull}", "click", function(sym, e) {
-         sym.play("videoArticleFlipBack");
-         // $('#Stage_coverFlow').scrollTop(xLinker);
-
-      });
-         //Edge binding end
+            
 
 
 
       
 
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 5900, function(sym, e) {
+      
+
+      
+
+      
+
+      
+
+            
+
+
+
+      
+
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 2151, function(sym, e) {
          sym.stop();
 
       });
@@ -310,85 +221,73 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
 
       
 
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 6500, function(sym, e) {
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 2751, function(sym, e) {
          sym.stop();
 
       });
       //Edge binding end
 
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 7700, function(sym, e) {
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 3951, function(sym, e) {
          sym.stop();
 
       });
       //Edge binding end
 
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 8300, function(sym, e) {
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 4551, function(sym, e) {
          sym.stop();
 
       });
       //Edge binding end
 
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 8707, function(sym, e) {
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 4958, function(sym, e) {
          sym.stop();
 
       });
       //Edge binding end
 
-            Symbol.bindElementAction(compId, symbolName, "${_lvpool3StackRect}", "click", function(sym, e) {
-         sym.play("myCardExtend");
-
-      });
-         //Edge binding end
+                  
 
 
 
-            Symbol.bindElementAction(compId, symbolName, "${_RectangleCopy2}", "click", function(sym, e) {
-         sym.play("myCardExtend");
 
-      });
-         //Edge binding end
+
+                  
 
 
 
-            Symbol.bindElementAction(compId, symbolName, "${_nats3StackTopRect}", "click", function(sym, e) {
-         sym.play("myCardExtend");
 
-      });
-         //Edge binding end
+
+                  
 
 
 
-            Symbol.bindElementAction(compId, symbolName, "${_collapseEleCopy}", "click", function(sym, e) {
-         sym.play("myCardCollapse");
 
-      });
-         //Edge binding end
+
+                  
 
 
 
-            Symbol.bindElementAction(compId, symbolName, "${_collapseEleCopy3}", "click", function(sym, e) {
-         sym.play("myCardCollapse");
 
-      });
-         //Edge binding end
+
+                  
 
 
 
-            Symbol.bindElementAction(compId, symbolName, "${_collapseEleCopy4}", "click", function(sym, e) {
-         sym.play("myCardCollapse");
 
-      });
-         //Edge binding end
+
+                  
 
 
 
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 9052, function(sym, e) {
+
+
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 5303, function(sym, e) {
          sym.stop();
 
       });
       //Edge binding end
 
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 9750, function(sym, e) {
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 6001, function(sym, e) {
          sym.stop();
 
       });
@@ -396,7 +295,7 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
 
       
 
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 10430, function(sym, e) {
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 6681, function(sym, e) {
          sym.stop();
 
       });
@@ -404,13 +303,13 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
 
       
 
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 11011, function(sym, e) {
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 7262, function(sym, e) {
          sym.stop();
 
       });
       //Edge binding end
 
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 11691, function(sym, e) {
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 7942, function(sym, e) {
          sym.stop();
 
       });
@@ -422,18 +321,13 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
 
       
 
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 16004, function(sym, e) {
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 12255, function(sym, e) {
          sym.stop();
 
       });
       //Edge binding end
 
-      Symbol.bindElementAction(compId, symbolName, "${_Rectangle2}", "click", function(sym, e) {
-         sym.stop("ArticleFlip");
-         sym.play("ArticleFlip");
-
-      });
-      //Edge binding end
+      
 
       Symbol.bindElementAction(compId, symbolName, "${_rightSwipeEle}", "swipeleft", function(sym, e) {
          // insert code to be run when a swipeleft event occurs on an element
@@ -441,29 +335,29 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       });
       //Edge binding end
 
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 16500, function(sym, e) {
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 12833, function(sym, e) {
          sym.stop();
 
       });
       //Edge binding end
 
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 17200, function(sym, e) {
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 13415, function(sym, e) {
          sym.stop();
 
       });
       //Edge binding end
-
-      Symbol.bindElementAction(compId, symbolName, "${_offEdgeNav}", "swipeleft", function(sym, e) {
-         sym.play("navOut");
-
-      });
-      //Edge binding end
-
-      
-
-      
-
-      
 
    })("stage");
    //Edge symbol end:'stage'
@@ -600,7 +494,13 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       });
          //Edge binding end
 
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 430, function(sym, e) {
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 563, function(sym, e) {
+         sym.stop();
+
+      });
+      //Edge binding end
+
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 0, function(sym, e) {
          sym.stop();
 
       });
@@ -637,5 +537,168 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
 
    })("natsFull_symbol");
    //Edge symbol end:'natsFull_symbol'
+
+   //=========================================================
+   
+   //Edge symbol: 'cardFlow_symbol'
+   (function(symbolName) {   
+   
+      Symbol.bindElementAction(compId, symbolName, "${__34ArticleCardFull}", "click", function(sym, e) {
+         sym.play("34ArticleFlipBack");
+         $('#Stage_coverFlow').scrollTop(xLinker);
+
+      });
+            //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${_article-card-fullCopy}", "click", function(sym, e) {
+         sym.play("ArticleFlipBack");
+         $('#Stage_coverFlow').scrollTop(xLinker);
+
+      });
+            //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${_videoArticleCardFull}", "click", function(sym, e) {
+         sym.play("videoArticleFlipBack");
+         $('#Stage_coverFlow').scrollTop(xLinker);
+
+      });
+            //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${_article-card}", "click", function(sym, e) {
+         sym.play("ArticleFlip");
+         setTimeout(function() {
+         $('#Stage_coverFlow').scrollTop(0);
+         xLinker = Math.round($('#Stage_cardFlow_symbol2_article-card').offset().top);                  
+         }, 200);
+
+      });
+            //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${_article-3-4-card}", "click", function(sym, e) {
+         sym.play("34ArticleFlip");
+         $('#Stage_coverFlow').scrollTop(0);
+         xLinker = Math.round($('#Stage_cardFlow_symbol2_article-3-4-card').offset().top);         
+
+      });
+            //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${_article-video-card}", "click", function(sym, e) {
+         sym.play("ArticleFlip");
+         setTimeout(function() {
+         $('#Stage_coverFlow').scrollTop(0);
+         xLinker = Math.round($('#Stage_cardFlow_symbol2_article-video-card').offset().top);
+         }, 200);
+
+      });
+            //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${_article-gallery-card}", "click", function(sym, e) {
+         sym.play("34ArticleFlip");
+         dfd.resolve();
+
+      });
+            //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${_article-assetless-card}", "click", function(sym, e) {
+         sym.play("34ArticleFlip");
+         $('#Stage_coverFlow').scrollTop(0);
+         xLinker = Math.round($('#Stage_cardFlow_symbol2_article-assetless-card').offset().top);                           
+
+      });
+            //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${_video-card}", "click", function(sym, e) {
+         sym.play("videoArticleFlip");
+         setTimeout(function() {
+         $('#Stage_coverFlow').scrollTop(0);
+         xLinker = Math.round($('#Stage_video-card').offset().top);                                    
+         }, 200);
+
+      });
+            //Edge binding end
+
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 0, function(sym, e) {
+         sym.stop();
+
+      });
+      //Edge binding end
+
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 827, function(sym, e) {
+         sym.stop();
+
+      });
+      //Edge binding end
+
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 1327, function(sym, e) {
+         sym.stop();
+
+      });
+      //Edge binding end
+
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 1927, function(sym, e) {
+         sym.stop();
+
+      });
+      //Edge binding end
+
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 2427, function(sym, e) {
+         sym.stop();
+
+      });
+      //Edge binding end
+
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 3027, function(sym, e) {
+         sym.stop();
+
+      });
+      //Edge binding end
+
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 3527, function(sym, e) {
+         sym.stop();
+
+      });
+      //Edge binding end
+
+   })("cardFlow_symbol");
+   //Edge symbol end:'cardFlow_symbol'
+
+   //=========================================================
+   
+   //Edge symbol: 'mainNav_symbol'
+   (function(symbolName) {   
+   
+      Symbol.bindElementAction(compId, symbolName, "${_nav-main2}", "swipeleft", function(sym, e) {
+         sym.play("navOut");
+
+      });
+      //Edge binding end
+
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 0, function(sym, e) {
+         sym.stop();
+
+      });
+      //Edge binding end
+
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 667, function(sym, e) {
+         sym.stop();// insert code here
+
+      });
+      //Edge binding end
+
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 1167, function(sym, e) {
+         sym.stop();// insert code here
+
+      });
+      //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${_Rectangle}", "touchend", function(sym, e) {
+         sym.play("navOut");
+         sym.getComposition().getStage().play("cardFlowSlideLeft");
+
+      });
+      //Edge binding end
+
+   })("mainNav_symbol");
+   //Edge symbol end:'mainNav_symbol'
 
 })(jQuery, AdobeEdge, "EDGE-260752881");
