@@ -78,7 +78,7 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
          
          	// run code
          	// update_me();	
-           var detection = scrollDetect($('#Stage_coverFlow'));
+           // var detection = scrollDetect($('#Stage_coverFlow'));
          
          
         // When ready...
@@ -549,30 +549,36 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
 
       Symbol.bindElementAction(compId, symbolName, "${_article-3-4-card}", "click", function(sym, e) {
          sym.play("34ArticleFlip");
+         /*
          setTimeout(function() {
          $('#Stage_coverFlow').scrollTop(0);
          xLinker = Math.round($('#Stage_cardFlow_symbol2_article-3-4-card').offset().top);         
          }, 200);
+         */
 
       });
             //Edge binding end
 
       Symbol.bindElementAction(compId, symbolName, "${_article-video-card}", "click", function(sym, e) {
          sym.play("ArticleFlip");
+         /*
          setTimeout(function() {
          $('#Stage_coverFlow').scrollTop(0);
          xLinker = Math.round($('#Stage_cardFlow_symbol2_article-video-card').offset().top);
          }, 200);
+         */
 
       });
             //Edge binding end
 
       Symbol.bindElementAction(compId, symbolName, "${_article-gallery-card}", "click", function(sym, e) {
          sym.play("34ArticleFlip");
+         /*
          setTimeout(function() {
          $('#Stage_coverFlow').scrollTop(0);
          xLinker = Math.round($('#Stage_cardFlow_symbol2_article-gallery-card').offset().top);                  
          }, 200);
+         */
 
       });
             //Edge binding end
@@ -587,10 +593,12 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
 
       Symbol.bindElementAction(compId, symbolName, "${_video-card}", "click", function(sym, e) {
          sym.play("videoArticleFlip");
+         /*
          setTimeout(function() {
          $('#Stage_coverFlow').scrollTop(0);
          xLinker = Math.round($('#Stage_video-card').offset().top);                                    
          }, 200);
+         */
 
       });
             //Edge binding end
@@ -647,6 +655,7 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
    
       Symbol.bindElementAction(compId, symbolName, "${_nav-main2}", "swipeleft", function(sym, e) {
          sym.play("navOut");
+         sym.getComposition().getStage().play("cardFlowSlideLeft");v
 
       });
       //Edge binding end
