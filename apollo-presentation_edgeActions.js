@@ -520,29 +520,29 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
          $('#Stage_cardFlow_symbol2_nonFullCards').fadeIn(function() {
          	sym.play("34ArticleFlipBack");
             $('#Stage_myCards_symbol').fadeIn(function() {         
-         		$('#Stage_coverFlow').scrollTop(xLinker);         
             });
          });
+         $('#Stage_coverFlow').scrollTop(Math.round($('#Stage_cardFlow_symbol2_article-3-4-card').offset().top));            
       });
             //Edge binding end
       
       Symbol.bindElementAction(compId, symbolName, "${_article-card-fullCopy}", "click", function(sym, e) {   
          $('#Stage_cardFlow_symbol2_nonFullCards').fadeIn(function() {
       		sym.play("ArticleFlipBack");   
-         	$('#Stage_myCards_symbol').fadeIn(function() {   		
-      		   $('#Stage_coverFlow').scrollTop(xLinker);   		
+         	$('#Stage_myCards_symbol').fadeIn(function() {   				   
          	});
          });   
+      	$('#Stage_coverFlow').scrollTop(Math.round($('#Stage_cardFlow_symbol2_article-card').offset().top));   		   
       });
             //Edge binding end
       
       Symbol.bindElementAction(compId, symbolName, "${_videoArticleCardFull}", "click", function(sym, e) {
          $('#Stage_cardFlow_symbol2_nonFullCards').fadeIn(function() {
          	sym.play("videoArticleFlipBack");
-      		$('#Stage_myCards_symbol').fadeIn(function() {		   
-         		$('#Stage_coverFlow').scrollTop(xLinker);      		   
+      		$('#Stage_myCards_symbol').fadeIn(function() {		      		
       		});
-         });   	
+         });   
+      	$('#Stage_coverFlow').scrollTop(Math.round($('#Stage_cardFlow_symbol2_article-video-card').offset().top));      		      	
       });
             //Edge binding end
       
