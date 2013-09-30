@@ -515,133 +515,146 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
    
    //Edge symbol: 'cardFlow_symbol'
    (function(symbolName) {   
-   
-      Symbol.bindElementAction(compId, symbolName, "${__34ArticleCardFull}", "click", function(sym, e) {
-         sym.play("34ArticleFlipBack");
-         $('#Stage_coverFlow').scrollTop(xLinker);
-
+      
+      Symbol.bindElementAction(compId, symbolName, "${__34ArticleCardFull}", "click", function(sym, e) {   
+         $('#Stage_cardFlow_symbol2_nonFullCards').fadeIn(function() {
+         	sym.play("34ArticleFlipBack");
+            $('#Stage_myCards_symbol').fadeIn(function() {         
+         		$('#Stage_coverFlow').scrollTop(xLinker);         
+            });
+         });
       });
             //Edge binding end
-
-      Symbol.bindElementAction(compId, symbolName, "${_article-card-fullCopy}", "click", function(sym, e) {
-         sym.play("ArticleFlipBack");
-         $('#Stage_coverFlow').scrollTop(xLinker);
-
+      
+      Symbol.bindElementAction(compId, symbolName, "${_article-card-fullCopy}", "click", function(sym, e) {   
+         $('#Stage_cardFlow_symbol2_nonFullCards').fadeIn(function() {
+      		sym.play("ArticleFlipBack");   
+         	$('#Stage_myCards_symbol').fadeIn(function() {   		
+      		   $('#Stage_coverFlow').scrollTop(xLinker);   		
+         	});
+         });   
       });
             //Edge binding end
-
+      
       Symbol.bindElementAction(compId, symbolName, "${_videoArticleCardFull}", "click", function(sym, e) {
-         sym.play("videoArticleFlipBack");
-         $('#Stage_coverFlow').scrollTop(xLinker);
-
+         $('#Stage_cardFlow_symbol2_nonFullCards').fadeIn(function() {
+         	sym.play("videoArticleFlipBack");
+      		$('#Stage_myCards_symbol').fadeIn(function() {		   
+         		$('#Stage_coverFlow').scrollTop(xLinker);      		   
+      		});
+         });   	
       });
             //Edge binding end
-
+      
       Symbol.bindElementAction(compId, symbolName, "${_article-card}", "click", function(sym, e) {
-         sym.play("ArticleFlip");
-         setTimeout(function() {
-         $('#Stage_coverFlow').scrollTop(0);
-         xLinker = Math.round($('#Stage_cardFlow_symbol2_article-card').offset().top);                  
-         }, 200);
-
+      	xLinker = Math.round($('#Stage_cardFlow_symbol2_article-card').offset().top);                           
+         $('#Stage_cardFlow_symbol2_nonFullCards').fadeOut(function() {
+         	$('#Stage_myCards_symbol').fadeOut(function(){
+         		sym.play("ArticleFlip");
+         		$('#Stage_coverFlow').scrollTop(0);
+         	});	
+         });
       });
             //Edge binding end
-
+      
       Symbol.bindElementAction(compId, symbolName, "${_article-3-4-card}", "click", function(sym, e) {
-         sym.play("34ArticleFlip");
-         /*
-         setTimeout(function() {
-         $('#Stage_coverFlow').scrollTop(0);
-         xLinker = Math.round($('#Stage_cardFlow_symbol2_article-3-4-card').offset().top);         
-         }, 200);
-         */
-
+      	xLinker = Math.round($('#Stage_cardFlow_symbol2_article-3-4-card').offset().top);         
+         $('#Stage_cardFlow_symbol2_nonFullCards').fadeOut(function() {
+         	$('#Stage_myCards_symbol').fadeOut(function(){
+         		sym.play("34ArticleFlip");
+         		$('#Stage_coverFlow').scrollTop(0);
+         	});	
+         });
+      
       });
             //Edge binding end
-
+      
       Symbol.bindElementAction(compId, symbolName, "${_article-video-card}", "click", function(sym, e) {
-         sym.play("ArticleFlip");
-         /*
-         setTimeout(function() {
-         $('#Stage_coverFlow').scrollTop(0);
-         xLinker = Math.round($('#Stage_cardFlow_symbol2_article-video-card').offset().top);
-         }, 200);
-         */
-
+      	xLinker = Math.round($('#Stage_cardFlow_symbol2_article-video-card').offset().top);         
+         $('#Stage_cardFlow_symbol2_nonFullCards').fadeOut(function() {
+         	$('#Stage_myCards_symbol').fadeOut(function(){
+         		sym.play("videoArticleFlip");
+         		$('#Stage_coverFlow').scrollTop(0);
+         	});	
+         });
       });
             //Edge binding end
-
+      
       Symbol.bindElementAction(compId, symbolName, "${_article-gallery-card}", "click", function(sym, e) {
-         sym.play("34ArticleFlip");
-         /*
-         setTimeout(function() {
-         $('#Stage_coverFlow').scrollTop(0);
-         xLinker = Math.round($('#Stage_cardFlow_symbol2_article-gallery-card').offset().top);                  
-         }, 200);
-         */
-
+      	xLinker = Math.round($('#Stage_cardFlow_symbol2_article-gallery-card').offset().top);                  
+         $('#Stage_cardFlow_symbol2_nonFullCards').fadeOut(function() {
+         	$('#Stage_myCards_symbol').fadeOut(function(){
+         		sym.play("34ArticleFlip");
+         		$('#Stage_coverFlow').scrollTop(0);
+         	});	
+         });
+      
       });
             //Edge binding end
-
+      
       Symbol.bindElementAction(compId, symbolName, "${_article-assetless-card}", "click", function(sym, e) {
-         sym.play("34ArticleFlip");
-         $('#Stage_coverFlow').scrollTop(0);
-         xLinker = Math.round($('#Stage_cardFlow_symbol2_article-assetless-card').offset().top);                           
-
+      	xLinker = Math.round($('#Stage_cardFlow_symbol2_article-assetless-card').offset().top);                           
+         $('#Stage_cardFlow_symbol2_nonFullCards').fadeOut(function() {
+         	$('#Stage_myCards_symbol').fadeOut(function(){
+         		sym.play("34ArticleFlip");
+         		$('#Stage_coverFlow').scrollTop(0);
+         	});	
+         });
+      
       });
             //Edge binding end
-
+      
       Symbol.bindElementAction(compId, symbolName, "${_video-card}", "click", function(sym, e) {
-         sym.play("videoArticleFlip");
-         /*
-         setTimeout(function() {
-         $('#Stage_coverFlow').scrollTop(0);
-         xLinker = Math.round($('#Stage_video-card').offset().top);                                    
-         }, 200);
-         */
-
+      	xLinker = Math.round($('#Stage_video-card').offset().top);
+         $('#Stage_cardFlow_symbol2_nonFullCards').fadeOut(function() {
+         	$('#Stage_myCards_symbol').fadeOut(function(){
+         		sym.play("videoArticleFlip");
+         		$('#Stage_coverFlow').scrollTop(0);
+         	});	
+         }); 
+      
       });
             //Edge binding end
-
+      
       Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 0, function(sym, e) {
          sym.stop();
-
+      
       });
       //Edge binding end
-
+      
       Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 827, function(sym, e) {
          sym.stop();
-
+      
       });
       //Edge binding end
-
+      
       Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 1327, function(sym, e) {
          sym.stop();
-
+      
       });
       //Edge binding end
-
+      
       Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 1927, function(sym, e) {
          sym.stop();
-
+      
       });
       //Edge binding end
-
+      
       Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 2427, function(sym, e) {
          sym.stop();
-
+      
       });
       //Edge binding end
-
+      
       Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 3027, function(sym, e) {
          sym.stop();
-
+      
       });
       //Edge binding end
-
+      
       Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 3527, function(sym, e) {
          sym.stop();
-
+      
       });
       //Edge binding end
 
