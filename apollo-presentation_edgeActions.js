@@ -515,6 +515,7 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
    
    //Edge symbol: 'cardFlow_symbol'
    (function(symbolName) {   
+      var xLinker;
       
       Symbol.bindElementAction(compId, symbolName, "${__34ArticleCardFull}", "click", function(sym, e) {   
          $('#Stage_cardFlow_symbol2_nonFullCards').fadeIn(function() {
