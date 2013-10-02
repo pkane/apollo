@@ -24,34 +24,35 @@
 	"Down-level-Default Timeline_playhead_ms":"0",
 	"pref__general__TimelineGridSize":"30fps",
 	"symbol_large4":{
-		"defaultStageParentHeight":"550px",
+		"element_${_RectangleCopy}":{
+			"timelineColor2":"0xb099ce",
+			"timelineColor3":"0x70657c",
+			"timelineColor":"0xceaef4"},
 		"dummyStageParentHeight":"550px",
 		"defaultStageParentWidth":"1200px",
-		"dummyStageParentWidth":"1200px",
+		"defaultStageParentHeight":"550px",
 		"element_${_Text3}":{
 			"timelineColor2":"0x5a558a",
 			"timelineColor3":"0x4a485e",
 			"animationEnabled":"true",
 			"timelineColor":"0x63599f"},
-		"element_${_RectangleCopy}":{
-			"timelineColor2":"0xb099ce",
-			"timelineColor3":"0x70657c",
-			"timelineColor":"0xceaef4"}},
+		"dummyStageParentWidth":"1200px"},
 	"symbol_thumb4":{
-		"defaultStageParentHeight":"70px",
+		"dummyStageParentWidth":"70px",
 		"dummyStageParentHeight":"70px",
 		"defaultStageParentWidth":"70px",
+		"defaultStageParentHeight":"70px",
 		"element_${_thumb4}":{
 			"timelineColor2":"0x1aa38f",
 			"timelineColor3":"0x2a6a61",
 			"animationEnabled":"true",
-			"timelineColor":"0x00bda4"},
-		"dummyStageParentWidth":"70px"},
+			"timelineColor":"0x00bda4"}},
 	"CompZoomFactor":"100",
 	"colorSwatches":"rgba(248,248,248,1.00)",
-	"nextElementColorIndex":"10",
-	"stage-Default Timeline_playhead_ms":"0",
-	"panel1-Default Timeline_mark_ms":"-1",
+	"nextElementColorIndex":"12",
+	"pref__general__GenerateSmoothTransitions":"true",
+	"HTMLFileName":"apollo-presentation.html",
+	"symbol_Symbol_1":{},
 	"ModelData":"{\
 \"stage\": {\
    \"timelines\": {\
@@ -110,34 +111,42 @@
 \"Down-level\": {\
    \"timelines\": {\
 \
+   }},\
+\"Symbol_articleGroup\": {\
+   \"timelines\": {\
+      \"Default Timeline\": {\
+      }\
+   }},\
+\"Symbol_articleVideoGroup\": {\
+   \"timelines\": {\
+      \"Default Timeline\": {\
+      }\
    }}\
 }",
+	"Symbol_1-Default Timeline_playhead_ms":"0",
 	"thumb1-Default Timeline_mark_ms":"-1",
-	"symbol_natsFull_symbol":{
-		"element_${_baseball-full}":{
-			"timelineColor2":"0x1aa38f",
-			"timelineColor3":"0x2a6a61",
-			"timelineColor":"0x00bda4",
-			"timelineTreeOpened":"true",
+	"symbol_thumb1":{
+		"element_${_thumb1}":{
+			"timelineColor2":"0x168c84",
+			"timelineColor3":"0x2a605c",
 			"animationEnabled":"true",
-			"invisible":"false"},
-		"codeTreeElementPopupFilter":""},
-	"large1-Default Timeline_playhead_ms":"0",
+			"timelineColor":"0x00a096"},
+		"dummyStageParentWidth":"70px",
+		"dummyStageParentHeight":"70px",
+		"defaultStageParentWidth":"70px",
+		"defaultStageParentHeight":"70px"},
+	"large3-Default Timeline_playhead_ms":"0",
 	"pref__general__AutoKeyframePropertiesArmed":"true",
 	"thumb4-Default Timeline_playhead_ms":"0",
 	"cardFlow_symbol-Default Timeline_playhead_ms":"0",
 	"symbol_panel3":{
-		"defaultStageParentHeight":"550px",
 		"dummyStageParentWidth":"1200px",
+		"defaultStageParentHeight":"550px",
 		"element_${_Background}":{
 			"timelineColor2":"0x5a558a",
 			"timelineColor3":"0x4a485e",
 			"timelineColor":"0x63599f"},
-		"element_${_Text3}":{
-			"timelineColor2":"0x1095d2",
-			"timelineColor3":"0x29647e",
-			"animationEnabled":"false",
-			"timelineColor":"0x00a9fa"},
+		"dummyStageParentHeight":"550px",
 		"element_${_myText}":{
 			"timelineColor2":"0x107faa",
 			"timelineColor3":"0x295a6d",
@@ -149,7 +158,11 @@
 			"timelineColor3":"0x295a6d",
 			"animationEnabled":"false",
 			"timelineColor":"0x008dc8"},
-		"dummyStageParentHeight":"550px"},
+		"element_${_Text3}":{
+			"timelineColor2":"0x1095d2",
+			"timelineColor3":"0x29647e",
+			"animationEnabled":"false",
+			"timelineColor":"0x00a9fa"}},
 	"usedBOM":"false",
 	"symbol_livFull_symbol":{
 		"element_${_liverpool-full}":{
@@ -162,39 +175,47 @@
 	"cardFlow-Default Timeline_playhead_ms":"0",
 	"cardFlowCards_symbol-Default Timeline_playhead_ms":"0",
 	"symbol_thumb2":{
-		"defaultStageParentHeight":"70px",
+		"dummyStageParentWidth":"70px",
 		"dummyStageParentHeight":"70px",
 		"defaultStageParentWidth":"70px",
+		"defaultStageParentHeight":"70px",
 		"element_${_thumb2}":{
 			"timelineColor2":"0xd8b467",
 			"timelineColor3":"0x81714f",
 			"animationEnabled":"true",
-			"timelineColor":"0xffd46d"},
-		"dummyStageParentWidth":"70px"},
-	"pref__general__AutoKeyframeProperties":"false",
+			"timelineColor":"0xffd46d"}},
+	"pref__general__AutoKeyframeProperties":"true",
 	"large1-Default Timeline_mark_ms":"-1",
 	"symbol_cardFlow_symbol":{
+		"element_${_Symbol_1}":{
+			"timelineColor2":"0xb099ce",
+			"timelineColor3":"0x70657c",
+			"animationEnabled":"true",
+			"timelineColor":"0xceaef4"},
 		"element_${__34ArticleCardFull}":{
 			"timelineColor2":"0xba5b89",
 			"timelineColor3":"0x734a5f",
 			"timelineColor":"0xdb619d",
 			"timelineTreeOpened":"false",
 			"animationEnabled":"true"},
-		"element_${_nonFullCards}":{
-			"epOpened":"false",
-			"timelineColor3":"0x70657c",
-			"timelineColor":"0xceaef4",
-			"timelineTreeOpened":"false",
-			"animationEnabled":"true",
-			"timelineColor2":"0xb099ce",
-			"invisible":"false"},
-		"element_${_article-card-fullCopy}":{
-			"timelineColor2":"0xb099ce",
+		"element_${_Symbol_articleVideoGroup2}":{
+			"timelineColor2":"0x107faa",
+			"timelineColor3":"0x295a6d",
+			"animationEnabled":"false",
+			"timelineColor":"0x008dc8"},
+		"element_${_article-gallery-card}":{
+			"timelineColor2":"0xd35d6e",
 			"invisible":"false",
-			"timelineColor":"0xceaef4",
+			"timelineColor":"0xfb657a",
+			"locked":"false",
+			"animationEnabled":"false",
 			"timelineTreeOpened":"false",
-			"animationEnabled":"true",
-			"timelineColor3":"0x70657c"},
+			"timelineColor3":"0x7e4b52"},
+		"element_${_article-card-fullCopy}":{
+			"timelineColor2":"0x81aa62",
+			"timelineColor3":"0x5b6c4d",
+			"animationEnabled":"false",
+			"timelineColor":"0x91c767"},
 		"element_${_article-card}":{
 			"timelineColor2":"0x5a558a",
 			"invisible":"false",
@@ -217,14 +238,16 @@
 			"animationEnabled":"false",
 			"timelineTreeOpened":"false",
 			"timelineColor3":"0x81714f"},
-		"element_${_videoArticleGroup}":{
-			"epOpened":"false",
-			"timelineColor3":"0x29647e",
-			"timelineColor":"0x00a9fa",
-			"timelineTreeOpened":"false",
+		"element_${_Symbol_articleVideoGroup}":{
+			"timelineColor2":"0x1aa38f",
+			"timelineColor3":"0x2a6a61",
 			"animationEnabled":"true",
-			"timelineColor2":"0x1095d2",
-			"invisible":"false"},
+			"timelineColor":"0x00bda4"},
+		"element_${_videoArticleGroup}":{
+			"timelineColor2":"0x5a558a",
+			"timelineColor3":"0x4a485e",
+			"animationEnabled":"false",
+			"timelineColor":"0x63599f"},
 		"element_${_article-3-4-card}":{
 			"timelineColor2":"0xb099ce",
 			"invisible":"false",
@@ -239,6 +262,14 @@
 			"timelineColor":"0x50bd82",
 			"animationEnabled":"false",
 			"timelineColor3":"0x456a55"},
+		"element_${_video-card}":{
+			"timelineColor2":"0xcbbd71",
+			"invisible":"true",
+			"timelineColor":"0xeedf79",
+			"locked":"false",
+			"animationEnabled":"false",
+			"timelineTreeOpened":"false",
+			"timelineColor3":"0x7b7652"},
 		"element_${_article-video-card}":{
 			"timelineColor2":"0xba5b89",
 			"invisible":"false",
@@ -248,25 +279,21 @@
 			"timelineColor3":"0x734a5f",
 			"timelineTreeOpened":"false"},
 		"element_${_videoArticleCardFull}":{
-			"timelineColor2":"0xcbbd71",
-			"timelineColor3":"0x7b7652",
-			"timelineColor":"0xeedf79",
-			"timelineTreeOpened":"false",
-			"animationEnabled":"true"},
+			"timelineColor2":"0xb099ce",
+			"timelineColor3":"0x70657c",
+			"animationEnabled":"false",
+			"timelineColor":"0xceaef4"},
 		"element_${_assetlessArticleCardFull}":{
 			"timelineColor2":"0xba5b89",
 			"timelineColor3":"0x734a5f",
 			"timelineColor":"0xdb619d",
 			"timelineTreeOpened":"false",
 			"animationEnabled":"false"},
-		"element_${_video-card}":{
-			"timelineColor2":"0xcbbd71",
-			"invisible":"true",
-			"timelineColor":"0xeedf79",
-			"locked":"false",
+		"element_${_Symbol_articleGroup}":{
+			"timelineColor2":"0xd8b467",
+			"timelineColor3":"0x81714f",
 			"animationEnabled":"false",
-			"timelineTreeOpened":"false",
-			"timelineColor3":"0x7b7652"},
+			"timelineColor":"0xffd46d"},
 		"element_${__34ArticleGroup}":{
 			"timelineColor2":"0x326a96",
 			"timelineColor3":"0x385063",
@@ -286,25 +313,22 @@
 		"element_${_videoCardFull}":{
 			"timelineColor2":"0xd35d6e",
 			"timelineColor3":"0x7e4b52",
+			"timelineColor":"0xfb657a",
 			"timelineTreeOpened":"false",
-			"timelineColor":"0xfb657a"},
+			"animationEnabled":"false"},
 		"element_${_assetlessArticleGroup}":{
 			"timelineColor2":"0x5a558a",
 			"timelineColor3":"0x4a485e",
 			"timelineColor":"0x63599f",
 			"timelineTreeOpened":"false",
-			"animationEnabled":"true",
+			"animationEnabled":"false",
 			"epOpened":"false",
-			"invisible":"true"},
+			"invisible":"false"},
 		"element_${_articleGroup}":{
-			"timelineColor2":"0x5a558a",
-			"timelineColor3":"0x4a485e",
-			"locked":"false",
-			"timelineColor":"0x63599f",
-			"timelineTreeOpened":"false",
-			"animationEnabled":"true",
-			"invisible":"false",
-			"epOpened":"false"},
+			"timelineColor2":"0xcbbd71",
+			"timelineColor3":"0x7b7652",
+			"animationEnabled":"false",
+			"timelineColor":"0xeedf79"},
 		"element_${_videoGroup}":{
 			"epOpened":"false",
 			"timelineColor3":"0x70657c",
@@ -313,14 +337,14 @@
 			"animationEnabled":"true",
 			"timelineColor2":"0xb099ce",
 			"invisible":"true"},
-		"element_${_article-gallery-card}":{
-			"timelineColor2":"0xd35d6e",
-			"invisible":"false",
-			"timelineColor":"0xfb657a",
-			"locked":"false",
-			"animationEnabled":"false",
+		"element_${_nonFullCards}":{
+			"epOpened":"false",
+			"timelineColor3":"0x70657c",
+			"timelineColor":"0xceaef4",
 			"timelineTreeOpened":"false",
-			"timelineColor3":"0x7e4b52"}},
+			"animationEnabled":"true",
+			"timelineColor2":"0xb099ce",
+			"invisible":"false"}},
 	"pref__general__FilterNonAnimatedElements":"false",
 	"natsFull_symbol-Default Timeline_playhead_ms":"0",
 	"symbol_Preloader":{
@@ -328,17 +352,8 @@
 		"defaultStageParentHeight":"1064px",
 		"dummyStageParentWidth":"640px",
 		"dummyStageParentHeight":"1064px"},
-	"symbol_thumb3":{
-		"defaultStageParentHeight":"70px",
-		"dummyStageParentHeight":"70px",
-		"defaultStageParentWidth":"70px",
-		"element_${_thumb3}":{
-			"timelineColor2":"0x4fa275",
-			"timelineColor3":"0x456a55",
-			"animationEnabled":"true",
-			"timelineColor":"0x50bd82"},
-		"dummyStageParentWidth":"70px"},
-	"pixelsPerMs":"0.30595339921483",
+	"thumb2-Default Timeline_mark_ms":"-1",
+	"pixelsPerMs":"0.25124191069291",
 	"stage-Default Timeline_mark_ms":"-1",
 	"pref__general__TimelineShowGrid":"true",
 	"symbol_myCards_symbol":{
@@ -469,7 +484,54 @@
 			"timelineTreeOpened":"false",
 			"timelineColor3":"0x456a55"}},
 	"livFull_Symbol-Default Timeline_playhead_ms":"0",
+	"StageZoomFactor":"50",
+	"mainNav_symbol-Default Timeline_playhead_ms":"0",
 	"panel1-Default Timeline_playhead_ms":"0",
+	"Symbol_articleGroup-Default Timeline_playhead_ms":"0",
+	"symbol_Symbol_articleGroup":{
+		"element_${_article-card-fullCopy}":{
+			"timelineColor2":"0xb099ce",
+			"invisible":"false",
+			"timelineColor":"0xceaef4",
+			"timelineTreeOpened":"true",
+			"animationEnabled":"true",
+			"timelineColor3":"0x70657c"},
+		"element_${_articleGroup}":{
+			"epOpened":"true",
+			"timelineColor3":"0x4a485e",
+			"timelineTreeOpened":"true",
+			"timelineColor":"0x63599f",
+			"locked":"false",
+			"animationEnabled":"true",
+			"invisible":"false",
+			"timelineColor2":"0x5a558a"}},
+	"symbol_Symbol_articleVideoGroup":{
+		"element_${_videoArticleCardFull}":{
+			"timelineColor2":"0xcbbd71",
+			"timelineColor3":"0x7b7652",
+			"timelineColor":"0xeedf79",
+			"timelineTreeOpened":"true",
+			"animationEnabled":"true"},
+		"element_${_articleVideoGroup}":{
+			"epOpened":"true",
+			"timelineColor3":"0x29647e",
+			"timelineColor":"0x00a9fa",
+			"timelineTreeOpened":"true",
+			"animationEnabled":"true",
+			"timelineColor2":"0x1095d2",
+			"invisible":"false"}},
+	"panel3-Default Timeline_playhead_ms":"0",
+	"thumb3-Default Timeline_playhead_ms":"0",
+	"symbol_natsFull_symbol":{
+		"element_${_baseball-full}":{
+			"timelineColor2":"0x1aa38f",
+			"timelineColor3":"0x2a6a61",
+			"timelineColor":"0x00bda4",
+			"timelineTreeOpened":"true",
+			"animationEnabled":"true",
+			"invisible":"false"},
+		"codeTreeElementPopupFilter":""},
+	"large4-Default Timeline_playhead_ms":"0",
 	"symbol_button":{
 		"dummyStageParentWidth":"80px",
 		"dummyStageParentHeight":"80px",
@@ -485,6 +547,8 @@
 			"timelineColor3":"0x385063",
 			"animationEnabled":"false",
 			"timelineColor":"0x2f73ad"}},
+	"livFull_symbol-Default Timeline_playhead_ms":"0",
+	"thumb2-Default Timeline_playhead_ms":"0",
 	"symbol_panel1":{
 		"dummyStageParentWidth":"544px",
 		"dummyStageParentHeight":"320px",
@@ -520,48 +584,28 @@
 			"timelineColor3":"0x2a6a61",
 			"animationEnabled":"false",
 			"timelineColor":"0x00bda4"}},
-	"symbol_thumb1":{
-		"element_${_thumb1}":{
+	"Symbol_articleGroup-Default Timeline_mark_ms":"-1",
+	"expanded:images/":"false",
+	"viewStartMs":"-19.901138254403",
+	"symbol_cardFlow":{},
+	"Symbol_articleVideoGroup-Default Timeline_playhead_ms":"0",
+	"symbol_stage":{
+		"element_${_line}":{
 			"timelineColor2":"0x168c84",
 			"timelineColor3":"0x2a605c",
-			"animationEnabled":"true",
-			"timelineColor":"0x00a096"},
-		"dummyStageParentWidth":"70px",
-		"dummyStageParentHeight":"70px",
-		"defaultStageParentWidth":"70px",
-		"defaultStageParentHeight":"70px"},
-	"mainNav_symbol-Default Timeline_playhead_ms":"0",
-	"panel3-Default Timeline_playhead_ms":"0",
-	"livFull_symbol-Default Timeline_playhead_ms":"0",
-	"thumb1-Default Timeline_playhead_ms":"0",
-	"large4-Default Timeline_playhead_ms":"0",
-	"thumb2-Default Timeline_playhead_ms":"0",
-	"expanded:images/":"false",
-	"viewStartMs":"2301.5355996526",
-	"symbol_cardFlow":{},
-	"StageZoomFactor":"50",
-	"symbol_stage":{
-		"element_${_livFull_Symbol}":{
-			"timelineColor2":"0x107faa",
-			"timelineColor3":"0x295a6d",
-			"timelineColor":"0x008dc8",
-			"timelineTreeOpened":"false",
-			"animationEnabled":"true",
-			"invisible":"false"},
+			"timelineColor":"0x00a096",
+			"animationEnabled":"false",
+			"invisible":"true"},
 		"element_${_sportsCopy}":{
 			"timelineColor2":"0x168c84",
 			"timelineColor3":"0x2a605c",
 			"animationEnabled":"false",
 			"timelineColor":"0x00a096"},
-		"element_${_cardsWrap}":{
-			"epOpened":"true",
-			"invisible":"false",
-			"timelineColor3":"0x81714f",
-			"timelineColor":"0xffd46d",
-			"timelineTreeOpened":"false",
+		"element_${_liverpoolGameGroup}":{
+			"timelineColor2":"0x1aa38f",
+			"timelineColor3":"0x2a6a61",
 			"animationEnabled":"false",
-			"timelineColor2":"0xd8b467",
-			"locked":"false"},
+			"timelineColor":"0x00bda4"},
 		"element_${_button}":{
 			"timelineColor2":"0xcbbd71",
 			"timelineColor3":"0x7b7652",
@@ -623,19 +667,19 @@
 			"timelineTreeOpened":"false",
 			"animationEnabled":"true",
 			"timelineColor3":"0x734a5f"},
-		"element_${_topPanel}":{
-			"timelineColor2":"0x1095d2",
-			"timelineColor3":"0x29647e",
-			"timelineColor":"0x00a9fa",
-			"timelineTreeOpened":"false",
-			"animationEnabled":"false"},
-		"element_${_articleWrap}":{
-			"timelineColor2":"0x1095d2",
-			"timelineColor3":"0x29647e",
-			"timelineColor":"0x00a9fa",
+		"element_${_nats3StackBot}":{
+			"epOpened":"false",
+			"timelineColor3":"0x734a5f",
+			"timelineColor":"0xdb619d",
 			"timelineTreeOpened":"false",
 			"animationEnabled":"true",
-			"epOpened":"false",
+			"invisible":"true",
+			"timelineColor2":"0xba5b89"},
+		"element_${_panel2}":{
+			"timelineColor2":"0xb099ce",
+			"timelineColor3":"0x70657c",
+			"timelineColor":"0xceaef4",
+			"animationEnabled":"false",
 			"invisible":"true"},
 		"element_${_panel1}":{
 			"timelineColor2":"0x4fa275",
@@ -649,10 +693,12 @@
 			"timelineColor3":"0x4a485e",
 			"animationEnabled":"false",
 			"timelineColor":"0x63599f"},
-		"element_${_article-card2}":{
-			"timelineColor2":"0x4fa275",
-			"timelineColor3":"0x456a55",
-			"timelineColor":"0x50bd82"},
+		"element_${__34ArticleGroup}":{
+			"timelineColor2":"0xcbbd71",
+			"timelineColor3":"0x7b7652",
+			"timelineColor":"0xeedf79",
+			"animationEnabled":"false",
+			"epOpened":"false"},
 		"element_${_Group2}":{
 			"epOpened":"false",
 			"timelineColor3":"0x7e4b52",
@@ -664,8 +710,9 @@
 		"element_${_videoArticleGroup}":{
 			"timelineColor2":"0xb099ce",
 			"timelineColor3":"0x70657c",
+			"timelineColor":"0xceaef4",
 			"animationEnabled":"false",
-			"timelineColor":"0xceaef4"},
+			"epOpened":"false"},
 		"element_${__34articleGroup}":{
 			"timelineColor2":"0xd35d6e",
 			"timelineColor3":"0x7e4b52",
@@ -708,8 +755,9 @@
 		"element_${_galleryArticleGroup}":{
 			"timelineColor2":"0x107faa",
 			"timelineColor3":"0x295a6d",
+			"timelineColor":"0x008dc8",
 			"animationEnabled":"false",
-			"timelineColor":"0x008dc8"},
+			"epOpened":"false"},
 		"element_${_lvpool3StackRect}":{
 			"timelineColor2":"0x1aa38f",
 			"invisible":"false",
@@ -770,11 +818,7 @@
 			"timelineColor3":"0x70657c",
 			"animationEnabled":"false",
 			"timelineColor":"0xceaef4"},
-		"element_${_swipe_arrow}":{
-			"timelineColor2":"0xd8b467",
-			"timelineColor3":"0x81714f",
-			"animationEnabled":"false",
-			"timelineColor":"0xffd46d"},
+		"dummyStageParentWidth":"620px",
 		"element_${_BaseballCopy3}":{
 			"timelineColor2":"0x1aa38f",
 			"timelineColor3":"0x2a6a61",
@@ -857,11 +901,12 @@
 			"animationEnabled":"false",
 			"timelineColor":"0xfb657a"},
 		"dummyStageParentHeight":"1064px",
-		"element_${_buttons}":{
-			"timelineColor2":"0xd8b467",
-			"timelineColor3":"0x81714f",
+		"element_${_sports-large}":{
+			"timelineColor2":"0xd35d6e",
+			"invisible":"true",
+			"timelineColor":"0xfb657a",
 			"animationEnabled":"false",
-			"timelineColor":"0xffd46d"},
+			"timelineColor3":"0x7e4b52"},
 		"element_${_frame}":{
 			"timelineColor2":"0xd8b467",
 			"invisible":"false",
@@ -876,11 +921,10 @@
 			"timelineColor":"0xdb619d",
 			"animationEnabled":"false",
 			"timelineColor3":"0x734a5f"},
-		"element_${_LiverpoolCopy}":{
-			"timelineColor2":"0x168c84",
-			"timelineColor3":"0x2a605c",
-			"timelineTreeOpened":"false",
-			"timelineColor":"0x00a096"},
+		"element_${_Text2}":{
+			"timelineColor2":"0x107faa",
+			"timelineColor3":"0x295a6d",
+			"timelineColor":"0x008dc8"},
 		"element_${_cardFlow}":{
 			"timelineColor2":"0x168c84",
 			"timelineColor3":"0x2a605c",
@@ -911,13 +955,15 @@
 		"element_${_assetlessArticleGroup}":{
 			"timelineColor2":"0x326a96",
 			"timelineColor3":"0x385063",
+			"timelineColor":"0x2f73ad",
 			"animationEnabled":"false",
-			"timelineColor":"0x2f73ad"},
+			"epOpened":"false"},
 		"element_${_videoGroup}":{
 			"timelineColor2":"0x1aa38f",
 			"timelineColor3":"0x2a6a61",
+			"timelineColor":"0x00bda4",
 			"animationEnabled":"false",
-			"timelineColor":"0x00bda4"},
+			"epOpened":"false"},
 		"element_${_articleGalleryCardCopy}":{
 			"timelineColor2":"0x1aa38f",
 			"timelineColor3":"0x2a6a61",
@@ -940,11 +986,13 @@
 			"timelineColor3":"0x70657c",
 			"animationEnabled":"false",
 			"timelineColor":"0xceaef4"},
-		"element_${_Baseball-normal-color}":{
-			"timelineColor2":"0xd35d6e",
-			"timelineColor3":"0x7e4b52",
+		"element_${_offEdgeNav}":{
+			"timelineColor2":"0xba5b89",
+			"invisible":"true",
+			"timelineColor":"0xdb619d",
+			"timelineTreeOpened":"false",
 			"animationEnabled":"false",
-			"timelineColor":"0xfb657a"},
+			"timelineColor3":"0x734a5f"},
 		"element_${_article-card-full}":{
 			"timelineColor2":"0x107faa",
 			"timelineColor3":"0x295a6d",
@@ -961,21 +1009,40 @@
 			"timelineColor3":"0x295a6d",
 			"animationEnabled":"false",
 			"timelineColor":"0x008dc8"},
-		"dummyStageParentWidth":"620px",
-		"element_${__34ArticleCardFull}":{
-			"timelineColor2":"0x81aa62",
-			"timelineColor3":"0x5b6c4d",
-			"animationEnabled":"false",
-			"timelineColor":"0x91c767"},
-		"element_${_coverFlow}":{
-			"epOpened":"true",
-			"timelineColor3":"0x7e4b52",
+		"element_${_Symbol_articleVideoGroup}":{
 			"timelineColor2":"0xd35d6e",
+			"timelineColor3":"0x7e4b52",
 			"timelineColor":"0xfb657a",
 			"timelineTreeOpened":"false",
+			"animationEnabled":"true"},
+		"element_${_cardsWrap}":{
+			"epOpened":"false",
+			"timelineColor3":"0x81714f",
+			"invisible":"false",
+			"timelineColor":"0xffd46d",
+			"locked":"false",
+			"animationEnabled":"false",
+			"timelineColor2":"0xd8b467",
+			"timelineTreeOpened":"false"},
+		"element_${_swipe_arrow}":{
+			"timelineColor2":"0xd8b467",
+			"timelineColor3":"0x81714f",
+			"animationEnabled":"false",
+			"timelineColor":"0xffd46d"},
+		"element_${_btnBaseCopy}":{
+			"timelineColor2":"0x1095d2",
+			"timelineColor3":"0x29647e",
+			"animationEnabled":"false",
+			"timelineColor":"0x00a9fa"},
+		"element_${_coverFlow}":{
+			"timelineColor2":"0xd35d6e",
+			"timelineColor3":"0x7e4b52",
+			"epOpened":"true",
+			"timelineColor":"0xfb657a",
+			"locked":"false",
 			"animationEnabled":"true",
 			"invisible":"false",
-			"locked":"false"},
+			"timelineTreeOpened":"false"},
 		"element_${_thumb3Copy}":{
 			"timelineColor2":"0x81aa62",
 			"timelineColor3":"0x5b6c4d",
@@ -986,30 +1053,28 @@
 			"timelineColor3":"0x5b6c4d",
 			"animationEnabled":"false",
 			"timelineColor":"0x91c767"},
-		"element_${_btnLabel}":{
-			"timelineColor2":"0x4fa275",
-			"timelineColor3":"0x456a55",
-			"animationEnabled":"false",
-			"timelineColor":"0x50bd82"},
-		"element_${_rightSwipeEle}":{
-			"timelineColor2":"0x326a96",
-			"invisible":"true",
-			"timelineColor":"0x2f73ad",
-			"animationEnabled":"false",
-			"timelineColor3":"0x385063"},
-		"element_${_movie-card-copyCopy6}":{
-			"timelineColor2":"0x1aa38f",
-			"timelineColor3":"0x2a6a61",
-			"animationEnabled":"false",
-			"timelineColor":"0x00bda4"},
-		"element_${_breakingAlert}":{
-			"epOpened":"false",
-			"timelineColor3":"0x70657c",
-			"timelineColor":"0xceaef4",
+		"element_${_articleGalleryCard}":{
+			"timelineColor2":"0x81aa62",
+			"timelineColor3":"0x5b6c4d",
+			"timelineColor":"0x91c767",
+			"animationEnabled":"true",
+			"epOpened":"false"},
+		"element_${_Rectangle2Copy}":{
+			"timelineColor2":"0xd35d6e",
+			"invisible":"false",
+			"timelineColor":"0xfb657a",
 			"timelineTreeOpened":"false",
 			"animationEnabled":"true",
-			"invisible":"false",
-			"timelineColor2":"0xb099ce"},
+			"timelineColor3":"0x7e4b52"},
+		"element_${_RectangleFullCardCopy}":{
+			"timelineColor2":"0x326a96",
+			"timelineColor3":"0x385063",
+			"animationEnabled":"false",
+			"timelineColor":"0x2f73ad"},
+		"element_${_movie-card-copyCopy5}":{
+			"timelineColor2":"0xb099ce",
+			"timelineColor3":"0x70657c",
+			"timelineColor":"0xceaef4"},
 		"element_${_Stage}":{
 			"timelineColor2":"0xcbbd71",
 			"invisible":"false",
@@ -1022,11 +1087,12 @@
 			"timelineColor2":"0x1095d2",
 			"timelineColor3":"0x29647e",
 			"timelineColor":"0x00a9fa"},
-		"element_${_btnBase}":{
-			"timelineColor2":"0x81aa62",
-			"timelineColor3":"0x5b6c4d",
-			"animationEnabled":"false",
-			"timelineColor":"0x91c767"},
+		"element_${_topPanel}":{
+			"timelineColor2":"0x1095d2",
+			"timelineColor3":"0x29647e",
+			"timelineColor":"0x00a9fa",
+			"timelineTreeOpened":"false",
+			"animationEnabled":"false"},
 		"element_${_edgeSwipes}":{
 			"timelineColor2":"0x1aa38f",
 			"timelineColor3":"0x2a6a61",
@@ -1035,129 +1101,23 @@
 			"animationEnabled":"false",
 			"epOpened":"true",
 			"invisible":"false"},
-		"element_${_nats3StackBot}":{
-			"epOpened":"false",
-			"timelineColor3":"0x734a5f",
-			"timelineColor":"0xdb619d",
-			"timelineTreeOpened":"false",
-			"animationEnabled":"true",
-			"invisible":"true",
-			"timelineColor2":"0xba5b89"},
-		"element_${_Group2Copy}":{
-			"timelineColor2":"0x168c84",
-			"timelineColor3":"0x2a605c",
-			"timelineColor":"0x00a096"},
-		"element_${_BaseballCopy}":{
-			"timelineColor2":"0x81aa62",
-			"timelineColor3":"0x5b6c4d",
-			"timelineColor":"0x91c767"},
-		"element_${_Text}":{
-			"timelineColor2":"0x1095d2",
-			"timelineColor3":"0x29647e",
-			"timelineColor":"0x00a9fa"},
-		"element_${_Baseball-normal-colorCopy3}":{
-			"timelineColor2":"0x4fa275",
-			"timelineColor3":"0x456a55",
-			"animationEnabled":"false",
-			"timelineColor":"0x50bd82"},
-		"element_${_line}":{
-			"timelineColor2":"0x168c84",
-			"timelineColor3":"0x2a605c",
-			"timelineColor":"0x00a096",
-			"animationEnabled":"false",
-			"invisible":"true"},
-		"element_${_RectangleFullCardCopy}":{
-			"timelineColor2":"0x326a96",
-			"timelineColor3":"0x385063",
-			"animationEnabled":"false",
-			"timelineColor":"0x2f73ad"},
-		"element_${_galleryArticleCardFull}":{
-			"timelineColor2":"0x5a558a",
-			"timelineColor3":"0x4a485e",
-			"animationEnabled":"false",
-			"timelineColor":"0x63599f"},
-		"element_${_GroupCopy}":{
-			"timelineColor2":"0x1aa38f",
-			"timelineColor3":"0x2a6a61",
-			"timelineColor":"0x00bda4"},
-		"element_${_articleGroup}":{
-			"timelineColor2":"0xba5b89",
-			"timelineColor3":"0x734a5f",
-			"animationEnabled":"false",
-			"timelineColor":"0xdb619d"},
-		"element_${_topSwipeEle}":{
-			"timelineColor2":"0x107faa",
-			"timelineColor3":"0x295a6d",
-			"timelineColor":"0x008dc8",
-			"timelineTreeOpened":"false",
-			"animationEnabled":"false"},
-		"element_${_header}":{
-			"timelineColor2":"0x107faa",
-			"timelineColor3":"0x295a6d",
-			"timelineColor":"0x008dc8"},
-		"element_${_Rectangle}":{
-			"timelineColor2":"0x168c84",
-			"timelineColor3":"0x2a605c",
-			"animationEnabled":"false",
-			"timelineColor":"0x00a096"},
-		"element_${_movie-card-copyCopy2}":{
-			"timelineColor2":"0xd35d6e",
-			"timelineColor3":"0x7e4b52",
-			"timelineColor":"0xfb657a",
-			"animationEnabled":"false",
-			"invisible":"false"},
-		"element_${_movie-group}":{
-			"timelineColor2":"0x81aa62",
-			"timelineColor3":"0x5b6c4d",
-			"timelineColor":"0x91c767",
-			"animationEnabled":"false",
-			"invisible":"false",
-			"epOpened":"true"},
-		"element_${_movie-groupCopy2}":{
-			"timelineColor2":"0x4fa275",
-			"timelineColor3":"0x456a55",
-			"animationEnabled":"false",
-			"timelineColor":"0x50bd82"},
-		"element_${_collapseEleCopy3}":{
-			"timelineColor2":"0xd8b467",
-			"timelineColor3":"0x81714f",
-			"timelineColor":"0xffd46d"},
-		"element_${_panel2}":{
-			"timelineColor2":"0xb099ce",
-			"timelineColor3":"0x70657c",
-			"timelineColor":"0xceaef4",
-			"animationEnabled":"false",
-			"invisible":"true"},
-		"element_${_Rectangle2Copy}":{
-			"timelineColor2":"0xd35d6e",
-			"invisible":"false",
-			"timelineColor":"0xfb657a",
-			"timelineTreeOpened":"false",
-			"animationEnabled":"true",
-			"timelineColor3":"0x7e4b52"},
-		"element_${_thumb1Copy}":{
-			"timelineColor2":"0x1aa38f",
-			"timelineColor3":"0x2a6a61",
-			"animationEnabled":"false",
-			"timelineColor":"0x00bda4"},
-		"element_${_natsGameGroup}":{
-			"timelineColor2":"0x107faa",
-			"timelineColor3":"0x295a6d",
-			"animationEnabled":"false",
-			"timelineColor":"0x008dc8"},
-		"element_${_venice1}":{
-			"timelineColor2":"0x326a96",
-			"timelineColor3":"0x385063",
-			"animationEnabled":"false",
-			"timelineColor":"0x2f73ad"},
-		"element_${_RectangleCopy2}":{
-			"timelineColor2":"0xd8b467",
-			"timelineColor3":"0x81714f",
-			"timelineColor":"0xffd46d"},
 		"element_${_Baseball-normal-colorCopy2}":{
 			"timelineColor2":"0x107faa",
 			"timelineColor3":"0x295a6d",
 			"timelineColor":"0x008dc8"},
+		"element_${_Group2Copy}":{
+			"timelineColor2":"0x168c84",
+			"timelineColor3":"0x2a605c",
+			"timelineColor":"0x00a096"},
+		"element_${_btnLabel}":{
+			"timelineColor2":"0x4fa275",
+			"timelineColor3":"0x456a55",
+			"animationEnabled":"false",
+			"timelineColor":"0x50bd82"},
+		"element_${_Text}":{
+			"timelineColor2":"0x1095d2",
+			"timelineColor3":"0x29647e",
+			"timelineColor":"0x00a9fa"},
 		"element_${_botPanel}":{
 			"timelineColor2":"0x168c84",
 			"timelineColor3":"0x2a605c",
@@ -1175,6 +1135,120 @@
 			"animationEnabled":"true",
 			"timelineColor":"0x50bd82"},
 		"hGuides":"32px,3002px,1158px,4265px,7233px,2900px,3637px,768px,19px,110px,686px",
+		"element_${_GroupCopy}":{
+			"timelineColor2":"0x1aa38f",
+			"timelineColor3":"0x2a6a61",
+			"timelineColor":"0x00bda4"},
+		"element_${_movie-card-copyCopy2}":{
+			"timelineColor2":"0xd35d6e",
+			"timelineColor3":"0x7e4b52",
+			"timelineColor":"0xfb657a",
+			"animationEnabled":"false",
+			"invisible":"false"},
+		"element_${_topSwipeEle}":{
+			"timelineColor2":"0x107faa",
+			"timelineColor3":"0x295a6d",
+			"timelineColor":"0x008dc8",
+			"timelineTreeOpened":"false",
+			"animationEnabled":"false"},
+		"element_${_header}":{
+			"timelineColor2":"0x107faa",
+			"timelineColor3":"0x295a6d",
+			"timelineColor":"0x008dc8"},
+		"element_${_Rectangle}":{
+			"timelineColor2":"0x168c84",
+			"timelineColor3":"0x2a605c",
+			"animationEnabled":"false",
+			"timelineColor":"0x00a096"},
+		"element_${_articleWrap}":{
+			"timelineColor2":"0x1095d2",
+			"timelineColor3":"0x29647e",
+			"timelineColor":"0x00a9fa",
+			"timelineTreeOpened":"false",
+			"animationEnabled":"true",
+			"epOpened":"false",
+			"invisible":"true"},
+		"element_${_movie-group}":{
+			"timelineColor2":"0x81aa62",
+			"timelineColor3":"0x5b6c4d",
+			"timelineColor":"0x91c767",
+			"animationEnabled":"false",
+			"invisible":"false",
+			"epOpened":"true"},
+		"element_${_movie-groupCopy2}":{
+			"timelineColor2":"0x4fa275",
+			"timelineColor3":"0x456a55",
+			"animationEnabled":"false",
+			"timelineColor":"0x50bd82"},
+		"element_${_collapseEleCopy3}":{
+			"timelineColor2":"0xd8b467",
+			"timelineColor3":"0x81714f",
+			"timelineColor":"0xffd46d"},
+		"element_${_LiverpoolCopy}":{
+			"timelineColor2":"0x168c84",
+			"timelineColor3":"0x2a605c",
+			"timelineTreeOpened":"false",
+			"timelineColor":"0x00a096"},
+		"element_${_rightSwipeEle}":{
+			"timelineColor2":"0x326a96",
+			"invisible":"true",
+			"timelineColor":"0x2f73ad",
+			"animationEnabled":"false",
+			"timelineColor3":"0x385063"},
+		"element_${_thumb1Copy}":{
+			"timelineColor2":"0x1aa38f",
+			"timelineColor3":"0x2a6a61",
+			"animationEnabled":"false",
+			"timelineColor":"0x00bda4"},
+		"element_${_natsGameGroup}":{
+			"timelineColor2":"0x107faa",
+			"timelineColor3":"0x295a6d",
+			"animationEnabled":"false",
+			"timelineColor":"0x008dc8"},
+		"element_${_venice1}":{
+			"timelineColor2":"0x326a96",
+			"timelineColor3":"0x385063",
+			"animationEnabled":"false",
+			"timelineColor":"0x2f73ad"},
+		"element_${_Symbol_articleGroup}":{
+			"timelineColor2":"0x4fa275",
+			"timelineColor3":"0x456a55",
+			"timelineColor":"0x50bd82",
+			"timelineTreeOpened":"false",
+			"animationEnabled":"true"},
+		"element_${_sports}":{
+			"timelineColor2":"0xcbbd71",
+			"invisible":"false",
+			"timelineColor":"0xeedf79",
+			"timelineTreeOpened":"true",
+			"animationEnabled":"false",
+			"timelineColor3":"0x7b7652"},
+		"element_${_livFull_Symbol}":{
+			"timelineColor2":"0x107faa",
+			"timelineColor3":"0x295a6d",
+			"timelineColor":"0x008dc8",
+			"timelineTreeOpened":"false",
+			"animationEnabled":"true",
+			"invisible":"false"},
+		"element_${_breakingAlert}":{
+			"epOpened":"false",
+			"timelineColor3":"0x70657c",
+			"timelineColor":"0xceaef4",
+			"timelineTreeOpened":"false",
+			"animationEnabled":"true",
+			"invisible":"false",
+			"timelineColor2":"0xb099ce"},
+		"element_${_movie-card-copyCopy8}":{
+			"timelineColor2":"0x1095d2",
+			"timelineColor3":"0x29647e",
+			"animationEnabled":"false",
+			"timelineColor":"0x00a9fa"},
+		"element_${_articleGroup}":{
+			"timelineColor2":"0xba5b89",
+			"timelineColor3":"0x734a5f",
+			"timelineColor":"0xdb619d",
+			"animationEnabled":"false",
+			"epOpened":"false"},
 		"element_${_cardFlowCards_symbol}":{
 			"timelineColor2":"0xcbbd71",
 			"timelineColor3":"0x7b7652",
@@ -1194,10 +1268,11 @@
 			"timelineColor3":"0x70657c",
 			"animationEnabled":"false",
 			"timelineColor":"0xceaef4"},
-		"element_${_movie-card-copyCopy5}":{
-			"timelineColor2":"0xb099ce",
-			"timelineColor3":"0x70657c",
-			"timelineColor":"0xceaef4"},
+		"element_${__34ArticleCardFull}":{
+			"timelineColor2":"0x81aa62",
+			"timelineColor3":"0x5b6c4d",
+			"animationEnabled":"false",
+			"timelineColor":"0x91c767"},
 		"element_${_movie-groupCopy}":{
 			"timelineColor2":"0x326a96",
 			"timelineColor3":"0x385063",
@@ -1213,62 +1288,62 @@
 			"timelineColor":"0x00bda4",
 			"animationEnabled":"false",
 			"timelineColor3":"0x2a6a61"},
-		"element_${_article-gallery-card}":{
-			"timelineColor2":"0xcbbd71",
-			"timelineColor3":"0x7b7652",
-			"animationEnabled":"false",
-			"timelineColor":"0xeedf79"},
-		"element_${_homeCopy}":{
-			"timelineColor2":"0x326a96",
-			"timelineColor3":"0x385063",
-			"animationEnabled":"false",
-			"timelineColor":"0x2f73ad"},
 		"element_${_natsFull_symbol}":{
 			"timelineColor2":"0xd8b467",
 			"timelineColor3":"0x81714f",
 			"timelineColor":"0xffd46d",
 			"timelineTreeOpened":"false",
 			"animationEnabled":"true"},
+		"element_${_homeCopy}":{
+			"timelineColor2":"0x326a96",
+			"timelineColor3":"0x385063",
+			"animationEnabled":"false",
+			"timelineColor":"0x2f73ad"},
+		"element_${_article-gallery-card}":{
+			"timelineColor2":"0xcbbd71",
+			"timelineColor3":"0x7b7652",
+			"animationEnabled":"false",
+			"timelineColor":"0xeedf79"},
 		"element_${_navigation}":{
 			"timelineColor2":"0xd8b467",
 			"timelineColor3":"0x81714f",
 			"timelineColor":"0xffd46d",
 			"animationEnabled":"false",
 			"invisible":"false"},
-		"element_${_Text2Copy}":{
-			"timelineColor2":"0x5a558a",
-			"timelineColor3":"0x4a485e",
-			"invisible":"false",
-			"timelineColor":"0x63599f"},
 		"element_${_RectangleFullCard}":{
 			"timelineColor2":"0xb099ce",
 			"timelineColor3":"0x70657c",
 			"animationEnabled":"false",
 			"timelineColor":"0xceaef4"},
-		"element_${_liverpool-full}":{
-			"timelineColor2":"0xd35d6e",
-			"timelineColor3":"0x7e4b52",
+		"element_${_Text2Copy}":{
+			"timelineColor2":"0x5a558a",
+			"timelineColor3":"0x4a485e",
+			"invisible":"false",
+			"timelineColor":"0x63599f"},
+		"element_${_Group2Copy2}":{
+			"timelineColor2":"0x81aa62",
+			"timelineColor3":"0x5b6c4d",
 			"animationEnabled":"false",
-			"timelineColor":"0xfb657a"},
+			"timelineColor":"0x91c767"},
 		"element_${_article-video-card}":{
 			"timelineColor2":"0xd8b467",
 			"timelineColor3":"0x81714f",
 			"animationEnabled":"false",
 			"timelineColor":"0xffd46d"},
-		"element_${_thumb4Copy}":{
-			"timelineColor2":"0xcbbd71",
-			"timelineColor3":"0x7b7652",
+		"element_${_buttons}":{
+			"timelineColor2":"0xd8b467",
+			"timelineColor3":"0x81714f",
 			"animationEnabled":"false",
-			"timelineColor":"0xeedf79"},
-		"element_${_liverpoolGameGroup}":{
-			"timelineColor2":"0x1aa38f",
-			"timelineColor3":"0x2a6a61",
+			"timelineColor":"0xffd46d"},
+		"element_${_RectangleCopy2}":{
+			"timelineColor2":"0xd8b467",
+			"timelineColor3":"0x81714f",
+			"timelineColor":"0xffd46d"},
+		"element_${_liverpool-full}":{
+			"timelineColor2":"0xd35d6e",
+			"timelineColor3":"0x7e4b52",
 			"animationEnabled":"false",
-			"timelineColor":"0x00bda4"},
-		"element_${_Text2}":{
-			"timelineColor2":"0x107faa",
-			"timelineColor3":"0x295a6d",
-			"timelineColor":"0x008dc8"},
+			"timelineColor":"0xfb657a"},
 		"element_${_Baseball}":{
 			"timelineColor2":"0xba5b89",
 			"timelineColor3":"0x734a5f",
@@ -1284,47 +1359,39 @@
 			"timelineColor3":"0x7b7652",
 			"animationEnabled":"false",
 			"timelineColor":"0xeedf79"},
-		"element_${_articleGalleryCard}":{
+		"element_${_movie-card-copyCopy6}":{
+			"timelineColor2":"0x1aa38f",
+			"timelineColor3":"0x2a6a61",
+			"animationEnabled":"false",
+			"timelineColor":"0x00bda4"},
+		"element_${_thumb4Copy}":{
+			"timelineColor2":"0xcbbd71",
+			"timelineColor3":"0x7b7652",
+			"animationEnabled":"false",
+			"timelineColor":"0xeedf79"},
+		"element_${_Baseball-normal-colorCopy3}":{
+			"timelineColor2":"0x4fa275",
+			"timelineColor3":"0x456a55",
+			"animationEnabled":"false",
+			"timelineColor":"0x50bd82"},
+		"element_${_Baseball-normal-color}":{
+			"timelineColor2":"0xd35d6e",
+			"timelineColor3":"0x7e4b52",
+			"animationEnabled":"false",
+			"timelineColor":"0xfb657a"},
+		"element_${_BaseballCopy}":{
 			"timelineColor2":"0x81aa62",
 			"timelineColor3":"0x5b6c4d",
-			"timelineColor":"0x91c767",
-			"animationEnabled":"true",
-			"epOpened":"false"},
+			"timelineColor":"0x91c767"},
+		"element_${_article-card2}":{
+			"timelineColor2":"0x4fa275",
+			"timelineColor3":"0x456a55",
+			"timelineColor":"0x50bd82"},
 		"element_${_movie-card-copyCopy7}":{
 			"timelineColor2":"0x326a96",
 			"timelineColor3":"0x385063",
 			"animationEnabled":"false",
 			"timelineColor":"0x2f73ad"},
-		"element_${_sports-large}":{
-			"timelineColor2":"0xd35d6e",
-			"invisible":"true",
-			"timelineColor":"0xfb657a",
-			"animationEnabled":"false",
-			"timelineColor3":"0x7e4b52"},
-		"element_${_sports}":{
-			"timelineColor2":"0xcbbd71",
-			"invisible":"false",
-			"timelineColor":"0xeedf79",
-			"timelineTreeOpened":"true",
-			"animationEnabled":"false",
-			"timelineColor3":"0x7b7652"},
-		"element_${_btnBaseCopy}":{
-			"timelineColor2":"0x1095d2",
-			"timelineColor3":"0x29647e",
-			"animationEnabled":"false",
-			"timelineColor":"0x00a9fa"},
-		"element_${_offEdgeNav}":{
-			"timelineColor2":"0xba5b89",
-			"invisible":"true",
-			"timelineColor":"0xdb619d",
-			"timelineTreeOpened":"false",
-			"animationEnabled":"false",
-			"timelineColor3":"0x734a5f"},
-		"element_${__34ArticleGroup}":{
-			"timelineColor2":"0xcbbd71",
-			"timelineColor3":"0x7b7652",
-			"animationEnabled":"false",
-			"timelineColor":"0xeedf79"},
 		"element_${_myCards_symbol}":{
 			"timelineColor2":"0x4fa275",
 			"timelineColor3":"0x456a55",
@@ -1332,12 +1399,12 @@
 			"timelineTreeOpened":"false",
 			"animationEnabled":"true",
 			"invisible":"false"},
-		"element_${_movie-card-copyCopy8}":{
-			"timelineColor2":"0x1095d2",
-			"timelineColor3":"0x29647e",
+		"element_${_galleryArticleCardFull}":{
+			"timelineColor2":"0x5a558a",
+			"timelineColor3":"0x4a485e",
 			"animationEnabled":"false",
-			"timelineColor":"0x00a9fa"},
-		"element_${_Group2Copy2}":{
+			"timelineColor":"0x63599f"},
+		"element_${_btnBase}":{
 			"timelineColor2":"0x81aa62",
 			"timelineColor3":"0x5b6c4d",
 			"animationEnabled":"false",
@@ -1359,7 +1426,7 @@
 			"timelineColor3":"0x7b7652",
 			"animationEnabled":"false",
 			"timelineColor":"0xeedf79"}},
-	"TransitionIdCounter":"13292",
+	"TransitionIdCounter":"13408",
 	"symbol_Down-level":{
 		"defaultStageParentWidth":"640px",
 		"defaultStageParentHeight":"1064px",
@@ -1367,10 +1434,19 @@
 		"dummyStageParentHeight":"1064px"},
 	"viewStartY":"29",
 	"ShowGuides":"true",
-	"pref__general__GenerateSmoothTransitions":"false",
-	"thumb3-Default Timeline_playhead_ms":"0",
-	"HTMLFileName":"apollo-presentation.html",
-	"thumb2-Default Timeline_mark_ms":"-1",
+	"stage-Default Timeline_playhead_ms":"0",
+	"large2-Default Timeline_playhead_ms":"0",
+	"panel1-Default Timeline_mark_ms":"-1",
+	"symbol_thumb3":{
+		"dummyStageParentWidth":"70px",
+		"dummyStageParentHeight":"70px",
+		"element_${_thumb3}":{
+			"timelineColor2":"0x4fa275",
+			"timelineColor3":"0x456a55",
+			"animationEnabled":"true",
+			"timelineColor":"0x50bd82"},
+		"defaultStageParentWidth":"70px",
+		"defaultStageParentHeight":"70px"},
 	"symbol_livFull_Symbol":{},
 	"symbol_panel2":{
 		"dummyStageParentWidth":"1200px",
@@ -1405,5 +1481,5 @@
 			"animationEnabled":"false",
 			"timelineColor":"0x2f73ad"},
 		"dummyStageParentHeight":"550px"},
-	"large3-Default Timeline_playhead_ms":"0",
-	"large2-Default Timeline_playhead_ms":"0"}
+	"large1-Default Timeline_playhead_ms":"0",
+	"thumb1-Default Timeline_playhead_ms":"0"}

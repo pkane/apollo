@@ -527,93 +527,38 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       });
             //Edge binding end
       
-      Symbol.bindElementAction(compId, symbolName, "${_article-card-fullCopy}", "click", function(sym, e) {   
-         $('#Stage_cardFlow_symbol2_nonFullCards').fadeIn(function() {
-      		sym.play("ArticleFlipBack");   
-         	$('#Stage_myCards_symbol').fadeIn(function() {   				   
-         	});
-         });   
-      	$('#Stage_coverFlow').scrollTop(Math.round($('#Stage_cardFlow_symbol2_article-card').offset().top));   		   
-      });
-            //Edge binding end
-      
-      Symbol.bindElementAction(compId, symbolName, "${_videoArticleCardFull}", "click", function(sym, e) {
-         $('#Stage_cardFlow_symbol2_nonFullCards').fadeIn(function() {
-         	sym.play("videoArticleFlipBack");
-      		$('#Stage_myCards_symbol').fadeIn(function() {		      		
-      		});
-         });   
-      	$('#Stage_coverFlow').scrollTop(Math.round($('#Stage_cardFlow_symbol2_article-video-card').offset().top));      		      	
-      });
-            //Edge binding end
-      
       Symbol.bindElementAction(compId, symbolName, "${_article-card}", "click", function(sym, e) {
-      	xLinker = Math.round($('#Stage_cardFlow_symbol2_article-card').offset().top);                           
-         $('#Stage_cardFlow_symbol2_nonFullCards').fadeOut(function() {
-         	$('#Stage_myCards_symbol').fadeOut(function(){
-         		sym.play("ArticleFlip");
-         		$('#Stage_coverFlow').scrollTop(0);
-         	});	
-         });
+      	$('#Stage_Symbol_articleGroup').fadeIn(50);
+         sym.getComposition().getStage().getSymbol("Symbol_articleGroup").play("ArticleFlip");
+      	$('#Stage_Symbol_articleGroup_articleGroup').scrollTop(0);   		   	   
       });
             //Edge binding end
       
       Symbol.bindElementAction(compId, symbolName, "${_article-3-4-card}", "click", function(sym, e) {
-      	xLinker = Math.round($('#Stage_cardFlow_symbol2_article-3-4-card').offset().top);         
-         $('#Stage_cardFlow_symbol2_nonFullCards').fadeOut(function() {
-         	$('#Stage_myCards_symbol').fadeOut(function(){
-         		sym.play("34ArticleFlip");
-         		$('#Stage_coverFlow').scrollTop(0);
-         	});	
-         });
-      
+      	$('#Stage_Symbol_article34Group').fadeIn(50);
+         sym.getComposition().getStage().getSymbol("Symbol_article34Group").play("34ArticleFlip");
+      	$('#Stage_Symbol_article34Group_article34Group').scrollTop(0); 
       });
             //Edge binding end
       
       Symbol.bindElementAction(compId, symbolName, "${_article-video-card}", "click", function(sym, e) {
-      	xLinker = Math.round($('#Stage_cardFlow_symbol2_article-video-card').offset().top);         
-         $('#Stage_cardFlow_symbol2_nonFullCards').fadeOut(function() {
-         	$('#Stage_myCards_symbol').fadeOut(function(){
-         		sym.play("videoArticleFlip");
-         		$('#Stage_coverFlow').scrollTop(0);
-         	});	
-         });
+      	$('#Stage_Symbol_articleVideoGroup').fadeIn(50);
+         sym.getComposition().getStage().getSymbol("Symbol_articleVideoGroup").play("VideoArticleFlip");
+      	$('#Stage_Symbol_articleVideoGroup_articleVideoGroup').scrollTop(0); 
       });
             //Edge binding end
       
       Symbol.bindElementAction(compId, symbolName, "${_article-gallery-card}", "click", function(sym, e) {
-      	xLinker = Math.round($('#Stage_cardFlow_symbol2_article-gallery-card').offset().top);                  
-         $('#Stage_cardFlow_symbol2_nonFullCards').fadeOut(function() {
-         	$('#Stage_myCards_symbol').fadeOut(function(){
-         		sym.play("34ArticleFlip");
-         		$('#Stage_coverFlow').scrollTop(0);
-         	});	
-         });
-      
+      	$('#Stage_Symbol_articleGalleryGroup').fadeIn(50);
+         sym.getComposition().getStage().getSymbol("Symbol_articleGalleryGroup").play("GalleryArticleFlip");
+      	$('#Stage_Symbol_articleGalleryGroup_articleGalleryGroup').scrollTop(0); 	
       });
             //Edge binding end
       
       Symbol.bindElementAction(compId, symbolName, "${_article-assetless-card}", "click", function(sym, e) {
-      	xLinker = Math.round($('#Stage_cardFlow_symbol2_article-assetless-card').offset().top);                           
-         $('#Stage_cardFlow_symbol2_nonFullCards').fadeOut(function() {
-         	$('#Stage_myCards_symbol').fadeOut(function(){
-         		sym.play("34ArticleFlip");
-         		$('#Stage_coverFlow').scrollTop(0);
-         	});	
-         });
-      
-      });
-            //Edge binding end
-      
-      Symbol.bindElementAction(compId, symbolName, "${_video-card}", "click", function(sym, e) {
-      	xLinker = Math.round($('#Stage_video-card').offset().top);
-         $('#Stage_cardFlow_symbol2_nonFullCards').fadeOut(function() {
-         	$('#Stage_myCards_symbol').fadeOut(function(){
-         		sym.play("videoArticleFlip");
-         		$('#Stage_coverFlow').scrollTop(0);
-         	});	
-         }); 
-      
+      	$('#Stage_Symbol_articleAssetlessGroup').fadeIn(50);
+         sym.getComposition().getStage().getSymbol("Symbol_articleAssetlessGroup").play("AssetlessArticleFlip");
+      	$('#Stage_Symbol_articleAssetlessGroup_articleAssetlessGroup').scrollTop(0); 
       });
             //Edge binding end
       
@@ -647,17 +592,9 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       });
       //Edge binding end
       
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 3027, function(sym, e) {
-         sym.stop();
       
-      });
-      //Edge binding end
       
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 3527, function(sym, e) {
-         sym.stop();
       
-      });
-      //Edge binding end
 
    })("cardFlow_symbol");
    //Edge symbol end:'cardFlow_symbol'
@@ -701,5 +638,71 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
 
    })("mainNav_symbol");
    //Edge symbol end:'mainNav_symbol'
+
+   //=========================================================
+   
+   //Edge symbol: 'Symbol_articleGroup'
+   (function(symbolName) {   
+   
+      Symbol.bindElementAction(compId, symbolName, "${_article-card-fullCopy}", "click", function(sym, e) {   
+      sym.play("ArticleFlipBack");	
+      $('#Stage_Symbol_articleGroup').fadeOut(50);
+
+      });
+               //Edge binding end
+
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 0, function(sym, e) {
+         sym.stop();
+
+      });
+      //Edge binding end
+
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 827, function(sym, e) {
+         sym.stop();
+
+      });
+      //Edge binding end
+
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 1327, function(sym, e) {
+         sym.stop();
+
+      });
+      //Edge binding end
+
+   })("Symbol_articleGroup");
+   //Edge symbol end:'Symbol_articleGroup'
+
+   //=========================================================
+   
+   //Edge symbol: 'Symbol_articleVideoGroup'
+   (function(symbolName) {   
+   
+      Symbol.bindElementAction(compId, symbolName, "${_videoArticleCardFull}", "click", function(sym, e) {
+      sym.play("videoArticleFlipBack");
+      $('#Stage_Symbol_articleVideoGroup').fadeOut(50);
+
+      });
+               //Edge binding end
+
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 433, function(sym, e) {
+         sym.stop();
+      
+      });
+      //Edge binding end
+
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 933, function(sym, e) {
+         sym.stop();
+      
+      });
+      //Edge binding end
+
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 0, function(sym, e) {
+         sym.stop();
+
+      });
+      //Edge binding end
+
+   })("Symbol_articleVideoGroup");
+   //Edge symbol end:'Symbol_articleVideoGroup'
 
 })(jQuery, AdobeEdge, "EDGE-260752881");
