@@ -50,7 +50,7 @@
 	"CompZoomFactor":"100",
 	"colorSwatches":"rgba(248,248,248,1.00)",
 	"nextElementColorIndex":"9",
-	"pref__general__GenerateSmoothTransitions":"true",
+	"pref__general__GenerateSmoothTransitions":"false",
 	"HTMLFileName":"apollo-presentation.html",
 	"symbol_Symbol_1":{},
 	"ModelData":"{\
@@ -141,7 +141,7 @@
 		"defaultStageParentWidth":"70px",
 		"defaultStageParentHeight":"70px"},
 	"large3-Default Timeline_playhead_ms":"0",
-	"pref__general__AutoKeyframePropertiesArmed":"false",
+	"pref__general__AutoKeyframePropertiesArmed":"true",
 	"thumb4-Default Timeline_playhead_ms":"0",
 	"cardFlow_symbol-Default Timeline_playhead_ms":"0",
 	"symbol_panel3":{
@@ -206,7 +206,7 @@
 			"animationEnabled":"true",
 			"timelineColor":"0xffd46d"},
 		"dummyStageParentWidth":"70px"},
-	"pref__general__AutoKeyframeProperties":"true",
+	"pref__general__AutoKeyframeProperties":"false",
 	"large1-Default Timeline_mark_ms":"-1",
 	"symbol_cardFlow_symbol":{
 		"element_${_Symbol_1}":{
@@ -921,9 +921,10 @@
 			"timelineColor":"0x00a096"},
 		"element_${_Rectangle2}":{
 			"timelineColor2":"0x326a96",
-			"timelineColor3":"0x385063",
 			"invisible":"false",
-			"timelineColor":"0x2f73ad"},
+			"timelineColor":"0x2f73ad",
+			"timelineTreeOpened":"false",
+			"timelineColor3":"0x385063"},
 		"element_${_Liverpool}":{
 			"timelineColor2":"0x1095d2",
 			"timelineColor3":"0x29647e",
@@ -1416,7 +1417,7 @@
 		"defaultStageParentHeight":"1064px",
 		"dummyStageParentWidth":"640px",
 		"dummyStageParentHeight":"1064px"},
-	"viewStartY":"29",
+	"viewStartY":"0",
 	"ShowGuides":"true",
 	"symbol_Symbol_articleGroup":{
 		"element_${_articleGroup}":{

@@ -1531,7 +1531,7 @@ var symbols = {
       {
          id: 'article-card-fullCopy',
          type: 'image',
-         rect: ['0%','-2%','640px','6166px','auto','auto'],
+         rect: ['0%','-0.1%','640px','6166px','auto','auto'],
          fill: ['rgba(0,0,0,0)','cardflow/article-card-full.png','0px','0px']
       }]
    }],
@@ -1544,7 +1544,7 @@ var symbols = {
             ["transform", "scaleX", '0.5'],
             ["style", "opacity", '0'],
             ["style", "left", '0%'],
-            ["style", "top", '-1.99%'],
+            ["style", "top", '-0.06%'],
             ["transform", "scaleY", '0.5'],
             ["style", "overflow", 'visible'],
             ["style", "height", '3331px'],
@@ -1626,7 +1626,7 @@ var symbols = {
       {
          id: 'videoArticleCardFull',
          type: 'image',
-         rect: ['0px','-22px','640px','6166px','auto','auto'],
+         rect: ['0px','0px','640px','6166px','auto','auto'],
          fill: ['rgba(0,0,0,0)','cardflow/article-card-full.png','0px','0px']
       }]
    }],
@@ -1648,7 +1648,7 @@ var symbols = {
             ["style", "left", '-147px']
          ],
          "${_videoArticleCardFull}": [
-            ["style", "top", '-22px'],
+            ["style", "top", '0px'],
             ["transform", "scaleX", '0.5'],
             ["transform", "scaleY", '0.5'],
             ["style", "overflow", 'visible'],
@@ -1667,7 +1667,7 @@ var symbols = {
       "Default Timeline": {
          fromState: "Base State",
          toState: "",
-         duration: 933.33333333333,
+         duration: 933,
          autoPlay: true,
          labels: {
             "VideoArticleFlip": 106,
