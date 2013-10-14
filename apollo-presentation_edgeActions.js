@@ -14,23 +14,23 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       
       
       Symbol.bindSymbolAction(compId, symbolName, "creationComplete", function(sym, e) {
-          
+      
           // yepnope({
           //     nope:['edge_includes/hammerjs/dist/hammer.js'] ,
           //     complete: init
           // });
-          
+      
           // function init (){
-          
+      
           //     var element = sym.element[0];
           //     var hammer = Hammer(element);
-          
+      
           //     hammer.on("swipeup", function(event) {
           //       sym.play("Coverflow");
           //     });          
           // }        
           var scrollStore = -1;
-          
+      
           function scrollDetect(thisObj){
               var obj = thisObj;              
               //Keep track of last scroll
@@ -57,10 +57,10 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
                   scrollStore = scrollSeq;
               });
             }  
-          
+      
           	window.setTimeout(function() { 
             	sym.play("breakingAlertIn");
-         	}, 3000);
+         	}, 9000);
          /*
             window.setTimeout(function() { 
             	sym.play("breakingAlertOut");
@@ -68,19 +68,19 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
          */
          	// define function and counter
          	var counter = 1;
-         
+      
          	function update_me() {
          	setTimeout(function(){
          		counter++;
          		update_me();
          	}, 1000);
          	}
-         
+      
          	// run code
          	// update_me();	
            // var detection = scrollDetect($('#Stage_coverFlow'));
-         
-         
+      
+      
         // When ready...
         window.addEventListener("load",function() {
             // Set a timeout...
@@ -89,19 +89,19 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
                 window.scrollTo(0, 1);
             }, 0);
         });          
-        
+      
          /**
           * Gallery Template
           * To add more items simply duplicate the symbol "large4" in the library and increase the number.
           * Then you can customize the content of the new symbol by double clicking on the symbol in the library.
           * The navigation will be extended automatically.
           **/
-        
-        
+      
+      
          /**
           * Don't modify the code below.
           */
-        
+      
          // Find all large symbols in the library
          var prefix = "panel"; // large1, large2 ... large99
          var index = 1;
@@ -115,24 +115,20 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
              $button.css({float: "left", margin: "0px 0 0px 0px"});
            }
          }
-        
+      
          var xLinker;
-        
+      
          // Hover effect for buttons
          $(".custom-button").mouseleave(function(evt){$(evt.currentTarget).css({"background-color": "rgba(229, 233, 233,0)"});});
          $(".custom-button").mouseenter(function(evt){$(evt.currentTarget).css({"background-color": "rgb(237, 241, 241)"});});
          $(".custom-button").mousedown(function(evt){$(evt.currentTarget).css({"background-color": "rgb(224,240,250)"});});              
-        
-
+      
+      
       });
       //Edge binding end
       
       
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 0, function(sym, e) {
-         sym.stop();
       
-      });
-      //Edge binding end
       
       
       
@@ -324,11 +320,11 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       
       });
       //Edge binding end
-
+      
       Symbol.bindElementAction(compId, symbolName, "${_Stage}", "swiperight", function(sym, e) {
          sym.play("cardFlowSlideRight");
          sym.getSymbol("mainNav_symbol").play("navIn");
-
+      
       });
       //Edge binding end
 
@@ -712,5 +708,20 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
 
    })("Symbol_articleAssetlessGroup");
    //Edge symbol end:'Symbol_articleAssetlessGroup'
+
+   //=========================================================
+   
+   //Edge symbol: 'Symbol_loader'
+   (function(symbolName) {   
+   
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 2000, function(sym, e) {
+         $('#Stage_Symbol_loader').fadeOut();
+         sym.stop();
+
+      });
+      //Edge binding end
+
+   })("Symbol_loader");
+   //Edge symbol end:'Symbol_loader'
 
 })(jQuery, AdobeEdge, "EDGE-260752881");
