@@ -57,9 +57,6 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
               });
             }  
           
-          	window.setTimeout(function() { 
-            	sym.play("breakingAlertIn");
-         	}, 9000);
          /*
             window.setTimeout(function() { 
             	sym.play("breakingAlertOut");
@@ -85,9 +82,18 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
             // Set a timeout...
             setTimeout(function(){
                 // Hide the address bar!
-                window.scrollTo(0, 1);
+                window.scrollTo(0, 1);		  
             }, 0);
         });          
+        
+        	window.setTimeout(function() {
+        		sym.play("myCardsIn");
+        		sym.getComposition().getStage().getSymbol("cardFlow_symbol").getSymbol("nonFullCards_Symbol").play("cardFlowIn");            
+        	}, 0);
+        
+          	window.setTimeout(function() { 
+            	sym.play("breakingAlertIn");
+         	}, 9000);
         
          /**
           * Gallery Template
@@ -95,7 +101,6 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
           * Then you can customize the content of the new symbol by double clicking on the symbol in the library.
           * The navigation will be extended automatically.
           **/
-        
         
          /**
           * Don't modify the code below.
@@ -114,14 +119,6 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
              $button.css({float: "left", margin: "0px 0 0px 0px"});
            }
          }
-        
-         var xLinker;
-        
-         // Hover effect for buttons
-         $(".custom-button").mouseleave(function(evt){$(evt.currentTarget).css({"background-color": "rgba(229, 233, 233,0)"});});
-         $(".custom-button").mouseenter(function(evt){$(evt.currentTarget).css({"background-color": "rgb(237, 241, 241)"});});
-         $(".custom-button").mousedown(function(evt){$(evt.currentTarget).css({"background-color": "rgb(224,240,250)"});});              
-        
 
       });
       //Edge binding end
@@ -324,6 +321,12 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
          sym.$("mainNav_symbol").show();
          // sym.play("cardFlowSlideRight");
          sym.getSymbol("mainNav_symbol").play("navIn");
+
+      });
+      //Edge binding end
+
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 6100, function(sym, e) {
+         sym.stop();
 
       });
       //Edge binding end
@@ -586,11 +589,21 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       
       Symbol.bindElementAction(compId, symbolName, "${_newsTopicLink}", "click", function(sym, e) {
          sym.getComposition().getStage().$("coverFlow").hide();
-         // sym.getComposition().getStage().$("newsCoverFlow").show();
+         sym.getComposition().getStage().$("newsCoverFlow").show();
          sym.play("navOut");
          $("#Stage_mainNav_symbol").fadeOut();
-         // sym.getComposition().getStage().$("newsCoverFlow").$("newsWrap").getSymbol("newsFlow_symbol").play("newsFlowIn");
          sym.getComposition().getStage().getSymbol("newsFlow_symbol").getSymbol("newsCards_Symbol").play("newsFlowIn");
+
+      });
+      //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${_homeLink}", "click", function(sym, e) {
+         sym.getComposition().getStage().$("newsCoverFlow").hide();
+         sym.getComposition().getStage().$("coverFlow").show();
+         sym.play("navOut");
+         $("#Stage_mainNav_symbol").fadeOut();
+         sym.getComposition().getStage().play("myCardsIn");
+         sym.getComposition().getStage().getSymbol("cardFlow_symbol").getSymbol("nonFullCards_Symbol").play("cardFlowIn");
 
       });
       //Edge binding end
@@ -764,6 +777,12 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
 
       Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 0, function(sym, e) {
          sym.stop();// insert code here
+
+      });
+      //Edge binding end
+
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 2900, function(sym, e) {
+         sym.stop();
 
       });
       //Edge binding end
