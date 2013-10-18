@@ -588,7 +588,9 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
          sym.getComposition().getStage().$("coverFlow").hide();
          // sym.getComposition().getStage().$("newsCoverFlow").show();
          sym.play("navOut");
-         sym.getComposition().getStage().$("newsCoverFlow").$("newsWrap").getSymbol("newsFlow_symbol").play("newsFlowIn");
+         $("#Stage_mainNav_symbol").fadeOut();
+         // sym.getComposition().getStage().$("newsCoverFlow").$("newsWrap").getSymbol("newsFlow_symbol").play("newsFlowIn");
+         sym.getComposition().getStage().getSymbol("newsFlow_symbol").getSymbol("newsCards_Symbol").play("newsFlowIn");
 
       });
       //Edge binding end
@@ -716,12 +718,6 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
 
       
 
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 467, function(sym, e) {
-         sym.stop();
-
-      });
-      //Edge binding end
-
       })("newsFlow_symbol");
    //Edge symbol end:'newsFlow_symbol'
 
@@ -823,6 +819,12 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       //Edge binding end
 
       
+
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 0, function(sym, e) {
+         sym.stop();
+
+      });
+      //Edge binding end
 
    })("newsCards_Symbol");
    //Edge symbol end:'newsCards_Symbol'

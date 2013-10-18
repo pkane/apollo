@@ -44,36 +44,34 @@ var symbols = {
          {
             id:'newsCoverFlow',
             type:'group',
-            rect:['0px','20px','640px','1065px','auto','auto'],
+            rect:['0px','38px','640px','1065px','auto','auto'],
             clip:['rect(0px 640px 1061.388671875px 0px)'],
             transform:[[],[],[],['1','1.03714']],
             c:[
             {
                id:'newsWrap',
                type:'group',
-               rect:['238px','64px','600px','2729px','auto','auto'],
-               clip:['rect(-175.99354553222656px 600px 3884.3046875px 0px)'],
+               rect:['20px','150px','600px','2729px','auto','auto'],
                transform:[[],[],[],['1','1.005']],
                c:[
                {
                   id:'newsFlow_symbol',
                   type:'rect',
-                  rect:['-10px','0px','auto','auto','auto','auto']
+                  rect:['-40px','0px','auto','auto','auto','auto']
                }]
             }]
          },
          {
             id:'coverFlow',
             type:'group',
-            rect:['0px','20px','640px','1065px','auto','auto'],
-            clip:['rect(0px 640px 1061.388671875px 0px)'],
+            rect:['0px','38px','640px','1065px','auto','auto'],
+            clip:['rect(0px 640pxpx 1065pxpx 0px)'],
             transform:[[],[],[],['1','1.03714']],
             c:[
             {
                id:'cardsWrap',
                type:'group',
-               rect:['18px','135px','600px','2729px','auto','auto'],
-               clip:['rect(-175.99354553222656px 600px 3884.3046875px 0px)'],
+               rect:['0px','150px','600px','2729px','auto','auto'],
                transform:[[],[],[],['1','1.005']],
                c:[
                {
@@ -172,12 +170,12 @@ var symbols = {
                {
                   id:'myCards_symbol',
                   type:'rect',
-                  rect:['2','4px','auto','auto','auto','auto']
+                  rect:['10px','-23px','600px','1215px','auto','auto']
                },
                {
                   id:'cardFlow_symbol2',
                   type:'rect',
-                  rect:['2','746px','auto','auto','auto','auto']
+                  rect:['2','717px','auto','auto','auto','auto']
                }]
             }]
          },
@@ -356,7 +354,7 @@ var symbols = {
             ["style", "height", '14px']
          ],
          "${_newsFlow_symbol}": [
-            ["style", "left", '-10px'],
+            ["style", "left", '-40px'],
             ["style", "top", '0px']
          ],
          "${_lvpool3StackRect}": [
@@ -377,16 +375,15 @@ var symbols = {
             ["style", "opacity", '1']
          ],
          "${_newsWrap}": [
-            ["style", "top", '64px'],
+            ["style", "top", '150px'],
             ["transform", "scaleY", '1.005'],
             ["style", "height", '4110px'],
-            ["style", "left", '238px'],
-            ["style", "clip", [-0.22967222332954,600.03637695312,7134.6440429688,0.036376953125], {valueTemplate:'rect(@@0@@px @@1@@px @@2@@px @@3@@px)'} ],
+            ["style", "left", '20px'],
             ["transform", "scaleX", '1']
          ],
          "${_cardFlow_symbol2}": [
-            ["style", "left", '-8px'],
-            ["style", "top", '746px']
+            ["style", "left", '-30px'],
+            ["style", "top", '717px']
          ],
          "${_nats3StackTop}": [
             ["style", "top", '781px'],
@@ -458,16 +455,16 @@ var symbols = {
             ["style", "top", '6px']
          ],
          "${_coverFlow}": [
-            ["transform", "scaleX", '0.96819'],
+            ["transform", "scaleX", '1'],
             ["style", "opacity", '1'],
             ["style", "-webkit-overflow-scrolling", 'touch'],
             ["style", "width", '640px'],
             ["style", "overflow-y", 'auto'],
-            ["transform", "scaleY", '1.03662'],
+            ["transform", "scaleY", '1.07068'],
             ["style", "height", '1065px'],
-            ["style", "left", '-10px'],
-            ["style", "clip", [0,640,1061.388671875,0], {valueTemplate:'rect(@@0@@px @@1@@px @@2@@px @@3@@px)'} ],
-            ["style", "top", '20px']
+            ["style", "left", '0px'],
+            ["style", "clip", [0,640,1065,0], {valueTemplate:'rect(@@0@@px @@1@@px @@2@@px @@3@@px)'} ],
+            ["style", "top", '38px']
          ],
          "${_article-card-full}": [
             ["style", "position", 'absolute'],
@@ -477,12 +474,11 @@ var symbols = {
             ["style", "overflow", 'visible']
          ],
          "${_cardsWrap}": [
-            ["style", "top", '135px'],
+            ["style", "top", '150px'],
             ["transform", "scaleY", '1.005'],
             ["style", "height", '4110px'],
             ["transform", "scaleX", '1'],
-            ["style", "clip", [-0.22967222332954407,600.036376953125,7134.64404296875,0.036376953125], {valueTemplate:'rect(@@0@@px @@1@@px @@2@@px @@3@@px)'} ],
-            ["style", "left", '18px']
+            ["style", "left", '0px']
          ],
          "${_Symbol_loader}": [
             ["transform", "scaleY", '1.03759'],
@@ -512,7 +508,8 @@ var symbols = {
             ["style", "width", '600px']
          ],
          "${_myCards_symbol}": [
-            ["style", "top", '4px']
+            ["style", "top", '-23px'],
+            ["style", "left", '10px']
          ],
          "${_collapseEleCopy3}": [
             ["style", "top", '505px'],
@@ -536,17 +533,16 @@ var symbols = {
             ["style", "font-size", '30px']
          ],
          "${_newsCoverFlow}": [
-            ["transform", "scaleX", '0.96819'],
+            ["transform", "scaleX", '1'],
             ["style", "opacity", '1'],
             ["style", "-webkit-overflow-scrolling", 'touch'],
             ["style", "width", '640px'],
-            ["style", "top", '20px'],
-            ["transform", "scaleY", '1.03662'],
+            ["style", "top", '38px'],
+            ["transform", "scaleY", '1.07068'],
             ["style", "height", '1065px'],
-            ["style", "display", 'block'],
             ["style", "overflow-y", 'auto'],
             ["style", "clip", [0,640,1061.388671875,0], {valueTemplate:'rect(@@0@@px @@1@@px @@2@@px @@3@@px)'} ],
-            ["style", "left", '-10px']
+            ["style", "left", '0px']
          ],
          "${_Stage}": [
             ["color", "background-color", 'rgba(231,231,231,1.00)'],
@@ -593,13 +589,12 @@ var symbols = {
             { id: "eid13274", tween: [ "style", "${_topPanelGroup}", "display", 'block', { fromValue: 'block'}], position: 2251, duration: 0, easing: "easeOutCubic" },
             { id: "eid13271", tween: [ "style", "${_topPanelGroup}", "display", 'block', { fromValue: 'block'}], position: 3951, duration: 0, easing: "easeOutCubic" },
             { id: "eid13157", tween: [ "style", "${_nats3StackBot}", "width", '600px', { fromValue: '600px'}], position: 8151, duration: 0 },
-            { id: "eid13616", tween: [ "style", "${_newsCoverFlow}", "display", 'block', { fromValue: 'block'}], position: 0, duration: 0 },
             { id: "eid13044", tween: [ "style", "${_systemBar}", "display", 'none', { fromValue: 'block'}], position: 3700, duration: 0 },
-            { id: "eid13538", tween: [ "transform", "${_newsCoverFlow}", "scaleX", '0.96819', { fromValue: '0.96819'}], position: 0, duration: 0 },
+            { id: "eid13538", tween: [ "transform", "${_newsCoverFlow}", "scaleX", '1', { fromValue: '1'}], position: 0, duration: 0 },
             { id: "eid13277", tween: [ "style", "${_topPanelGroup}", "top", '-88px', { fromValue: '-1px'}], position: 2251, duration: 500, easing: "easeOutCubic" },
             { id: "eid13278", tween: [ "style", "${_topPanelGroup}", "top", '-1px', { fromValue: '-88px'}], position: 3451, duration: 500, easing: "easeOutCubic" },
-            { id: "eid13498", tween: [ "style", "${_cardFlow_symbol2}", "left", '-8px', { fromValue: '-8px'}], position: 13416, duration: 0 },
-            { id: "eid13257", tween: [ "style", "${_coverFlow}", "left", '127px', { fromValue: '-10px'}], position: 12333, duration: 500, easing: "easeOutCubic" },
+            { id: "eid13498", tween: [ "style", "${_cardFlow_symbol2}", "left", '-30px', { fromValue: '-30px'}], position: 13416, duration: 0 },
+            { id: "eid13257", tween: [ "style", "${_coverFlow}", "left", '127px', { fromValue: '0px'}], position: 12333, duration: 500, easing: "easeOutCubic" },
             { id: "eid13259", tween: [ "style", "${_coverFlow}", "left", '-10px', { fromValue: '127px'}], position: 12916, duration: 500, easing: "easeOutCubic" },
             { id: "eid13055", tween: [ "style", "${_nats3StackBot}", "left", '4px', { fromValue: '2px'}], position: 4651, duration: 307 },
             { id: "eid13070", tween: [ "style", "${_nats3StackBot}", "left", '2px', { fromValue: '4px'}], position: 4996, duration: 307 },
@@ -617,22 +612,22 @@ var symbols = {
             { id: "eid13058", tween: [ "style", "${_nats3StackTop}", "top", '1760px', { fromValue: '781px'}], position: 4651, duration: 307 },
             { id: "eid13062", tween: [ "style", "${_nats3StackTop}", "top", '780px', { fromValue: '1760px'}], position: 4996, duration: 307 },
             { id: "eid13488", tween: [ "style", "${_mainNav_symbol}", "left", '-135px', { fromValue: '-135px'}], position: 0, duration: 0 },
-            { id: "eid13541", tween: [ "transform", "${_newsCoverFlow}", "scaleY", '1.03662', { fromValue: '1.03662'}], position: 0, duration: 0 },
+            { id: "eid13541", tween: [ "transform", "${_newsCoverFlow}", "scaleY", '1.07068', { fromValue: '1.07068'}], position: 0, duration: 0 },
             { id: "eid13635", tween: [ "style", "${_mainNav_symbol}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0, easing: "easeOutCubic" },
             { id: "eid13123", tween: [ "style", "${_breakingAlert}", "left", '0px', { fromValue: '643px'}], position: 8251, duration: 500, easing: "easeOutCubic" },
             { id: "eid13128", tween: [ "style", "${_breakingAlert}", "left", '643px', { fromValue: '0px'}], position: 11951, duration: 304, easing: "easeOutCubic" },
             { id: "eid13158", tween: [ "style", "${_nats3StackTop}", "width", '600px', { fromValue: '600px'}], position: 8151, duration: 0 },
             { id: "eid13043", tween: [ "style", "${_articleWrap}", "display", 'none', { fromValue: 'block'}], position: 3700, duration: 0 },
-            { id: "eid13539", tween: [ "style", "${_newsCoverFlow}", "left", '127px', { fromValue: '-10px'}], position: 12333, duration: 500, easing: "easeOutCubic" },
+            { id: "eid13539", tween: [ "style", "${_newsCoverFlow}", "left", '127px', { fromValue: '0px'}], position: 12333, duration: 500, easing: "easeOutCubic" },
             { id: "eid13540", tween: [ "style", "${_newsCoverFlow}", "left", '-10px', { fromValue: '127px'}], position: 12916, duration: 500, easing: "easeOutCubic" },
             { id: "eid13372", tween: [ "style", "${_Symbol_articleGroup}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0, easing: "easeOutCubic" },
-            { id: "eid13504", tween: [ "transform", "${_coverFlow}", "scaleY", '1.03662', { fromValue: '1.03662'}], position: 0, duration: 0 },
+            { id: "eid13504", tween: [ "transform", "${_coverFlow}", "scaleY", '1.07068', { fromValue: '1.07068'}], position: 0, duration: 0 },
             { id: "eid13146", tween: [ "style", "${_Rectangle2Copy}", "width", '641px', { fromValue: '0px'}], position: 8834, duration: 2917 },
             { id: "eid13176", tween: [ "style", "${_lvpool3Stack}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0, easing: "easeOutCubic" },
             { id: "eid13124", tween: [ "style", "${_breakingAlert}", "opacity", '1', { fromValue: '0'}], position: 8251, duration: 500, easing: "easeOutCubic" },
             { id: "eid13129", tween: [ "style", "${_breakingAlert}", "opacity", '0', { fromValue: '1'}], position: 11951, duration: 304, easing: "easeOutCubic" },
             { id: "eid13144", tween: [ "color", "${_Rectangle2Copy}", "background-color", 'rgba(169,40,46,1.00)', { animationColorSpace: 'RGB', valueTemplate: undefined, fromValue: 'rgba(209,33,33,0.8672)'}], position: 8251, duration: 3500 },
-            { id: "eid13503", tween: [ "transform", "${_coverFlow}", "scaleX", '0.96819', { fromValue: '0.96819'}], position: 0, duration: 0 },
+            { id: "eid13503", tween: [ "transform", "${_coverFlow}", "scaleX", '1', { fromValue: '1'}], position: 0, duration: 0 },
             { id: "eid13057", tween: [ "style", "${_nats3StackTop}", "left", '4px', { fromValue: '2px'}], position: 4651, duration: 307 },
             { id: "eid13061", tween: [ "style", "${_nats3StackTop}", "left", '2px', { fromValue: '4px'}], position: 4996, duration: 307 },
             { id: "eid13220", trigger: [ function executeSymbolFunction(e, data) { this._executeSymbolAction(e, data); }, ['stop', '${_livFull_symbol}', [] ], ""], position: 0 },
@@ -1423,7 +1418,7 @@ var symbols = {
    {
       id: 'nonFullCards_Symbol',
       type: 'rect',
-      rect: ['10','0','auto','auto','auto','auto']
+      rect: ['10px','0','auto','auto','auto','auto']
    }],
    symbolInstances: [
    {
@@ -2008,11 +2003,10 @@ var symbols = {
    content: {
    dom: [
    {
-      rect: ['10px','21px','auto','auto','auto','auto'],
       id: 'newsCards_Symbol',
+      type: 'rect',
       transform: [],
-      display: 'none',
-      type: 'rect'
+      rect: ['0px','21px','auto','auto','auto','auto']
    }],
    symbolInstances: [
    {
@@ -2024,8 +2018,7 @@ var symbols = {
       "Base State": {
          "${_newsCards_Symbol}": [
             ["style", "top", '21px'],
-            ["style", "left", '10px'],
-            ["style", "display", 'none']
+            ["style", "left", '0px']
          ],
          "${symbolSelector}": [
             ["style", "height", '4256px'],
@@ -2037,13 +2030,10 @@ var symbols = {
       "Default Timeline": {
          fromState: "Base State",
          toState: "",
-         duration: 600,
+         duration: 0,
          autoPlay: true,
-         labels: {
-            "newsFlowIn": 600
-         },
          timeline: [
-            { id: "eid13697", tween: [ "style", "${_newsCards_Symbol}", "display", 'block', { fromValue: 'none'}], position: 600, duration: 0 }         ]
+         ]
       }
    }
 },
@@ -2138,7 +2128,7 @@ var symbols = {
             ["transform", "scaleY", '1'],
             ["transform", "scaleX", '1'],
             ["style", "opacity", '1'],
-            ["style", "left", '0px']
+            ["style", "left", '30px']
          ],
          "${_article-gallery-card}": [
             ["style", "top", '1593px'],
@@ -2172,7 +2162,7 @@ var symbols = {
             { id: "eid13042", tween: [ "transform", "${_nonFullCards}", "scaleY", '1', { fromValue: '0.5'}], position: 3200, duration: 500, easing: "easeOutCubic" },
             { id: "eid12891", tween: [ "style", "${_article-video-card}", "top", '-41px', { fromValue: '-41px'}], position: 0, duration: 0, easing: "easeOutCubic" },
             { id: "eid13052", tween: [ "style", "${_nonFullCards}", "top", '41px', { fromValue: '41px'}], position: 0, duration: 0 },
-            { id: "eid13499", tween: [ "style", "${_nonFullCards}", "left", '0px', { fromValue: '0px'}], position: 13416, duration: 0 },
+            { id: "eid13499", tween: [ "style", "${_nonFullCards}", "left", '30px', { fromValue: '30px'}], position: 13416, duration: 0 },
             { id: "eid12890", tween: [ "style", "${_article-3-4-card}", "top", '3026px', { fromValue: '3026px'}], position: 0, duration: 0, easing: "easeOutCubic" },
             { id: "eid13027", tween: [ "style", "${_nonFullCards}", "opacity", '0', { fromValue: '1'}], position: 500, duration: 500, easing: "easeOutCubic" },
             { id: "eid13028", tween: [ "style", "${_nonFullCards}", "opacity", '1', { fromValue: '0'}], position: 1000, duration: 500, easing: "easeOutCubic" },
@@ -2278,11 +2268,11 @@ var symbols = {
             ["style", "width", '600px']
          ],
          "${_nonFullCards}": [
-            ["style", "top", '41px'],
+            ["style", "top", '0px'],
             ["transform", "scaleY", '1'],
             ["transform", "scaleX", '1'],
             ["style", "opacity", '1'],
-            ["style", "left", '0px']
+            ["style", "left", '30px']
          ],
          "${_article-gallery-card}": [
             ["style", "top", '1593px'],
@@ -2306,6 +2296,9 @@ var symbols = {
          toState: "",
          duration: 13416,
          autoPlay: true,
+         labels: {
+            "newsFlowIn": 400
+         },
          timeline: [
             { id: "eid13686", tween: [ "style", "${_article-gallery-card}", "display", 'none', { fromValue: 'none'}], position: 1400, duration: 0 },
             { id: "eid13687", tween: [ "style", "${_article-gallery-card}", "display", 'block', { fromValue: 'none'}], position: 1600, duration: 0 },
@@ -2325,13 +2318,13 @@ var symbols = {
             { id: "eid13666", tween: [ "style", "${_article-card}", "display", 'none', { fromValue: 'none'}], position: 900, duration: 0 },
             { id: "eid13667", tween: [ "style", "${_article-card}", "display", 'block', { fromValue: 'none'}], position: 1100, duration: 0 },
             { id: "eid13680", tween: [ "style", "${_article-video-card}", "opacity", '1', { fromValue: '0'}], position: 600, duration: 300 },
-            { id: "eid13499", tween: [ "style", "${_nonFullCards}", "left", '0px', { fromValue: '0px'}], position: 13416, duration: 0 },
+            { id: "eid13499", tween: [ "style", "${_nonFullCards}", "left", '30px', { fromValue: '30px'}], position: 13416, duration: 0 },
             { id: "eid13692", tween: [ "style", "${_article-assetless-card}", "top", '2695px', { fromValue: '2454px'}], position: 1900, duration: 200 },
             { id: "eid13693", tween: [ "style", "${_article-assetless-card}", "top", '2454px', { fromValue: '2695px'}], position: 2100, duration: 300 },
             { id: "eid12891", tween: [ "style", "${_article-video-card}", "top", '-41px', { fromValue: '-41px'}], position: 0, duration: 0, easing: "easeOutCubic" },
             { id: "eid13678", tween: [ "style", "${_article-video-card}", "top", '200px', { fromValue: '-41px'}], position: 400, duration: 200 },
             { id: "eid13679", tween: [ "style", "${_article-video-card}", "top", '-41px', { fromValue: '200px'}], position: 600, duration: 300 },
-            { id: "eid13052", tween: [ "style", "${_nonFullCards}", "top", '41px', { fromValue: '41px'}], position: 0, duration: 0 },
+            { id: "eid13052", tween: [ "style", "${_nonFullCards}", "top", '0px', { fromValue: '0px'}], position: 0, duration: 0 },
             { id: "eid13668", tween: [ "style", "${_article-card}", "opacity", '0', { fromValue: '0'}], position: 900, duration: 0 },
             { id: "eid13669", tween: [ "style", "${_article-card}", "opacity", '1', { fromValue: '0'}], position: 1100, duration: 300 },
             { id: "eid13676", tween: [ "style", "${_article-3-4-card}", "display", 'none', { fromValue: 'none'}], position: 2400, duration: 0 },
