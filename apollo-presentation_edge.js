@@ -25,8 +25,8 @@ var symbols = {
          {
             id:'COVERFLOW_sym',
             type:'rect',
-            rect:['-30px','0px','auto','auto','auto','auto'],
-            transform:[]
+            rect:['-14px','-123px','auto','auto','auto','auto'],
+            transform:[[],[],[],['0.95522','0.95522']]
          },
          {
             id:'ARTICLEFULL_sym',
@@ -36,8 +36,8 @@ var symbols = {
          {
             id:'NAVBAR_sym',
             type:'rect',
-            rect:['-1px','-1px','auto','auto','auto','auto'],
-            transform:[]
+            rect:['9px','-1px','auto','auto','auto','auto'],
+            transform:[[],[],[],['1.0306']]
          },
          {
             id:'FULLCARDS_sym',
@@ -63,8 +63,9 @@ var symbols = {
          },
          {
             id:'DISCOVER_sym',
+            display:'none',
             type:'rect',
-            rect:['-10px','-80px','auto','auto','auto','auto'],
+            rect:['-10px','-120px','auto','auto','auto','auto'],
             transform:[[],[],[],['0.96875','0.96875']]
          }],
          symbolInstances: [
@@ -107,6 +108,10 @@ var symbols = {
          "${_myText}": [
             ["style", "text-align", '']
          ],
+         "${_NAVBAR_sym}": [
+            ["transform", "scaleX", '1.0306'],
+            ["style", "left", '9px']
+         ],
          "${_ARTICLEFULL_sym}": [
             ["style", "left", '0px'],
             ["style", "top", '0px']
@@ -128,14 +133,20 @@ var symbols = {
             ["style", "overflow", 'hidden'],
             ["style", "height", '1104px'],
             ["style", "max-width", 'none'],
-            ["style", "width", '620px']
+            ["style", "width", '640px']
          ],
          "${_DISCOVER_sym}": [
-            ["style", "top", '-80px'],
+            ["style", "top", '-120px'],
             ["transform", "scaleY", '0.96875'],
             ["transform", "scaleX", '0.96875'],
             ["style", "left", '-10px'],
-            ["style", "display", 'block']
+            ["style", "display", 'none']
+         ],
+         "${_COVERFLOW_sym}": [
+            ["transform", "scaleX", '0.95522'],
+            ["style", "top", '-123px'],
+            ["style", "left", '-14px'],
+            ["transform", "scaleY", '0.95522']
          ]
       }
    },
@@ -156,7 +167,7 @@ var symbols = {
             "breakingAlertOut": 11951
          },
          timeline: [
-            { id: "eid14392", tween: [ "style", "${_DISCOVER_sym}", "display", 'block', { fromValue: 'block'}], position: 0, duration: 0, easing: "easeOutCubic" },
+            { id: "eid14392", tween: [ "style", "${_DISCOVER_sym}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0, easing: "easeOutCubic" },
             { id: "eid14379", tween: [ "style", "${_MAINNAV_sym}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
             { id: "eid14351", tween: [ "style", "${_LOADER_sym}", "display", 'none', { fromValue: 'block'}], position: 2000, duration: 0, easing: "easeOutCubic" },
             { id: "eid14378", tween: [ "style", "${_MAINNAV_sym}", "left", '0px', { fromValue: '0px'}], position: 0, duration: 0 },
@@ -563,7 +574,7 @@ var symbols = {
    {
       id: 'natsGameGroup',
       type: 'group',
-      rect: ['0px','119px','1200','1100','auto','auto'],
+      rect: ['0px','119px','1200','1100px','auto','auto'],
       c: [
       {
          id: 'Baseball',
@@ -642,8 +653,8 @@ var symbols = {
             ["style", "display", 'block']
          ],
          "${symbolSelector}": [
-            ["style", "height", '1215px'],
-            ["style", "width", '600px']
+            ["style", "height", '1256px'],
+            ["style", "width", '620px']
          ],
          "${_natsGameGroup}": [
             ["style", "top", '117px'],
@@ -946,7 +957,8 @@ var symbols = {
    {
       id: 'nonFullCards_Symbol',
       type: 'rect',
-      rect: ['10px','0','auto','auto','auto','auto']
+      transform: [[],[],[],['1.03333','1.03333']],
+      rect: ['20px','71px','auto','auto','auto','auto']
    }],
    symbolInstances: [
    {
@@ -956,6 +968,12 @@ var symbols = {
    },
    states: {
       "Base State": {
+         "${_nonFullCards_Symbol}": [
+            ["transform", "scaleX", '1.03333'],
+            ["style", "top", '71px'],
+            ["transform", "scaleY", '1.03333'],
+            ["style", "left", '20px']
+         ],
          "${symbolSelector}": [
             ["style", "height", '4256px'],
             ["style", "width", '620px']
@@ -1555,8 +1573,8 @@ var symbols = {
    {
       id: 'newsCards_Symbol',
       type: 'rect',
-      transform: [],
-      rect: ['10px','21px','auto','auto','auto','auto']
+      transform: [[],[],[],['1.03333','1.03333']],
+      rect: ['20px','92px','auto','auto','auto','auto']
    }],
    symbolInstances: [
    {
@@ -1567,8 +1585,10 @@ var symbols = {
    states: {
       "Base State": {
          "${_newsCards_Symbol}": [
-            ["style", "top", '21px'],
-            ["style", "left", '10px']
+            ["style", "top", '92px'],
+            ["transform", "scaleY", '1.03333'],
+            ["style", "left", '20px'],
+            ["transform", "scaleX", '1.03333']
          ],
          "${symbolSelector}": [
             ["style", "height", '4256px'],
@@ -1600,7 +1620,7 @@ var symbols = {
    {
       id: 'nonFullCards',
       type: 'group',
-      rect: ['-12px','44px','600','4215','auto','auto'],
+      rect: ['-12px','44px','600px','4215','auto','auto'],
       c: [
       {
          id: 'video-card',
@@ -1655,7 +1675,7 @@ var symbols = {
             ["transform", "scaleY", '1'],
             ["transform", "scaleX", '1'],
             ["style", "opacity", '1'],
-            ["style", "left", '30px']
+            ["style", "left", '0px']
          ],
          "${_article-card}": [
             ["style", "top", '725px'],
@@ -1736,7 +1756,7 @@ var symbols = {
             { id: "eid14337", tween: [ "style", "${_article-video-card}", "opacity", '1', { fromValue: '1'}], position: 0, duration: 0 },
             { id: "eid14340", tween: [ "style", "${_article-video-card}", "opacity", '1', { fromValue: '1'}], position: 600, duration: 0 },
             { id: "eid14341", tween: [ "style", "${_article-video-card}", "opacity", '1', { fromValue: '1'}], position: 900, duration: 0 },
-            { id: "eid13499", tween: [ "style", "${_nonFullCards}", "left", '30px', { fromValue: '30px'}], position: 13416, duration: 0 },
+            { id: "eid13499", tween: [ "style", "${_nonFullCards}", "left", '0px', { fromValue: '0px'}], position: 13416, duration: 0 },
             { id: "eid14267", tween: [ "style", "${_article-3-4-card}", "top", '3267px', { fromValue: '3026px'}], position: 2400, duration: 200 },
             { id: "eid14268", tween: [ "style", "${_article-3-4-card}", "top", '3026px', { fromValue: '3267px'}], position: 2600, duration: 300 },
             { id: "eid14287", tween: [ "style", "${_article-assetless-card}", "top", '2695px', { fromValue: '2454px'}], position: 1900, duration: 200 },
@@ -2100,14 +2120,14 @@ var symbols = {
    content: {
    dom: [
    {
-      rect: ['30px','38px','640px','1065px','auto','auto'],
+      rect: ['0px','38px','640px','1065px','auto','auto'],
       id: 'newsCoverFlow',
       transform: [[],[],[],['1','1.03714']],
       clip: ['rect(0px 640px 1061.388671875px 0px)'],
       type: 'group',
       c: [
       {
-         rect: ['20px','150px','600px','2729px','auto','auto'],
+         rect: ['20px','150px','620px','4247px','auto','auto'],
          id: 'newsWrap',
          type: 'group',
          transform: [[],[],[],['1','1.005']],
@@ -2115,19 +2135,20 @@ var symbols = {
          {
             id: 'newsFlow_symbol',
             type: 'rect',
-            rect: ['-40px','0px','auto','auto','auto','auto']
+            transform: [[],[],[],['1.03226','1.03226']],
+            rect: ['-40px','69px','auto','auto','auto','auto']
          }]
       }]
    },
    {
-      rect: ['30px','38px','640px','1065px','auto','auto'],
+      rect: ['0px','38px','640px','1065px','auto','auto'],
       id: 'coverFlow',
       transform: [[],[],[],['1','1.03714']],
       clip: ['rect(0px 640pxpx 1065pxpx 0px)'],
       type: 'group',
       c: [
       {
-         rect: ['0px','150px','600px','2729px','auto','auto'],
+         rect: ['20px','150px','620px','4247px','auto','auto'],
          id: 'cardsWrap',
          type: 'group',
          transform: [[],[],[],['1','1.005']],
@@ -2228,12 +2249,13 @@ var symbols = {
          {
             id: 'myCards_symbol',
             type: 'rect',
-            rect: ['10px','-23px','600px','1215px','auto','auto']
+            rect: ['-10px','-23px','640px','1297px','auto','auto']
          },
          {
             id: 'cardFlow_symbol',
             type: 'rect',
-            rect: ['2','717px','auto','auto','auto','auto']
+            transform: [[],[],[],['1.03226','1.03226']],
+            rect: ['2','786px','auto','auto','auto','auto']
          }]
       }]
    }],
@@ -2262,14 +2284,18 @@ var symbols = {
             ["style", "opacity", '1']
          ],
          "${_myCards_symbol}": [
-            ["style", "top", '-23px'],
+            ["style", "top", '-18px'],
+            ["style", "height", '1297px'],
+            ["style", "display", 'block'],
             ["style", "opacity", '1'],
-            ["style", "left", '10px'],
-            ["style", "display", 'block']
+            ["style", "left", '-10px'],
+            ["style", "width", '640px']
          ],
          "${_newsFlow_symbol}": [
-            ["style", "left", '-20px'],
-            ["style", "top", '0px']
+            ["style", "top", '69px'],
+            ["transform", "scaleY", '1.03226'],
+            ["style", "left", '-10px'],
+            ["transform", "scaleX", '1.03226']
          ],
          "${_nats3StackBot}": [
             ["style", "top", '704px'],
@@ -2289,9 +2315,10 @@ var symbols = {
          "${_cardsWrap}": [
             ["style", "top", '150px'],
             ["transform", "scaleY", '1.005'],
-            ["style", "height", '4110px'],
-            ["style", "left", '0px'],
-            ["transform", "scaleX", '1']
+            ["style", "height", '4247px'],
+            ["transform", "scaleX", '1'],
+            ["style", "left", '20px'],
+            ["style", "width", '620px']
          ],
          "${_LiverpoolCopy}": [
             ["style", "left", '1px'],
@@ -2304,13 +2331,16 @@ var symbols = {
          "${_newsWrap}": [
             ["style", "top", '150px'],
             ["transform", "scaleY", '1.005'],
-            ["style", "height", '4110px'],
+            ["style", "height", '4247px'],
+            ["transform", "scaleX", '1'],
             ["style", "left", '20px'],
-            ["transform", "scaleX", '1']
+            ["style", "width", '620px']
          ],
          "${_cardFlow_symbol}": [
-            ["style", "left", '-30px'],
-            ["style", "top", '717px']
+            ["style", "top", '786px'],
+            ["transform", "scaleY", '1.03226'],
+            ["style", "left", '-10px'],
+            ["transform", "scaleX", '1.03226']
          ],
          "${_collapseEleCopy3}": [
             ["style", "top", '505px'],
@@ -2335,7 +2365,7 @@ var symbols = {
          ],
          "${symbolSelector}": [
             ["style", "height", '5501px'],
-            ["style", "width", '670px']
+            ["style", "width", '640px']
          ],
          "${_RectangleCopy2}": [
             ["style", "top", '54px'],
@@ -2357,7 +2387,7 @@ var symbols = {
             ["style", "overflow-y", 'auto'],
             ["transform", "scaleY", '1.07068'],
             ["style", "height", '1065px'],
-            ["style", "left", '30px'],
+            ["style", "left", '0px'],
             ["style", "clip", [0,640,1061.388671875,0], {valueTemplate:'rect(@@0@@px @@1@@px @@2@@px @@3@@px)'} ],
             ["style", "top", '38px']
          ],
@@ -2385,7 +2415,7 @@ var symbols = {
             ["style", "height", '1065px'],
             ["style", "top", '38px'],
             ["style", "clip", [0,640,1065,0], {valueTemplate:'rect(@@0@@px @@1@@px @@2@@px @@3@@px)'} ],
-            ["style", "left", '30px']
+            ["style", "left", '0px']
          ],
          "${_BaseballCopy2}": [
             ["style", "top", '54px'],
@@ -2404,8 +2434,8 @@ var symbols = {
          },
          timeline: [
             { id: "eid14352", tween: [ "transform", "${_newsCoverFlow}", "scaleX", '1', { fromValue: '1'}], position: 0, duration: 0 },
-            { id: "eid13498", tween: [ "style", "${_cardFlow_symbol}", "left", '-30px', { fromValue: '-30px'}], position: 13416, duration: 0 },
-            { id: "eid14382", tween: [ "style", "${_newsFlow_symbol}", "left", '-20px', { fromValue: '-20px'}], position: 0, duration: 0 },
+            { id: "eid13498", tween: [ "style", "${_cardFlow_symbol}", "left", '-10px', { fromValue: '-10px'}], position: 13416, duration: 0 },
+            { id: "eid14382", tween: [ "style", "${_newsFlow_symbol}", "left", '-10px', { fromValue: '-10px'}], position: 0, duration: 0 },
             { id: "eid14320", tween: [ "style", "${_myCards_symbol}", "display", 'block', { fromValue: 'block'}], position: 0, duration: 0 },
             { id: "eid14317", tween: [ "style", "${_myCards_symbol}", "display", 'none', { fromValue: 'block'}], position: 5467, duration: 0 },
             { id: "eid14297", tween: [ "style", "${_myCards_symbol}", "display", 'block', { fromValue: 'none'}], position: 5600, duration: 0 },
@@ -2413,7 +2443,7 @@ var symbols = {
             { id: "eid13069", tween: [ "style", "${_nats3StackBot}", "top", '703px', { fromValue: '1187px'}], position: 4996, duration: 307 },
             { id: "eid13178", tween: [ "style", "${_nats3StackBot}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0, easing: "easeOutCubic" },
             { id: "eid13179", tween: [ "style", "${_nats3StackTop}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0, easing: "easeOutCubic" },
-            { id: "eid14300", tween: [ "style", "${_myCards_symbol}", "top", '-23px', { fromValue: '218px'}], position: 5600, duration: 500 },
+            { id: "eid14300", tween: [ "style", "${_myCards_symbol}", "top", '-23px', { fromValue: '-18px'}], position: 5600, duration: 500 },
             { id: "eid13058", tween: [ "style", "${_nats3StackTop}", "top", '1760px', { fromValue: '781px'}], position: 4651, duration: 307 },
             { id: "eid13062", tween: [ "style", "${_nats3StackTop}", "top", '780px', { fromValue: '1760px'}], position: 4996, duration: 307 },
             { id: "eid14353", tween: [ "transform", "${_newsCoverFlow}", "scaleY", '1.07068', { fromValue: '1.07068'}], position: 0, duration: 0 },
