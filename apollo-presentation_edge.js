@@ -25,7 +25,8 @@ var symbols = {
          {
             id:'COVERFLOW_sym',
             type:'rect',
-            rect:['-30','0','auto','auto','auto','auto']
+            rect:['-30px','0px','auto','auto','auto','auto'],
+            transform:[]
          },
          {
             id:'ARTICLEFULL_sym',
@@ -35,7 +36,8 @@ var symbols = {
          {
             id:'NAVBAR_sym',
             type:'rect',
-            rect:['-1','-1','auto','auto','auto','auto']
+            rect:['-1px','-1px','auto','auto','auto','auto'],
+            transform:[]
          },
          {
             id:'FULLCARDS_sym',
@@ -56,10 +58,20 @@ var symbols = {
          {
             id:'LOADER_sym',
             type:'rect',
-            rect:['1','22px','auto','auto','auto','auto'],
+            rect:['1px','22px','auto','auto','auto','auto'],
             transform:[[],[],[],['1','1.03759']]
+         },
+         {
+            id:'DISCOVER_sym',
+            type:'rect',
+            rect:['-10px','-80px','auto','auto','auto','auto'],
+            transform:[[],[],[],['0.96875','0.96875']]
          }],
          symbolInstances: [
+         {
+            id:'DISCOVER_sym',
+            symbolName:'DISCOVER_sym'
+         },
          {
             id:'NAVBAR_sym',
             symbolName:'NAVBAR_sym'
@@ -92,12 +104,23 @@ var symbols = {
       },
    states: {
       "Base State": {
+         "${_myText}": [
+            ["style", "text-align", '']
+         ],
          "${_ARTICLEFULL_sym}": [
             ["style", "left", '0px'],
             ["style", "top", '0px']
          ],
-         "${_myText}": [
-            ["style", "text-align", '']
+         "${_LOADER_sym}": [
+            ["style", "top", '22px'],
+            ["transform", "scaleY", '1.03759'],
+            ["style", "display", 'block']
+         ],
+         "${_MAINNAV_sym}": [
+            ["style", "-webkit-transform", 'none'],
+            ["style", "display", 'none'],
+            ["style", "left", '0px'],
+            ["style", "top", '0px']
          ],
          "${_Stage}": [
             ["color", "background-color", 'rgba(231,231,231,1.00)'],
@@ -107,15 +130,11 @@ var symbols = {
             ["style", "max-width", 'none'],
             ["style", "width", '620px']
          ],
-         "${_MAINNAV_sym}": [
-            ["style", "-webkit-transform", 'none'],
-            ["style", "display", 'none'],
-            ["style", "left", '0px'],
-            ["style", "top", '0px']
-         ],
-         "${_LOADER_sym}": [
-            ["style", "top", '22px'],
-            ["transform", "scaleY", '1.03759'],
+         "${_DISCOVER_sym}": [
+            ["style", "top", '-80px'],
+            ["transform", "scaleY", '0.96875'],
+            ["transform", "scaleX", '0.96875'],
+            ["style", "left", '-10px'],
             ["style", "display", 'block']
          ]
       }
@@ -137,6 +156,7 @@ var symbols = {
             "breakingAlertOut": 11951
          },
          timeline: [
+            { id: "eid14392", tween: [ "style", "${_DISCOVER_sym}", "display", 'block', { fromValue: 'block'}], position: 0, duration: 0, easing: "easeOutCubic" },
             { id: "eid14379", tween: [ "style", "${_MAINNAV_sym}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
             { id: "eid14351", tween: [ "style", "${_LOADER_sym}", "display", 'none', { fromValue: 'block'}], position: 2000, duration: 0, easing: "easeOutCubic" },
             { id: "eid14378", tween: [ "style", "${_MAINNAV_sym}", "left", '0px', { fromValue: '0px'}], position: 0, duration: 0 },
@@ -802,10 +822,10 @@ var symbols = {
    content: {
    dom: [
    {
-      type: 'image',
-      display: 'none',
       rect: ['-3px','0px','648px','1151px','auto','auto'],
       id: 'liverpool-full',
+      type: 'image',
+      display: 'none',
       fill: ['rgba(0,0,0,0)','cardflow/liverpool-full.png','0px','0px']
    }],
    symbolInstances: [
@@ -863,10 +883,10 @@ var symbols = {
    content: {
    dom: [
    {
-      type: 'image',
-      display: 'none',
       rect: ['0px','-1px','639px','1134px','auto','auto'],
       id: 'baseball-full',
+      type: 'image',
+      display: 'none',
       fill: ['rgba(0,0,0,0)','cardflow/baseball-full.png','0px','0px']
    }],
    symbolInstances: [
@@ -1047,16 +1067,16 @@ var symbols = {
             ["style", "left", '674px'],
             ["style", "width", '85px']
          ],
+         "${_nav-new}": [
+            ["style", "display", 'none'],
+            ["style", "left", '-414px'],
+            ["style", "top", '8px']
+         ],
          "${_newsTopicLink}": [
             ["style", "top", '611px'],
             ["style", "opacity", '0'],
             ["style", "left", '-414px'],
             ["style", "display", 'none']
-         ],
-         "${_nav-new}": [
-            ["style", "display", 'none'],
-            ["style", "left", '-414px'],
-            ["style", "top", '8px']
          ]
       }
    },
@@ -1908,23 +1928,23 @@ var symbols = {
    content: {
    dom: [
    {
-      type: 'group',
-      display: 'none',
-      id: 'breakingAlert',
       rect: ['0px','1px','853','203','auto','auto'],
+      id: 'breakingAlert',
+      display: 'none',
+      type: 'group',
       c: [
       {
-         type: 'rect',
+         rect: ['0px','-1px','640px','152px','auto','auto'],
          id: 'Rectangle2',
          stroke: [0,'rgb(0, 0, 0)','none'],
-         rect: ['0px','-1px','640px','152px','auto','auto'],
+         type: 'rect',
          fill: ['rgba(209,33,33,0.87)']
       },
       {
-         type: 'rect',
+         rect: ['0px','151px','0px','4px','auto','auto'],
          id: 'Rectangle2Copy',
          stroke: [0,'rgb(0, 0, 0)','none'],
-         rect: ['0px','151px','0px','4px','auto','auto'],
+         type: 'rect',
          fill: ['rgba(209,33,33,0.87)']
       },
       {
@@ -2438,10 +2458,10 @@ var symbols = {
             fill: ['rgba(0,0,0,0)','images/header.png','0px','0px']
          },
          {
-            type: 'rect',
+            rect: ['1px','0px','620px','28px','auto','auto'],
             id: 'Rectangle',
             stroke: [0,'rgba(0,0,0,1)','none'],
-            rect: ['1px','0px','620px','28px','auto','auto'],
+            type: 'rect',
             fill: ['rgba(15,152,240,0.80)']
          },
          {
@@ -2631,6 +2651,947 @@ var symbols = {
             { id: "eid14386", tween: [ "style", "${_Symbol_articleGroup}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0, easing: "easeOutCubic" },
             { id: "eid14388", trigger: [ function executeSymbolFunction(e, data) { this._executeSymbolAction(e, data); }, ['stop', '${_Symbol_articleGroup}', [] ], ""], position: 0 },
             { id: "eid14387", trigger: [ function executeSymbolFunction(e, data) { this._executeSymbolAction(e, data); }, ['stop', '${_Symbol_articleVideoGroup}', [] ], ""], position: 0 }         ]
+      }
+   }
+},
+"dicoverCard_left_sym": {
+   version: "2.0.1",
+   minimumCompatibleVersion: "2.0.0",
+   build: "2.0.1.268",
+   baseState: "Base State",
+   initialState: "Base State",
+   gpuAccelerate: false,
+   resizeInstances: false,
+   content: {
+   dom: [
+   {
+      id: 'Card_Left_sym',
+      type: 'group',
+      rect: ['0px','0px','293','429','auto','auto'],
+      c: [
+      {
+         type: 'rect',
+         id: 'Rectangle13',
+         stroke: [0,'rgb(0, 0, 0)','none'],
+         rect: ['0px','0px','293px','429px','auto','auto'],
+         fill: ['rgba(255,255,255,1.00)']
+      },
+      {
+         type: 'rect',
+         id: 'Rectangle14',
+         stroke: [0,'rgb(0, 0, 0)','none'],
+         rect: ['10px','11px','272px','208px','auto','auto'],
+         fill: ['rgba(192,192,192,1.00)']
+      },
+      {
+         rect: ['226px','17px','48px','48px','auto','auto'],
+         borderRadius: ['50%','50%','50%','50%'],
+         id: 'Ellipse',
+         stroke: [0,'rgb(0, 0, 0)','none'],
+         type: 'ellipse',
+         fill: ['rgba(255,255,255,1.00)']
+      },
+      {
+         rect: ['238px','19px','auto','auto','auto','auto'],
+         font: ['Arial, Helvetica, sans-serif',40,'rgba(107,107,107,1)','300','none','normal'],
+         id: 'Text',
+         text: '+',
+         align: 'left',
+         type: 'text'
+      },
+      {
+         type: 'rect',
+         id: 'Rectangle16',
+         stroke: [0,'rgb(0, 0, 0)','none'],
+         rect: ['20px','259px','152px','21px','auto','auto'],
+         fill: ['rgba(192,192,192,1.00)']
+      },
+      {
+         type: 'rect',
+         id: 'Rectangle17',
+         stroke: [0,'rgb(0, 0, 0)','none'],
+         rect: ['20px','296px','200px','18px','auto','auto'],
+         fill: ['rgba(232,230,230,1.00)']
+      },
+      {
+         type: 'rect',
+         id: 'Rectangle17Copy',
+         stroke: [0,'rgb(0, 0, 0)','none'],
+         rect: ['20px','325px','224px','18px','auto','auto'],
+         fill: ['rgba(232,230,230,1.00)']
+      },
+      {
+         type: 'rect',
+         id: 'Rectangle17Copy2',
+         stroke: [0,'rgb(0, 0, 0)','none'],
+         rect: ['20px','353px','208px','18px','auto','auto'],
+         fill: ['rgba(232,230,230,1.00)']
+      },
+      {
+         type: 'rect',
+         id: 'Rectangle17Copy3',
+         stroke: [0,'rgb(0, 0, 0)','none'],
+         rect: ['20px','383px','200px','18px','auto','auto'],
+         fill: ['rgba(232,230,230,1.00)']
+      },
+      {
+         type: 'rect',
+         id: 'Rectangle15',
+         stroke: [0,'rgb(0, 0, 0)','none'],
+         rect: ['20px','232px','120px','18px','auto','auto'],
+         fill: ['rgba(232,230,230,1.00)']
+      }]
+   }],
+   symbolInstances: [
+   ]
+   },
+   states: {
+      "Base State": {
+         "${_Rectangle17}": [
+            ["color", "background-color", 'rgba(232,230,230,1.00)'],
+            ["style", "left", '20px'],
+            ["style", "top", '296px']
+         ],
+         "${_Rectangle17Copy}": [
+            ["color", "background-color", 'rgba(232,230,230,1.00)'],
+            ["style", "top", '325px'],
+            ["style", "left", '20px'],
+            ["style", "width", '224px']
+         ],
+         "${_Card_Left_sym}": [
+            ["style", "left", '0px'],
+            ["style", "top", '0px']
+         ],
+         "${_Rectangle16}": [
+            ["color", "background-color", 'rgba(192,192,192,1.00)'],
+            ["style", "left", '20px'],
+            ["style", "top", '259px']
+         ],
+         "${_Rectangle15}": [
+            ["style", "top", '232px'],
+            ["style", "height", '18px'],
+            ["color", "background-color", 'rgba(232,230,230,1.00)'],
+            ["style", "left", '20px'],
+            ["style", "width", '120px']
+         ],
+         "${_Rectangle17Copy3}": [
+            ["style", "top", '383px'],
+            ["style", "left", '20px'],
+            ["color", "background-color", 'rgba(232,230,230,1.00)']
+         ],
+         "${_Text}": [
+            ["style", "top", '19px'],
+            ["style", "left", '238px'],
+            ["style", "font-size", '40px']
+         ],
+         "${symbolSelector}": [
+            ["style", "height", '429px'],
+            ["style", "width", '293px']
+         ],
+         "${_Rectangle14}": [
+            ["style", "top", '11px'],
+            ["style", "left", '10px'],
+            ["color", "background-color", 'rgba(192,192,192,1.00)']
+         ],
+         "${_Rectangle17Copy2}": [
+            ["color", "background-color", 'rgba(232,230,230,1.00)'],
+            ["style", "top", '353px'],
+            ["style", "left", '20px'],
+            ["style", "width", '208px']
+         ],
+         "${_Ellipse}": [
+            ["color", "background-color", 'rgba(255,255,255,1.00)'],
+            ["style", "left", '226px'],
+            ["style", "top", '17px']
+         ],
+         "${_Rectangle13}": [
+            ["style", "top", '0px'],
+            ["style", "left", '0px'],
+            ["color", "background-color", 'rgba(255,255,255,1.00)']
+         ]
+      }
+   },
+   timelines: {
+      "Default Timeline": {
+         fromState: "Base State",
+         toState: "",
+         duration: 0,
+         autoPlay: true,
+         timeline: [
+         ]
+      }
+   }
+},
+"discoverTopcard_first_syn": {
+   version: "2.0.1",
+   minimumCompatibleVersion: "2.0.0",
+   build: "2.0.1.268",
+   baseState: "Base State",
+   initialState: "Base State",
+   gpuAccelerate: false,
+   resizeInstances: false,
+   content: {
+   dom: [
+   {
+      id: 'Left_Category_Pic',
+      type: 'group',
+      rect: ['0px','0px','222','268','auto','auto'],
+      c: [
+      {
+         type: 'rect',
+         id: 'Rectangle4',
+         stroke: [0,'rgb(0, 0, 0)','none'],
+         rect: ['0px','0px','222px','268px','auto','auto'],
+         fill: ['rgba(255,255,255,1.00)']
+      },
+      {
+         type: 'rect',
+         id: 'Rectangle7',
+         stroke: [0,'rgb(0, 0, 0)','none'],
+         rect: ['12px','9px','200px','200px','auto','auto'],
+         fill: ['rgba(148,148,148,1.00)']
+      },
+      {
+         type: 'rect',
+         id: 'Rectangle8',
+         stroke: [0,'rgb(0, 0, 0)','none'],
+         rect: ['21px','228px','89px','21px','auto','auto'],
+         fill: ['rgba(192,192,192,1.00)']
+      },
+      {
+         type: 'rect',
+         id: 'Rectangle8Copy',
+         stroke: [0,'rgb(0, 0, 0)','none'],
+         rect: ['122px','228px','66px','21px','auto','auto'],
+         fill: ['rgba(192,192,192,1.00)']
+      }]
+   }],
+   symbolInstances: [
+   ]
+   },
+   states: {
+      "Base State": {
+         "${_Rectangle7}": [
+            ["style", "top", '9px'],
+            ["style", "height", '200px'],
+            ["color", "background-color", 'rgba(148,148,148,1.00)'],
+            ["style", "left", '12px'],
+            ["style", "width", '200px']
+         ],
+         "${symbolSelector}": [
+            ["style", "height", '268px'],
+            ["style", "width", '222px']
+         ],
+         "${_Rectangle8Copy}": [
+            ["style", "top", '228px'],
+            ["color", "background-color", 'rgba(192,192,192,1.00)'],
+            ["style", "left", '122px'],
+            ["style", "width", '66px']
+         ],
+         "${_Rectangle8}": [
+            ["color", "background-color", 'rgba(192,192,192,1.00)'],
+            ["style", "left", '21px'],
+            ["style", "top", '228px']
+         ],
+         "${_Rectangle4}": [
+            ["color", "background-color", 'rgba(255,255,255,1.00)'],
+            ["style", "height", '268px'],
+            ["style", "top", '0px'],
+            ["style", "left", '0px'],
+            ["style", "width", '222px']
+         ],
+         "${_Left_Category_Pic}": [
+            ["style", "left", '0px'],
+            ["style", "top", '0px']
+         ]
+      }
+   },
+   timelines: {
+      "Default Timeline": {
+         fromState: "Base State",
+         toState: "",
+         duration: 0,
+         autoPlay: true,
+         timeline: [
+         ]
+      }
+   }
+},
+"discoverTopBG_sym": {
+   version: "2.0.1",
+   minimumCompatibleVersion: "2.0.0",
+   build: "2.0.1.268",
+   baseState: "Base State",
+   initialState: "Base State",
+   gpuAccelerate: false,
+   resizeInstances: false,
+   content: {
+   dom: [
+   {
+      type: 'rect',
+      id: 'Rectangle3',
+      stroke: [0,'rgb(0, 0, 0)','none'],
+      rect: ['0px','0px','640px','382px','auto','auto'],
+      fill: ['rgba(221,220,220,1.00)']
+   },
+   {
+      type: 'rect',
+      id: 'Rectangle9',
+      stroke: [0,'rgb(0, 0, 0)','none'],
+      rect: ['20px','33px','152px','28px','auto','auto'],
+      fill: ['rgba(192,192,192,1.00)']
+   },
+   {
+      type: 'rect',
+      id: 'Rectangle9Copy',
+      stroke: [0,'rgb(0, 0, 0)','none'],
+      rect: ['533px','36px','89px','28px','auto','auto'],
+      fill: ['rgba(237,237,237,1.00)']
+   }],
+   symbolInstances: [
+   ]
+   },
+   states: {
+      "Base State": {
+         "${_Rectangle3}": [
+            ["style", "top", '0px'],
+            ["style", "left", '0px'],
+            ["color", "background-color", 'rgba(221,220,220,1.00)']
+         ],
+         "${_Rectangle9}": [
+            ["color", "background-color", 'rgba(192,192,192,1.00)'],
+            ["style", "left", '20px'],
+            ["style", "top", '33px']
+         ],
+         "${_Rectangle9Copy}": [
+            ["style", "top", '36px'],
+            ["color", "background-color", 'rgba(237,237,237,1)'],
+            ["style", "left", '533px'],
+            ["style", "width", '89px']
+         ],
+         "${symbolSelector}": [
+            ["style", "height", '382px'],
+            ["style", "width", '640px']
+         ]
+      }
+   },
+   timelines: {
+      "Default Timeline": {
+         fromState: "Base State",
+         toState: "",
+         duration: 0,
+         autoPlay: true,
+         timeline: [
+         ]
+      }
+   }
+},
+"DISCOVER_sym": {
+   version: "2.0.1",
+   minimumCompatibleVersion: "2.0.0",
+   build: "2.0.1.268",
+   baseState: "Base State",
+   initialState: "Base State",
+   gpuAccelerate: false,
+   resizeInstances: false,
+   content: {
+   dom: [
+   {
+      rect: ['2px','0px','640px','5136px','auto','auto'],
+      id: 'discover',
+      type: 'image',
+      display: 'none',
+      fill: ['rgba(0,0,0,0)','images/discover.png','0px','0px']
+   },
+   {
+      id: 'discoverTopBG_sym',
+      type: 'rect',
+      rect: ['0','216','auto','auto','auto','auto']
+   },
+   {
+      id: 'topCard_first_sym',
+      type: 'rect',
+      rect: ['19','308','auto','auto','auto','auto']
+   },
+   {
+      id: 'topCard_second_sym',
+      type: 'rect',
+      rect: ['251','308','auto','auto','auto','auto']
+   },
+   {
+      id: 'topCard_second_symCopy',
+      type: 'rect',
+      rect: ['251','308','auto','auto','auto','auto']
+   },
+   {
+      id: 'discoverBodyBG_sym',
+      type: 'rect',
+      rect: ['0','598','auto','auto','auto','auto']
+   },
+   {
+      id: 'discoverHeader_sym',
+      type: 'rect',
+      rect: ['0','41','auto','auto','auto','auto']
+   },
+   {
+      id: 'search_sym',
+      type: 'rect',
+      rect: ['0','127','auto','auto','auto','auto']
+   },
+   {
+      id: 'dicoverCard_left_sym',
+      type: 'rect',
+      rect: ['21','689','auto','auto','auto','auto']
+   },
+   {
+      id: 'discoverCard_right_sym',
+      type: 'rect',
+      rect: ['326','688','auto','auto','auto','auto']
+   }],
+   symbolInstances: [
+   {
+      id: 'discoverHeader_sym',
+      symbolName: 'discoverHeader_sym'
+   },
+   {
+      id: 'discoverTopBG_sym',
+      symbolName: 'discoverTopBG_sym'
+   },
+   {
+      id: 'discoverBodyBG_sym',
+      symbolName: 'discoverBodyBG_sym'
+   },
+   {
+      id: 'topCard_second_sym',
+      symbolName: 'discoverTopcard_second_sym'
+   },
+   {
+      id: 'discoverCard_right_sym',
+      symbolName: 'discoverCard_right_sym'
+   },
+   {
+      id: 'topCard_second_symCopy',
+      symbolName: 'discoverTopcard_second_sym'
+   },
+   {
+      id: 'topCard_first_sym',
+      symbolName: 'discoverTopcard_first_syn'
+   },
+   {
+      id: 'dicoverCard_left_sym',
+      symbolName: 'dicoverCard_left_sym'
+   },
+   {
+      id: 'search_sym',
+      symbolName: 'mainfrontSearch_sym'
+   }   ]
+   },
+   states: {
+      "Base State": {
+         "${_topCard_second_symCopy}": [
+            ["style", "left", '484px']
+         ],
+         "${_discoverTopBG_sym}": [
+            ["style", "top", '217px']
+         ],
+         "${symbolSelector}": [
+            ["style", "height", '5136px'],
+            ["style", "width", '640px']
+         ],
+         "${_topCard_first_sym}": [
+            ["style", "left", '21px']
+         ],
+         "${_discover}": [
+            ["style", "top", '0px'],
+            ["style", "opacity", '1'],
+            ["style", "left", '2px'],
+            ["style", "display", 'none']
+         ]
+      }
+   },
+   timelines: {
+      "Default Timeline": {
+         fromState: "Base State",
+         toState: "",
+         duration: 0,
+         autoPlay: true,
+         timeline: [
+            { id: "eid38", tween: [ "style", "${_discoverTopBG_sym}", "top", '217px', { fromValue: '217px'}], position: 0, duration: 0 },
+            { id: "eid22", tween: [ "style", "${_discover}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
+            { id: "eid37", tween: [ "style", "${_topCard_second_symCopy}", "left", '484px', { fromValue: '484px'}], position: 0, duration: 0 },
+            { id: "eid41", tween: [ "style", "${_topCard_first_sym}", "left", '21px', { fromValue: '21px'}], position: 0, duration: 0 }         ]
+      }
+   }
+},
+"discoverBodyBG_sym": {
+   version: "2.0.1",
+   minimumCompatibleVersion: "2.0.0",
+   build: "2.0.1.268",
+   baseState: "Base State",
+   initialState: "Base State",
+   gpuAccelerate: false,
+   resizeInstances: false,
+   content: {
+   dom: [
+   {
+      type: 'rect',
+      id: 'Rectangle3Copy',
+      stroke: [0,'rgb(0, 0, 0)','none'],
+      rect: ['0px','0px','640px','538px','auto','auto'],
+      fill: ['rgba(237,237,237,1.00)']
+   },
+   {
+      type: 'rect',
+      id: 'Rectangle12',
+      stroke: [0,'rgb(0, 0, 0)','none'],
+      rect: ['18px','29px','66px','28px','auto','auto'],
+      fill: ['rgba(192,192,192,1.00)']
+   },
+   {
+      type: 'rect',
+      id: 'Rectangle12Copy',
+      stroke: [0,'rgb(0, 0, 0)','none'],
+      rect: ['91px','29px','152px','28px','auto','auto'],
+      fill: ['rgba(192,192,192,1.00)']
+   }],
+   symbolInstances: [
+   ]
+   },
+   states: {
+      "Base State": {
+         "${_Rectangle12Copy}": [
+            ["color", "background-color", 'rgba(192,192,192,1.00)'],
+            ["style", "top", '29px'],
+            ["style", "left", '91px'],
+            ["style", "width", '152px']
+         ],
+         "${_Rectangle3Copy}": [
+            ["color", "background-color", 'rgba(237,237,237,1.00)'],
+            ["style", "top", '0px'],
+            ["style", "left", '0px'],
+            ["style", "height", '538px']
+         ],
+         "${_Rectangle12}": [
+            ["style", "top", '29px'],
+            ["style", "left", '18px'],
+            ["color", "background-color", 'rgba(192,192,192,1.00)']
+         ],
+         "${symbolSelector}": [
+            ["style", "height", '538px'],
+            ["style", "width", '640px']
+         ]
+      }
+   },
+   timelines: {
+      "Default Timeline": {
+         fromState: "Base State",
+         toState: "",
+         duration: 0,
+         autoPlay: true,
+         timeline: [
+         ]
+      }
+   }
+},
+"discoverTopcard_second_sym": {
+   version: "2.0.1",
+   minimumCompatibleVersion: "2.0.0",
+   build: "2.0.1.268",
+   baseState: "Base State",
+   initialState: "Base State",
+   gpuAccelerate: false,
+   resizeInstances: false,
+   content: {
+   dom: [
+   {
+      id: 'Left_Category_PicCopy2',
+      type: 'group',
+      rect: ['0px','0px','222','268','auto','auto'],
+      c: [
+      {
+         type: 'rect',
+         id: 'Rectangle4Copy2',
+         stroke: [0,'rgb(0, 0, 0)','none'],
+         rect: ['0px','0px','222px','268px','auto','auto'],
+         fill: ['rgba(255,255,255,1.00)']
+      },
+      {
+         type: 'rect',
+         id: 'Rectangle7Copy2',
+         stroke: [0,'rgb(0, 0, 0)','none'],
+         rect: ['12px','9px','200px','200px','auto','auto'],
+         fill: ['rgba(148,148,148,1.00)']
+      },
+      {
+         type: 'rect',
+         id: 'Rectangle8Copy5',
+         stroke: [0,'rgb(0, 0, 0)','none'],
+         rect: ['21px','228px','89px','21px','auto','auto'],
+         fill: ['rgba(192,192,192,1.00)']
+      }]
+   }],
+   symbolInstances: [
+   ]
+   },
+   states: {
+      "Base State": {
+         "${_Rectangle7Copy2}": [
+            ["style", "top", '9px'],
+            ["style", "height", '200px'],
+            ["color", "background-color", 'rgba(148,148,148,1.00)'],
+            ["style", "left", '12px'],
+            ["style", "width", '200px']
+         ],
+         "${symbolSelector}": [
+            ["style", "height", '268px'],
+            ["style", "width", '222px']
+         ],
+         "${_Left_Category_PicCopy2}": [
+            ["style", "left", '0px'],
+            ["style", "top", '0px']
+         ],
+         "${_Rectangle4Copy2}": [
+            ["color", "background-color", 'rgba(255,255,255,1.00)'],
+            ["style", "height", '268px'],
+            ["style", "top", '0px'],
+            ["style", "left", '0px'],
+            ["style", "width", '222px']
+         ],
+         "${_Rectangle8Copy5}": [
+            ["color", "background-color", 'rgba(192,192,192,1.00)'],
+            ["style", "left", '21px'],
+            ["style", "top", '228px']
+         ]
+      }
+   },
+   timelines: {
+      "Default Timeline": {
+         fromState: "Base State",
+         toState: "",
+         duration: 0,
+         autoPlay: true,
+         timeline: [
+         ]
+      }
+   }
+},
+"discoverCard_right_sym": {
+   version: "2.0.1",
+   minimumCompatibleVersion: "2.0.0",
+   build: "2.0.1.268",
+   baseState: "Base State",
+   initialState: "Base State",
+   gpuAccelerate: false,
+   resizeInstances: false,
+   content: {
+   dom: [
+   {
+      id: 'Card_Right_sym',
+      type: 'group',
+      rect: ['0px','0px','293','429px','auto','auto'],
+      c: [
+      {
+         type: 'rect',
+         id: 'Rectangle13Copy',
+         stroke: [0,'rgb(0, 0, 0)','none'],
+         rect: ['0px','0px','293px','590px','auto','auto'],
+         fill: ['rgba(255,255,255,1.00)']
+      },
+      {
+         type: 'rect',
+         id: 'Rectangle14Copy',
+         stroke: [0,'rgb(0, 0, 0)','none'],
+         rect: ['10px','11px','272px','369px','auto','auto'],
+         fill: ['rgba(192,192,192,1.00)']
+      },
+      {
+         rect: ['226px','17px','48px','48px','auto','auto'],
+         borderRadius: ['50%','50%','50%','50%'],
+         id: 'EllipseCopy',
+         stroke: [0,'rgb(0, 0, 0)','none'],
+         type: 'ellipse',
+         fill: ['rgba(255,255,255,1.00)']
+      },
+      {
+         rect: ['238px','19px','auto','auto','auto','auto'],
+         font: ['Arial, Helvetica, sans-serif',40,'rgba(107,107,107,1)','300','none','normal'],
+         id: 'TextCopy',
+         text: '+',
+         align: 'left',
+         type: 'text'
+      },
+      {
+         type: 'rect',
+         id: 'Rectangle15Copy',
+         stroke: [0,'rgb(0, 0, 0)','none'],
+         rect: ['20px','393px','120px','18px','auto','auto'],
+         fill: ['rgba(232,230,230,1.00)']
+      },
+      {
+         type: 'rect',
+         id: 'Rectangle16Copy',
+         stroke: [0,'rgb(0, 0, 0)','none'],
+         rect: ['20px','424px','152px','21px','auto','auto'],
+         fill: ['rgba(192,192,192,1.00)']
+      },
+      {
+         type: 'rect',
+         id: 'Rectangle17Copy7',
+         stroke: [0,'rgb(0, 0, 0)','none'],
+         rect: ['20px','461px','200px','18px','auto','auto'],
+         fill: ['rgba(232,230,230,1.00)']
+      },
+      {
+         type: 'rect',
+         id: 'Rectangle17Copy6',
+         stroke: [0,'rgb(0, 0, 0)','none'],
+         rect: ['20px','490px','224px','18px','auto','auto'],
+         fill: ['rgba(232,230,230,1.00)']
+      },
+      {
+         type: 'rect',
+         id: 'Rectangle17Copy5',
+         stroke: [0,'rgb(0, 0, 0)','none'],
+         rect: ['20px','518px','208px','18px','auto','auto'],
+         fill: ['rgba(232,230,230,1.00)']
+      },
+      {
+         type: 'rect',
+         id: 'Rectangle17Copy4',
+         stroke: [0,'rgb(0, 0, 0)','none'],
+         rect: ['20px','548px','200px','18px','auto','auto'],
+         fill: ['rgba(232,230,230,1.00)']
+      }]
+   }],
+   symbolInstances: [
+   ]
+   },
+   states: {
+      "Base State": {
+         "${_Rectangle17Copy7}": [
+            ["color", "background-color", 'rgba(232,230,230,1.00)'],
+            ["style", "left", '20px'],
+            ["style", "top", '461px']
+         ],
+         "${_Rectangle13Copy}": [
+            ["color", "background-color", 'rgba(255,255,255,1.00)'],
+            ["style", "top", '0px'],
+            ["style", "left", '0px'],
+            ["style", "height", '590px']
+         ],
+         "${_Rectangle17Copy4}": [
+            ["style", "top", '548px'],
+            ["style", "left", '20px'],
+            ["color", "background-color", 'rgba(232,230,230,1.00)']
+         ],
+         "${_Rectangle15Copy}": [
+            ["style", "top", '393px'],
+            ["style", "height", '18px'],
+            ["color", "background-color", 'rgba(232,230,230,1.00)'],
+            ["style", "left", '20px'],
+            ["style", "width", '120px']
+         ],
+         "${_Rectangle17Copy6}": [
+            ["style", "top", '490px'],
+            ["color", "background-color", 'rgba(232,230,230,1.00)'],
+            ["style", "left", '20px'],
+            ["style", "width", '224px']
+         ],
+         "${_Rectangle14Copy}": [
+            ["style", "top", '11px'],
+            ["color", "background-color", 'rgba(192,192,192,1.00)'],
+            ["style", "left", '10px'],
+            ["style", "height", '369px']
+         ],
+         "${_Rectangle16Copy}": [
+            ["color", "background-color", 'rgba(192,192,192,1.00)'],
+            ["style", "left", '20px'],
+            ["style", "top", '424px']
+         ],
+         "${symbolSelector}": [
+            ["style", "height", '590px'],
+            ["style", "width", '293px']
+         ],
+         "${_Rectangle17Copy5}": [
+            ["style", "top", '518px'],
+            ["color", "background-color", 'rgba(232,230,230,1.00)'],
+            ["style", "left", '20px'],
+            ["style", "width", '208px']
+         ],
+         "${_EllipseCopy}": [
+            ["color", "background-color", 'rgba(255,255,255,1.00)'],
+            ["style", "left", '226px'],
+            ["style", "top", '17px']
+         ],
+         "${_TextCopy}": [
+            ["style", "top", '19px'],
+            ["style", "left", '238px'],
+            ["style", "font-size", '40px']
+         ],
+         "${_Card_Right_sym}": [
+            ["style", "left", '0px'],
+            ["style", "top", '0px']
+         ]
+      }
+   },
+   timelines: {
+      "Default Timeline": {
+         fromState: "Base State",
+         toState: "",
+         duration: 0,
+         autoPlay: true,
+         timeline: [
+         ]
+      }
+   }
+},
+"mainfrontSearch_sym": {
+   version: "2.0.1",
+   minimumCompatibleVersion: "2.0.0",
+   build: "2.0.1.268",
+   baseState: "Base State",
+   initialState: "Base State",
+   gpuAccelerate: false,
+   resizeInstances: false,
+   content: {
+   dom: [
+   {
+      type: 'rect',
+      id: 'Rectangle2Copy',
+      stroke: [0,'rgb(0, 0, 0)','none'],
+      rect: ['0px','0px','640px','90px','auto','auto'],
+      fill: ['rgba(192,192,192,1.00)']
+   },
+   {
+      rect: ['20px','17px','598px','59px','auto','auto'],
+      borderRadius: ['10px','10px','10px','10px'],
+      id: 'RoundRect',
+      stroke: [0,'rgb(0, 0, 0)','none'],
+      type: 'rect',
+      fill: ['rgba(255,255,255,1.00)']
+   }],
+   symbolInstances: [
+   ]
+   },
+   states: {
+      "Base State": {
+         "${_RoundRect}": [
+            ["color", "background-color", 'rgba(255,255,255,1.00)'],
+            ["style", "left", '20px'],
+            ["style", "top", '17px']
+         ],
+         "${_Rectangle2Copy}": [
+            ["style", "top", '0px'],
+            ["style", "height", '90px'],
+            ["color", "background-color", 'rgba(192,192,192,1.00)'],
+            ["style", "left", '0px'],
+            ["style", "width", '640px']
+         ],
+         "${symbolSelector}": [
+            ["style", "height", '90px'],
+            ["style", "width", '640px']
+         ]
+      }
+   },
+   timelines: {
+      "Default Timeline": {
+         fromState: "Base State",
+         toState: "",
+         duration: 0,
+         autoPlay: true,
+         timeline: [
+         ]
+      }
+   }
+},
+"discoverHeader_sym": {
+   version: "2.0.1",
+   minimumCompatibleVersion: "2.0.0",
+   build: "2.0.1.268",
+   baseState: "Base State",
+   initialState: "Base State",
+   gpuAccelerate: false,
+   resizeInstances: false,
+   content: {
+   dom: [
+   {
+      type: 'rect',
+      id: 'Rectangle2',
+      stroke: [0,'rgb(0, 0, 0)','none'],
+      rect: ['0px','0px','640px','90px','auto','auto'],
+      fill: ['rgba(192,192,192,1.00)']
+   },
+   {
+      type: 'rect',
+      id: 'Rectangle10',
+      stroke: [0,'rgb(0, 0, 0)','none'],
+      rect: ['252px','30px','140px','28px','auto','auto'],
+      fill: ['rgba(255,255,255,1.00)']
+   },
+   {
+      type: 'rect',
+      id: 'Rectangle11',
+      stroke: [0,'rgb(0, 0, 0)','none'],
+      rect: ['41px','41px','36px','6px','auto','auto'],
+      fill: ['rgba(255,255,255,1)']
+   },
+   {
+      type: 'rect',
+      id: 'Rectangle11Copy2',
+      stroke: [0,'rgb(0, 0, 0)','none'],
+      rect: ['41px','31px','36px','6px','auto','auto'],
+      fill: ['rgba(255,255,255,1)']
+   },
+   {
+      type: 'rect',
+      id: 'Rectangle11Copy',
+      stroke: [0,'rgb(0, 0, 0)','none'],
+      rect: ['41px','51px','36px','6px','auto','auto'],
+      fill: ['rgba(255,255,255,1)']
+   }],
+   symbolInstances: [
+   ]
+   },
+   states: {
+      "Base State": {
+         "${_Rectangle2}": [
+            ["color", "background-color", 'rgba(192,192,192,1.00)'],
+            ["style", "height", '90px'],
+            ["style", "top", '0px'],
+            ["style", "left", '0px'],
+            ["style", "width", '640px']
+         ],
+         "${symbolSelector}": [
+            ["style", "height", '90px'],
+            ["style", "width", '640px']
+         ],
+         "${_Rectangle10}": [
+            ["color", "background-color", 'rgba(255,255,255,1.00)'],
+            ["style", "left", '252px'],
+            ["style", "top", '30px']
+         ],
+         "${_Rectangle11}": [
+            ["style", "top", '41px'],
+            ["style", "left", '41px']
+         ],
+         "${_Rectangle11Copy2}": [
+            ["style", "top", '31px'],
+            ["style", "left", '41px']
+         ],
+         "${_Rectangle11Copy}": [
+            ["style", "top", '51px'],
+            ["style", "left", '41px']
+         ]
+      }
+   },
+   timelines: {
+      "Default Timeline": {
+         fromState: "Base State",
+         toState: "",
+         duration: 0,
+         autoPlay: true,
+         timeline: [
+         ]
       }
    }
 }

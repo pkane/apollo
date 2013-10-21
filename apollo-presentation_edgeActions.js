@@ -606,7 +606,8 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
    (function(symbolName) {   
       Symbol.bindElementAction(compId, symbolName, "${_article-card-fullCopy}", "click", function(sym, e) {   
       	sym.play("ArticleFlipBack");	
-      	$('#Stage_Symbol_articleGroup').fadeOut(50);
+      	$('#Stage_ARTICLEFULL_sym_Symbol_articleGroup').fadeOut(50);
+
       });
       
       //Edge binding end
@@ -891,5 +892,79 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
    
    })("ARTICLEFULL_sym");
    //Edge symbol end:'ARTICLEFULL_sym'
+
+   //=========================================================
+
+   //=========================================================
+   
+   //Edge symbol: 'discoverHeader_sym'
+   (function(symbolName) {   
+   
+   })("discoverHeader_sym");
+   //Edge symbol end:'discoverHeader_sym'
+
+   //=========================================================
+   
+   //Edge symbol: 'topCard_first_sym'
+   (function(symbolName) {   
+   
+   })("discoverTopcard_first_syn");
+   //Edge symbol end:'discoverTopcard_first_syn'
+
+   //=========================================================
+   
+   //Edge symbol: 'discoverTopBG_sym'
+   (function(symbolName) {   
+   
+   })("discoverTopBG_sym");
+   //Edge symbol end:'discoverTopBG_sym'
+
+   //=========================================================
+   
+   //Edge symbol: 'discover'
+   (function(symbolName) {   
+   
+   })("DISCOVER_sym");
+   //Edge symbol end:'DISCOVER_sym'
+
+   //=========================================================
+   
+   //Edge symbol: 'discoverBodyBG_sym'
+   (function(symbolName) {   
+   
+   })("discoverBodyBG_sym");
+   //Edge symbol end:'discoverBodyBG_sym'
+
+   //=========================================================
+   
+   //Edge symbol: 'topCard_second_sym'
+   (function(symbolName) {   
+   
+   })("discoverTopcard_second_sym");
+   //Edge symbol end:'discoverTopcard_second_sym'
+
+   //=========================================================
+   
+   //Edge symbol: 'discoverCard_right_sym'
+   (function(symbolName) {   
+   
+   })("discoverCard_right_sym");
+   //Edge symbol end:'discoverCard_right_sym'
+
+   //=========================================================
+   
+   //Edge symbol: 'dicoverCard_left_sym'
+   (function(symbolName) {   
+   
+   })("dicoverCard_left_sym");
+   //Edge symbol end:'dicoverCard_left_sym'
+
+   //=========================================================
+   
+   //Edge symbol: 'search_sym'
+   (function(symbolName) {   
+   
+   })("mainfrontSearch_sym");
+   //Edge symbol end:'mainfrontSearch_sym'
 
 })(jQuery, AdobeEdge, "EDGE-260752881");
