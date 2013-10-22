@@ -14,23 +14,23 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       
       
       Symbol.bindSymbolAction(compId, symbolName, "creationComplete", function(sym, e) {
-          
+      
           // yepnope({
           //     nope:['edge_includes/hammerjs/dist/hammer.js'] ,
           //     complete: init
           // });
-          
+      
           // function init (){
-          
+      
           //     var element = sym.element[0];
           //     var hammer = Hammer(element);
-          
+      
           //     hammer.on("swipeup", function(event) {
           //       sym.play("Coverflow");
           //     });          
           // }        
           var scrollStore = -1;
-          
+      
           function scrollDetect(thisObj){
               var obj = thisObj;              
               //Keep track of last scroll
@@ -56,7 +56,7 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
                   scrollStore = scrollSeq;
               });
             }  
-          
+      
          /*
             window.setTimeout(function() { 
             	sym.play("breakingAlertOut");
@@ -64,48 +64,48 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
          */
          	// define function and counter
          	var counter = 1;
-         
+      
          	function update_me() {
          	setTimeout(function(){
          		counter++;
          		update_me();
          	}, 1000);
          	}
-         
+      
          	// run code
          	// update_me();	
            // var detection = scrollDetect($('#Stage_coverFlow'));
-         
-         
+      
+      
         // When ready...
         window.addEventListener("load",function() {
             // Set a timeout...
             setTimeout(function(){
                 // Hide the address bar!
                 window.scrollTo(0, 1);		  
-            }, 0);
-        });          
+            }, 0);        
+        });            
         
         	window.setTimeout(function() {
         		sym.play("myCardsIn");
         		sym.getComposition().getStage().getSymbol("COVERFLOW_sym").getSymbol("cardFlow_symbol").getSymbol("nonFullCards_Symbol").play("cardFlowIn");            
-        	}, 0);
-        
+        	}, 0); 	
+      
           	window.setTimeout(function() { 
             	sym.play("breakingAlertIn");
          	}, 9000);
-        
+      
          /**
           * Gallery Template
           * To add more items simply duplicate the symbol "large4" in the library and increase the number.
           * Then you can customize the content of the new symbol by double clicking on the symbol in the library.
           * The navigation will be extended automatically.
           **/
-        
+      
          /**
           * Don't modify the code below.
           */
-        
+      
          // Find all large symbols in the library
          var prefix = "panel"; // large1, large2 ... large99
          var index = 1;
@@ -119,7 +119,7 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
              $button.css({float: "left", margin: "0px 0 0px 0px"});
            }
          }
-
+      
       });
       //Edge binding end
       
@@ -312,13 +312,13 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       Symbol.bindElementAction(compId, symbolName, "${_Stage}", "swiperight", function(sym, e) {
          $("#Stage_MAINNAV_sym").fadeIn();
          sym.getSymbol("MAINNAV_sym").play("navIn");
-
+      
       });
       //Edge binding end
-
+      
       Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 6100, function(sym, e) {
          sym.stop();
-
+      
       });
       //Edge binding end
 
@@ -607,6 +607,7 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       Symbol.bindElementAction(compId, symbolName, "${_article-card-fullCopy}", "click", function(sym, e) {   
       	sym.play("ArticleFlipBack");	
       	$('#Stage_ARTICLEFULL_sym_Symbol_articleGroup').fadeOut(50);
+      	$('#Stage_ARTICLEFULL_sym').fadeOut();
 
       });
       
@@ -641,6 +642,7 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       Symbol.bindElementAction(compId, symbolName, "${_videoArticleCardFull}", "click", function(sym, e) {
       sym.play("VideoArticleFlipBack");
       $('#Stage_ARTICLEFULL_sym_Symbol_articleVideoGroup').fadeOut();
+      $('#ARTICLEFULL_sym').fadeOut();
 
       });
       //Edge binding end
@@ -729,6 +731,7 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
    (function(symbolName) {   
    
       Symbol.bindElementAction(compId, symbolName, "${_article-card}", "click", function(sym, e) {
+      $('#Stage_ARTICLEFULL_sym').fadeIn();
       $('#Stage_ARTICLEFULL_sym_Symbol_articleGroup').fadeIn();
       sym.getComposition().getStage().getSymbol("ARTICLEFULL_sym").getSymbol("Symbol_articleGroup").play("ArticleFlip");
       $('#Stage_ARTICLEFULL_sym_Symbol_articleGroup_articleGroup').scrollTop(0);   
@@ -737,6 +740,7 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
                //Edge binding end
 
       Symbol.bindElementAction(compId, symbolName, "${_article-3-4-card}", "click", function(sym, e) {
+      $('#Stage_ARTICLEFULL_sym').fadeIn();
       $('#Stage_ARTICLEFULL_sym_Symbol_articleGroup').fadeIn();
       sym.getComposition().getStage().getSymbol("ARTICLEFULL_sym").getSymbol("Symbol_articleGroup").play("ArticleFlip");
       $('#Stage_ARTICLEFULL_sym_Symbol_articleGroup_articleGroup').scrollTop(0);   
@@ -745,6 +749,7 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
                //Edge binding end
 
       Symbol.bindElementAction(compId, symbolName, "${_article-video-card}", "click", function(sym, e) {
+      $('#Stage_ARTICLEFULL_sym').fadeIn();
       $('#Stage_ARTICLEFULL_sym_Symbol_articleVideoGroup').fadeIn();
       sym.getComposition().getStage().getSymbol("ARTICLEFULL_sym").getSymbol("Symbol_articleVideoGroup").play("VideoArticleFlip");
       $('#Stage_ARTICLEFULL_sym_Symbol_articleVideoGroup_articleVideoGroup').scrollTop(0); 
@@ -753,6 +758,7 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
                //Edge binding end
 
       Symbol.bindElementAction(compId, symbolName, "${_article-gallery-card}", "click", function(sym, e) {
+      $('#Stage_ARTICLEFULL_sym').fadeIn();
       $('#Stage_ARTICLEFULL_sym_Symbol_articleGroup').fadeIn();
       sym.getComposition().getStage().getSymbol("ARTICLEFULL_sym").getSymbol("Symbol_articleGroup").play("ArticleFlip");
       $('#Stage_ARTICLEFULL_sym_Symbol_articleGroup_articleGroup').scrollTop(0);   
@@ -761,6 +767,7 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
                //Edge binding end
 
       Symbol.bindElementAction(compId, symbolName, "${_article-assetless-card}", "click", function(sym, e) {
+      $('#Stage_ARTICLEFULL_sym').fadeIn();
       $('#Stage_ARTICLEFULL_sym_Symbol_articleGroup').fadeIn();
       sym.getComposition().getStage().getSymbol("ARTICLEFULL_sym").getSymbol("Symbol_articleGroup").play("ArticleFlip");
       $('#Stage_ARTICLEFULL_sym_Symbol_articleGroup_articleGroup').scrollTop(0);   
@@ -789,6 +796,7 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
    (function(symbolName) {   
    
       Symbol.bindElementAction(compId, symbolName, "${_article-card}", "click", function(sym, e) {
+      $('#Stage_ARTICLEFULL_sym').fadeIn();
       $('#Stage_ARTICLEFULL_sym_Symbol_articleGroup').fadeIn();
       sym.getComposition().getStage().getSymbol("ARTICLEFULL_sym").getSymbol("Symbol_articleGroup").play("ArticleFlip");
       $('#Stage_ARTICLEFULL_sym_Symbol_articleGroup_articleGroup').scrollTop(0);   	   	   
@@ -797,6 +805,7 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
                //Edge binding end
 
       Symbol.bindElementAction(compId, symbolName, "${_article-3-4-card}", "click", function(sym, e) {
+      $('#Stage_ARTICLEFULL_sym').fadeIn();
       $('#Stage_ARTICLEFULL_sym_Symbol_articleGroup').fadeIn();
       sym.getComposition().getStage().getSymbol("ARTICLEFULL_sym").getSymbol("Symbol_articleGroup").play("ArticleFlip");
       $('#Stage_ARTICLEFULL_sym_Symbol_articleGroup_articleGroup').scrollTop(0);     
@@ -805,6 +814,7 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
                //Edge binding end
 
       Symbol.bindElementAction(compId, symbolName, "${_article-video-card}", "click", function(sym, e) {
+      $('#Stage_ARTICLEFULL_sym').fadeIn();
       $('#Stage_ARTICLEFULL_sym_Symbol_articleVideoGroup').fadeIn();
       sym.getComposition().getStage().getSymbol("ARTICLEFULL_sym").getSymbol("Symbol_articleVideoGroup").play("VideoArticleFlip");
       $('#Stage_ARTICLEFULL_sym_Symbol_articleVideoGroup_articleVideoGroup').scrollTop(0); 
@@ -813,6 +823,7 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
                //Edge binding end
 
       Symbol.bindElementAction(compId, symbolName, "${_article-gallery-card}", "click", function(sym, e) {
+      $('#Stage_ARTICLEFULL_sym').fadeIn();
       $('#Stage_ARTICLEFULL_sym_Symbol_articleGroup').fadeIn();
       sym.getComposition().getStage().getSymbol("ARTICLEFULL_sym").getSymbol("Symbol_articleGroup").play("ArticleFlip");
       $('#Stage_ARTICLEFULL_sym_Symbol_articleGroup_articleGroup').scrollTop(0);    	
@@ -821,6 +832,7 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
                //Edge binding end
 
       Symbol.bindElementAction(compId, symbolName, "${_article-assetless-card}", "click", function(sym, e) {
+      $('#Stage_ARTICLEFULL_sym').fadeIn();
       $('#Stage_ARTICLEFULL_sym_Symbol_articleGroup').fadeIn();
       sym.getComposition().getStage().getSymbol("ARTICLEFULL_sym").getSymbol("Symbol_articleGroup").play("ArticleFlip");
       $('#Stage_ARTICLEFULL_sym_Symbol_articleGroup_articleGroup').scrollTop(0);    
