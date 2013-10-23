@@ -752,7 +752,7 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       $('#Stage_ARTICLEFULL_sym').fadeIn();
       $('#Stage_ARTICLEFULL_sym_Symbol_articleVideoGroup').fadeIn();
       sym.getComposition().getStage().getSymbol("ARTICLEFULL_sym").getSymbol("Symbol_articleVideoGroup").play("VideoArticleFlip");
-      $('#Stage_ARTICLEFULL_sym_Symbol_articleVideoGroup_articleVideoGroup').scrollTop(0); 
+      $('#Stage_ARTICLEFULL_sym_Symbol_articleGroup_articleGroup').scrollTop(0); 
 
       });
                //Edge binding end

@@ -1009,46 +1009,46 @@ var symbols = {
    content: {
    dom: [
    {
-      type: 'image',
-      display: 'none',
       rect: ['0px','0px','132px','1030px','auto','auto'],
       id: 'nav-main2',
+      type: 'image',
+      display: 'none',
       fill: ['rgba(0,0,0,0)','images/nav-main2.png','0px','0px']
    },
    {
-      type: 'rect',
       rect: ['135px','0px','540px','30px','auto','auto'],
+      type: 'rect',
       id: 'Rectangle3',
       stroke: [0,'rgb(0, 0, 0)','none'],
       display: 'none',
       fill: ['rgba(0,172,129,1.00)']
    },
    {
+      rect: ['-418px','0px','574px','1136px','auto','auto'],
+      id: 'nav-new',
       type: 'image',
       display: 'none',
-      rect: ['-418px','8px','554px','1096px','auto','auto'],
-      id: 'nav-new',
       fill: ['rgba(0,0,0,0)','images/nav-new.png','0px','0px']
    },
    {
-      type: 'rect',
       rect: ['138px','0px','620px','1064px','auto','auto'],
+      type: 'rect',
       id: 'Rectangle',
       stroke: [0,'rgb(0, 0, 0)','none'],
       display: 'none',
       fill: ['rgba(192,192,192,1)']
    },
    {
+      rect: ['135px','626px','559px','84px','auto','auto'],
       type: 'rect',
-      rect: ['135px','611px','540px','84px','auto','auto'],
       id: 'newsTopicLink',
       stroke: [0,'rgb(0, 0, 0)','none'],
       display: 'none',
       fill: ['rgba(192,192,192,1)']
    },
    {
+      rect: ['135px','535px','559px','84px','auto','auto'],
       type: 'rect',
-      rect: ['135px','521px','540px','84px','auto','auto'],
       id: 'homeLink',
       stroke: [0,'rgb(0, 0, 0)','none'],
       display: 'none',
@@ -1067,14 +1067,15 @@ var symbols = {
             ["style", "width", '540px']
          ],
          "${_homeLink}": [
-            ["style", "top", '521px'],
+            ["style", "top", '535px'],
+            ["style", "display", 'none'],
             ["style", "opacity", '0'],
             ["style", "left", '-414px'],
-            ["style", "display", 'none']
+            ["style", "width", '559px']
          ],
          "${symbolSelector}": [
-            ["style", "height", '1064px'],
-            ["style", "width", '620px']
+            ["style", "height", '1136px'],
+            ["style", "width", '662px']
          ],
          "${_nav-main2}": [
             ["style", "top", '0px'],
@@ -1087,21 +1088,24 @@ var symbols = {
          "${_Rectangle}": [
             ["style", "top", '0px'],
             ["style", "display", 'none'],
-            ["style", "height", '1104px'],
+            ["style", "height", '1136px'],
             ["style", "opacity", '0'],
             ["style", "left", '674px'],
-            ["style", "width", '85px']
+            ["style", "width", '87px']
          ],
          "${_newsTopicLink}": [
-            ["style", "top", '611px'],
+            ["style", "top", '626px'],
+            ["style", "display", 'none'],
             ["style", "opacity", '0'],
             ["style", "left", '-414px'],
-            ["style", "display", 'none']
+            ["style", "width", '559px']
          ],
          "${_nav-new}": [
+            ["style", "top", '0px'],
+            ["style", "height", '1136px'],
             ["style", "display", 'none'],
             ["style", "left", '-414px'],
-            ["style", "top", '8px']
+            ["style", "width", '574px']
          ]
       }
    },
@@ -1122,8 +1126,8 @@ var symbols = {
             { id: "eid13525", tween: [ "style", "${_Rectangle3}", "display", 'block', { fromValue: 'none'}], position: 267, duration: 0 },
             { id: "eid13532", tween: [ "style", "${_Rectangle3}", "display", 'block', { fromValue: 'block'}], position: 767, duration: 0 },
             { id: "eid13527", tween: [ "style", "${_Rectangle3}", "display", 'none', { fromValue: 'block'}], position: 1167, duration: 0 },
-            { id: "eid13263", tween: [ "style", "${_Rectangle}", "width", '85px', { fromValue: '85px'}], position: 267, duration: 0, easing: "easeOutCubic" },
-            { id: "eid13537", tween: [ "style", "${_Rectangle}", "height", '1104px', { fromValue: '1104px'}], position: 667, duration: 0, easing: "easeOutCubic" },
+            { id: "eid13263", tween: [ "style", "${_Rectangle}", "width", '87px', { fromValue: '87px'}], position: 267, duration: 0, easing: "easeOutCubic" },
+            { id: "eid13537", tween: [ "style", "${_Rectangle}", "height", '1136px', { fromValue: '1136px'}], position: 667, duration: 0, easing: "easeOutCubic" },
             { id: "eid13629", tween: [ "style", "${_newsTopicLink}", "display", 'block', { fromValue: 'none'}], position: 267, duration: 0 },
             { id: "eid13630", tween: [ "style", "${_newsTopicLink}", "display", 'block', { fromValue: 'block'}], position: 767, duration: 0 },
             { id: "eid13631", tween: [ "style", "${_newsTopicLink}", "display", 'none', { fromValue: 'block'}], position: 1167, duration: 0 },
@@ -1137,7 +1141,7 @@ var symbols = {
             { id: "eid13536", tween: [ "style", "${_Rectangle3}", "left", '-418px', { fromValue: '0px'}], position: 767, duration: 400, easing: "easeOutCubic" },
             { id: "eid14345", tween: [ "style", "${_homeLink}", "left", '0px', { fromValue: '-414px'}], position: 267, duration: 400, easing: "easeOutCubic" },
             { id: "eid14346", tween: [ "style", "${_homeLink}", "left", '-414px', { fromValue: '0px'}], position: 767, duration: 400, easing: "easeOutCubic" },
-            { id: "eid14376", tween: [ "style", "${_Rectangle}", "left", '539px', { fromValue: '674px'}], position: 267, duration: 400, easing: "easeOutCubic" },
+            { id: "eid14376", tween: [ "style", "${_Rectangle}", "left", '560px', { fromValue: '674px'}], position: 267, duration: 400, easing: "easeOutCubic" },
             { id: "eid13254", tween: [ "style", "${_Rectangle}", "display", 'none', { fromValue: 'none'}], position: 267, duration: 0, easing: "easeOutCubic" },
             { id: "eid13255", tween: [ "style", "${_Rectangle}", "display", 'block', { fromValue: 'none'}], position: 667, duration: 0, easing: "easeOutCubic" },
             { id: "eid13256", tween: [ "style", "${_Rectangle}", "display", 'none', { fromValue: 'block'}], position: 1167, duration: 0, easing: "easeOutCubic" },
@@ -1169,16 +1173,16 @@ var symbols = {
       }]
    },
    {
-      type: 'rect',
       rect: ['-147px','-143px','640px','54px','auto','auto'],
+      type: 'rect',
       id: 'articleFullTopBarBG',
       stroke: [0,'rgb(0, 0, 0)','none'],
       display: 'none',
       fill: ['rgba(231,231,231,1.00)']
    },
    {
-      type: 'rect',
       rect: ['-147px','-143px','640px','54px','auto','auto'],
+      type: 'rect',
       id: 'articleFullTopBar',
       stroke: [0,'rgb(0, 0, 0)','none'],
       display: 'none',
@@ -1201,7 +1205,7 @@ var symbols = {
          ],
          "${_articleGroup}": [
             ["transform", "scaleX", '0.5'],
-            ["style", "left", '-147px'],
+            ["style", "left", '-138px'],
             ["style", "top", '-276px'],
             ["style", "display", 'block'],
             ["transform", "scaleY", '0.5'],
@@ -1263,19 +1267,19 @@ var symbols = {
             { id: "eid13510", tween: [ "style", "${_articleFullTopBarBG}", "display", 'block', { fromValue: 'none'}], position: 500, duration: 0 },
             { id: "eid12493", tween: [ "style", "${_articleGroup}", "clip", [0,640,6193.529296875,0], { valueTemplate: 'rect(@@0@@px @@1@@px @@2@@px @@3@@px)', fromValue: [0,640,2322.819091796875,0]}], position: 500, duration: 327, easing: "easeOutCubic" },
             { id: "eid12491", tween: [ "style", "${_articleGroup}", "clip", [0,640,2727.899169921875,0], { valueTemplate: 'rect(@@0@@px @@1@@px @@2@@px @@3@@px)', fromValue: [0,640,6193.529296875,0]}], position: 1000, duration: 327, easing: "easeOutCubic" },
-            { id: "eid12499", tween: [ "transform", "${_articleGroup}", "scaleY", '1', { fromValue: '0.5'}], position: 500, duration: 327, easing: "easeOutCubic" },
-            { id: "eid12498", tween: [ "transform", "${_articleGroup}", "scaleY", '0', { fromValue: '1'}], position: 1000, duration: 327, easing: "easeOutCubic" },
+            { id: "eid12499", tween: [ "transform", "${_articleGroup}", "scaleY", '1.02805', { fromValue: '0.5'}], position: 500, duration: 327, easing: "easeOutCubic" },
+            { id: "eid12498", tween: [ "transform", "${_articleGroup}", "scaleY", '0', { fromValue: '1.02805'}], position: 1000, duration: 327, easing: "easeOutCubic" },
             { id: "eid13508", tween: [ "style", "${_articleFullTopBar}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
             { id: "eid13511", tween: [ "style", "${_articleFullTopBar}", "display", 'block', { fromValue: 'none'}], position: 500, duration: 0 },
             { id: "eid12450", tween: [ "style", "${_article-card-fullCopy}", "opacity", '1', { fromValue: '0'}], position: 500, duration: 327, easing: "easeOutCubic" },
             { id: "eid12473", tween: [ "style", "${_article-card-fullCopy}", "opacity", '0', { fromValue: '1'}], position: 1000, duration: 327, easing: "easeOutCubic" },
-            { id: "eid12507", tween: [ "style", "${_articleGroup}", "top", '-143px', { fromValue: '-276px'}], position: 500, duration: 327, easing: "easeOutCubic" },
-            { id: "eid12509", tween: [ "style", "${_articleGroup}", "top", '-276px', { fromValue: '-143px'}], position: 1000, duration: 327, easing: "easeOutCubic" },
-            { id: "eid12496", tween: [ "transform", "${_articleGroup}", "scaleX", '1', { fromValue: '0.5'}], position: 500, duration: 327, easing: "easeOutCubic" },
-            { id: "eid12497", tween: [ "transform", "${_articleGroup}", "scaleX", '0', { fromValue: '1'}], position: 1000, duration: 327, easing: "easeOutCubic" },
+            { id: "eid12507", tween: [ "style", "${_articleGroup}", "top", '-127px', { fromValue: '-276px'}], position: 500, duration: 327, easing: "easeOutCubic" },
+            { id: "eid12509", tween: [ "style", "${_articleGroup}", "top", '-276px', { fromValue: '-127px'}], position: 1000, duration: 327, easing: "easeOutCubic" },
+            { id: "eid12496", tween: [ "transform", "${_articleGroup}", "scaleX", '1.02805', { fromValue: '0.5'}], position: 500, duration: 327, easing: "easeOutCubic" },
+            { id: "eid12497", tween: [ "transform", "${_articleGroup}", "scaleX", '0', { fromValue: '1.02805'}], position: 1000, duration: 327, easing: "easeOutCubic" },
             { id: "eid12564", tween: [ "style", "${_article-card-fullCopy}", "height", '6195px', { fromValue: '3331px'}], position: 500, duration: 327, easing: "easeOutCubic" },
             { id: "eid12565", tween: [ "style", "${_article-card-fullCopy}", "height", '3331px', { fromValue: '6195px'}], position: 1000, duration: 327, easing: "easeOutCubic" },
-            { id: "eid13373", tween: [ "style", "${_articleGroup}", "left", '-147px', { fromValue: '-147px'}], position: 827, duration: 0, easing: "easeOutCubic" },
+            { id: "eid13373", tween: [ "style", "${_articleGroup}", "left", '-138px', { fromValue: '-138px'}], position: 827, duration: 0, easing: "easeOutCubic" },
             { id: "eid12452", tween: [ "transform", "${_article-card-fullCopy}", "scaleY", '1', { fromValue: '0.5'}], position: 500, duration: 327, easing: "easeOutCubic" },
             { id: "eid12474", tween: [ "transform", "${_article-card-fullCopy}", "scaleY", '0', { fromValue: '1'}], position: 1000, duration: 327, easing: "easeOutCubic" }         ]
       }
@@ -1338,11 +1342,21 @@ var symbols = {
             ["style", "height", '1238px'],
             ["style", "width", '320px']
          ],
+         "${_articleFullTopBar}": [
+            ["color", "background-color", 'rgba(15,152,240,0.7969)'],
+            ["style", "top", '-143px'],
+            ["style", "z-index", '101'],
+            ["style", "position", 'fixed'],
+            ["style", "display", 'none'],
+            ["style", "height", '54px'],
+            ["style", "left", '-147px'],
+            ["style", "width", '640px']
+         ],
          "${_articleVideoGroup}": [
             ["transform", "scaleX", '0.5'],
             ["style", "-webkit-overflow-scrolling", 'touch'],
             ["style", "top", '86px'],
-            ["style", "left", '-147px'],
+            ["style", "left", '-138px'],
             ["transform", "scaleY", '0.5'],
             ["style", "z-index", '60'],
             ["style", "height", '1105px'],
@@ -1359,16 +1373,6 @@ var symbols = {
             ["style", "opacity", '0'],
             ["style", "left", '0px'],
             ["transform", "scaleX", '0.5']
-         ],
-         "${_articleFullTopBar}": [
-            ["color", "background-color", 'rgba(15,152,240,0.7969)'],
-            ["style", "top", '-143px'],
-            ["style", "z-index", '101'],
-            ["style", "position", 'fixed'],
-            ["style", "display", 'none'],
-            ["style", "height", '54px'],
-            ["style", "left", '-147px'],
-            ["style", "width", '640px']
          ]
       }
    },
@@ -1385,17 +1389,17 @@ var symbols = {
          timeline: [
             { id: "eid13400", tween: [ "style", "${_videoArticleCardFull}", "opacity", '1', { fromValue: '0'}], position: 106, duration: 327, easing: "easeOutCubic" },
             { id: "eid14372", tween: [ "style", "${_videoArticleCardFull}", "opacity", '0', { fromValue: '1'}], position: 606, duration: 327, easing: "easeOutCubic" },
-            { id: "eid13390", tween: [ "style", "${_articleVideoGroup}", "left", '-147px', { fromValue: '-147px'}], position: 433, duration: 0, easing: "easeOutCubic" },
-            { id: "eid14359", tween: [ "style", "${_articleVideoGroup}", "left", '-147px', { fromValue: '-147px'}], position: 606, duration: 0, easing: "easeOutCubic" },
+            { id: "eid13390", tween: [ "style", "${_articleVideoGroup}", "left", '-138px', { fromValue: '-138px'}], position: 433, duration: 0, easing: "easeOutCubic" },
+            { id: "eid14359", tween: [ "style", "${_articleVideoGroup}", "left", '-147px', { fromValue: '-138px'}], position: 606, duration: 0, easing: "easeOutCubic" },
             { id: "eid13512", tween: [ "style", "${_articleFullTopBarBG}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
             { id: "eid13514", tween: [ "style", "${_articleFullTopBarBG}", "display", 'block', { fromValue: 'none'}], position: 433, duration: 0 },
             { id: "eid14389", tween: [ "style", "${_articleFullTopBarBG}", "display", 'none', { fromValue: 'block'}], position: 933, duration: 0 },
-            { id: "eid13386", tween: [ "transform", "${_articleVideoGroup}", "scaleY", '1', { fromValue: '0.5'}], position: 106, duration: 327, easing: "easeOutCubic" },
-            { id: "eid14370", tween: [ "transform", "${_articleVideoGroup}", "scaleY", '0.5', { fromValue: '1'}], position: 606, duration: 327, easing: "easeOutCubic" },
+            { id: "eid13386", tween: [ "transform", "${_articleVideoGroup}", "scaleY", '1.02805', { fromValue: '0.5'}], position: 106, duration: 327, easing: "easeOutCubic" },
+            { id: "eid14370", tween: [ "transform", "${_articleVideoGroup}", "scaleY", '0.5', { fromValue: '1.02805'}], position: 606, duration: 327, easing: "easeOutCubic" },
             { id: "eid13405", tween: [ "transform", "${_videoArticleCardFull}", "scaleX", '1', { fromValue: '0.5'}], position: 106, duration: 327, easing: "easeOutCubic" },
             { id: "eid14374", tween: [ "transform", "${_videoArticleCardFull}", "scaleX", '0.5', { fromValue: '1'}], position: 606, duration: 327, easing: "easeOutCubic" },
-            { id: "eid13388", tween: [ "transform", "${_articleVideoGroup}", "scaleX", '1', { fromValue: '0.5'}], position: 106, duration: 327, easing: "easeOutCubic" },
-            { id: "eid14368", tween: [ "transform", "${_articleVideoGroup}", "scaleX", '0.5', { fromValue: '1'}], position: 606, duration: 327, easing: "easeOutCubic" },
+            { id: "eid13388", tween: [ "transform", "${_articleVideoGroup}", "scaleX", '1.02805', { fromValue: '0.5'}], position: 106, duration: 327, easing: "easeOutCubic" },
+            { id: "eid14368", tween: [ "transform", "${_articleVideoGroup}", "scaleX", '0.5', { fromValue: '1.02805'}], position: 606, duration: 327, easing: "easeOutCubic" },
             { id: "eid13391", tween: [ "style", "${_articleVideoGroup}", "clip", [0,640,6193.529296875,0], { valueTemplate: 'rect(@@0@@px @@1@@px @@2@@px @@3@@px)', fromValue: [0,640,2322.819091796875,0]}], position: 106, duration: 327, easing: "easeOutCubic" },
             { id: "eid14369", tween: [ "style", "${_articleVideoGroup}", "clip", [0,640,2322.819091796875,0], { valueTemplate: 'rect(@@0@@px @@1@@px @@2@@px @@3@@px)', fromValue: [0,640,6193.529296875,0]}], position: 606, duration: 327, easing: "easeOutCubic" },
             { id: "eid13393", tween: [ "style", "${_articleVideoGroup}", "display", 'block', { fromValue: 'block'}], position: 106, duration: 0, easing: "easeOutCubic" },
@@ -1405,8 +1409,8 @@ var symbols = {
             { id: "eid13513", tween: [ "style", "${_articleFullTopBar}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
             { id: "eid13515", tween: [ "style", "${_articleFullTopBar}", "display", 'block', { fromValue: 'none'}], position: 433, duration: 0 },
             { id: "eid14390", tween: [ "style", "${_articleFullTopBar}", "display", 'none', { fromValue: 'block'}], position: 933, duration: 0 },
-            { id: "eid13384", tween: [ "style", "${_articleVideoGroup}", "top", '-143px', { fromValue: '86px'}], position: 106, duration: 327, easing: "easeOutCubic" },
-            { id: "eid14367", tween: [ "style", "${_articleVideoGroup}", "top", '86px', { fromValue: '-143px'}], position: 606, duration: 327, easing: "easeOutCubic" },
+            { id: "eid13384", tween: [ "style", "${_articleVideoGroup}", "top", '-127px', { fromValue: '86px'}], position: 106, duration: 327, easing: "easeOutCubic" },
+            { id: "eid14367", tween: [ "style", "${_articleVideoGroup}", "top", '86px', { fromValue: '-127px'}], position: 606, duration: 327, easing: "easeOutCubic" },
             { id: "eid13402", tween: [ "style", "${_videoArticleCardFull}", "display", 'block', { fromValue: 'block'}], position: 106, duration: 0, easing: "easeOutCubic" },
             { id: "eid14363", tween: [ "style", "${_videoArticleCardFull}", "display", 'none', { fromValue: 'block'}], position: 933, duration: 0, easing: "easeOutCubic" },
             { id: "eid13398", tween: [ "style", "${_videoArticleCardFull}", "height", '6195px', { fromValue: '3331px'}], position: 106, duration: 327, easing: "easeOutCubic" },
@@ -2641,11 +2645,11 @@ var symbols = {
    content: {
    dom: [
    {
-      type: 'rect',
-      id: 'Symbol_articleGroup',
       rect: ['138','142','auto','auto','auto','auto'],
+      id: 'Symbol_articleGroup',
+      transform: [],
       display: 'none',
-      transform: []
+      type: 'rect'
    },
    {
       display: 'none',
