@@ -642,7 +642,7 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       Symbol.bindElementAction(compId, symbolName, "${_videoArticleCardFull}", "click", function(sym, e) {
       sym.play("VideoArticleFlipBack");
       $('#Stage_ARTICLEFULL_sym_Symbol_articleVideoGroup').fadeOut();
-      $('#ARTICLEFULL_sym').fadeOut();
+      $('#Stage_ARTICLEFULL_sym').fadeOut();
 
       });
       //Edge binding end
